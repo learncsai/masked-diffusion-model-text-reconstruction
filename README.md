@@ -88,7 +88,7 @@ paper/                    Python figure generator only
 tests/                    Numerical and experiment-integrity checks
 ```
 
-Generated results, corpus text, token arrays, checkpoints, PDFs, and TeX files are ignored by Git. The original ZIP is represented by its unpacked contents and SHA-256 provenance rather than uploaded as an opaque archive.
+
 
 ## Citation and publication
 
