@@ -6,7 +6,7 @@ Code and experiment resources for **Predicting Corpus-to-Corpus Variation in Tex
 
 How much does a masked-token prediction change when its training corpus changes? This project studies a local count-based reconstructor, forecasts its disagreement from an independent reference corpus, and compares those forecasts with small masked diffusion language models (MDLMs). Experiments use **TinyStories, WikiText-103, and CNN/DailyMail**, with squared error over GPT-2's full **50,257-token vocabulary**.
 
-The repository unpacks and extends `finalaistats_reproducibility.zip`: statistical code, preprocessing, study configurations, training implementation, numerical evidence, and 66 training logs are directly inspectable. Paper references follow the attached submitted version, which contains **nine tables and five figures**. Publication information is maintained in [paper metadata](paper_metadata.json); the arXiv link can be added later.
+ Paper references follow the attached submitted version, which contains **nine tables and five figures**. Publication information is maintained in [paper metadata](paper_metadata.json); the arXiv link can be added later.
 
 ## Start with the offline reproduction
 
