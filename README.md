@@ -92,6 +92,4 @@ Generated results, corpus text, token arrays, checkpoints, PDFs, and TeX files a
 
 ## Citation and publication
 
-The paper title is final for this repository snapshot. Paper authors, arXiv identifier, DOI, and publication details are pending in [paper_metadata.json](paper_metadata.json). [CITATION.cff](CITATION.cff) currently cites this software under its GitHub account; add the preferred paper citation when its author and publication metadata are confirmed. No arXiv identifier has been invented.
-
-This repository is initially private. Dataset attribution and access information are in [the data guide](docs/data.md) and [the archived source notes](artifact/DATA_SOURCES.md). A software license has not yet been selected; no additional redistribution rights are granted for upstream data.
+Upcoming
