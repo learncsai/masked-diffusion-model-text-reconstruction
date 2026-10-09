@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "calibration_rows": 156,
+  "decision_rows": 216,
+  "primary_and_exploratory_estimates_and_intervals_recomputed": true,
+  "scope": "Saved scalar bank forecasts and pair scores. Synthetic decomposition plots use saved aggregate components."
+}

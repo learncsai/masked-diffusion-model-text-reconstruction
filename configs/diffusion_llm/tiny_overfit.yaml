@@ -1,0 +1,42 @@
+experiment_name: tiny_overfit
+device: auto
+data:
+  source: roneneldan/TinyStories
+  raw_path: data/diffusion_llm/tinystories_documents.jsonl
+  processed_dir: data/diffusion_llm/processed_64
+  tokenizer_dir: data/diffusion_llm/gpt2_tokenizer
+  seed: 314159
+  document_counts: {train_a: 80, train_b: 80, eval: 40}
+  max_chunks: {train_a: 128, train_b: 128, eval: 64}
+model:
+  max_length: 64
+  hidden_size: 96
+  num_layers: 2
+  num_heads: 4
+  mlp_size: 384
+  dropout: 0.0
+  norm_eps: 1.0e-5
+diffusion:
+  schedule: linear
+  t_min: 0.1
+  t_max: 0.9
+  objective: mdlm_weighted
+  weight_cap: 10.0
+optimizer:
+  name: adamw
+  learning_rate: 0.001
+  weight_decay: 0.0
+  beta1: 0.9
+  beta2: 0.98
+  gradient_clip: 1.0
+  warmup_steps: 5
+  total_steps: 400
+training:
+  microbatch_size: 4
+  gradient_accumulation: 2
+  validation_interval: 25
+  checkpoint_interval: 50
+  validation_batches: 4
+  mixed_precision: false
+  num_workers: 0
+  train_chunk_limit: 32

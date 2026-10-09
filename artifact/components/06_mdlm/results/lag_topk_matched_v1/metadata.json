@@ -1,0 +1,433 @@
+{
+  "completed_utc": "2026-10-01T00:18:56.635134+00:00",
+  "source_run": "rtx4090_budget_v1",
+  "k": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64
+  ],
+  "radius": 2,
+  "classes": 50257,
+  "contexts": {
+    "tinystories": {
+      "chunks": 128,
+      "masked_positions": 4065,
+      "source_documents": 46,
+      "context_sha256": "f539f14ce1d626fb666687950106f8b660e409724749ab89a26b7f3493873004",
+      "protocol_sha256": "6efba4a6503cf461d9256aa2f111a57573a3c0ce0fe055f6c6a34e3a1266ab05"
+    },
+    "wikitext": {
+      "chunks": 128,
+      "masked_positions": 4066,
+      "source_documents": 60,
+      "context_sha256": "b0f9f3500986d84de3a7b66699eb9275c3e6ea87bc1b5ed14bef4f8b232e0710",
+      "protocol_sha256": "e7deaaf6958d358471460d6d4ba38c770fff1bff1f6333d81d03aec626cd3980"
+    },
+    "cnn_dailymail": {
+      "chunks": 128,
+      "masked_positions": 4115,
+      "source_documents": 64,
+      "context_sha256": "b6d86b680ee507aebfed55910284ec4a28d3f123031b16492ceda94a1f121a3c",
+      "protocol_sha256": "03e78af67277f557ba34ce90d5c1edccfd279cb5eb0c095de2177b905b69ddef"
+    }
+  },
+  "frozen_inputs_sha256": "47eb063092ecdc2a46d97a36aa78d308d766269868368460a12728c1058e2c93",
+  "analysis_script_sha256": "380aac55ba77a84e9bc0ad9b56e2b2ac3b07baefe2a173eee756a01456f2dd39",
+  "python": "3.12.1",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "aggregation": "Mean over masked positions within each chunk, then equal mean over chunks. Mean A/B within each pair, then mean over three pairs.",
+  "tie_rule": "Descending raw score, then ascending token ID. Tie min/max bound arbitrary tie ordering, not statistical uncertainty.",
+  "ranking": "All 50,257 content-token classes including EOS. MASK/PAD excluded. Raw affine reconstructor scores are not clipped or renormalized.",
+  "relative_topk_error_reduction": "1 - (1 - accuracy_f)/(1 - accuracy_p). This is distinct from relative MSE improvement.",
+  "independence": "Three source-disjoint A/B pairs per corpus, conditional on shared auxiliary/evaluation data. Sizes are nested. No token-level bootstrap or confidence intervals.",
+  "checks": {
+    "model_evaluations": 54,
+    "mse_matches_frozen_results": [
+      {
+        "corpus": "tinystories",
+        "n": 512,
+        "pair": 1,
+        "arm": "a",
+        "absolute_mse_difference": 0.0
+      },
+      {
+        "corpus": "tinystories",
+        "n": 512,
+        "pair": 1,
+        "arm": "b",
+        "absolute_mse_difference": 1.1102230246251565e-16
+      },
+      {
+        "corpus": "tinystories",
+        "n": 512,
+        "pair": 2,
+        "arm": "a",
+        "absolute_mse_difference": 0.0
+      },
+      {
+        "corpus": "tinystories",
+        "n": 512,
+        "pair": 2,
+        "arm": "b",
+        "absolute_mse_difference": 0.0
+      },
+      {
+        "corpus": "tinystories",
+        "n": 512,
+        "pair": 3,
+        "arm": "a",
+        "absolute_mse_difference": 0.0
+      },
+      {
+        "corpus": "tinystories",
+        "n": 512,
+        "pair": 3,
+        "arm": "b",
+        "absolute_mse_difference": 0.0
+      },
+      {
+        "corpus": "tinystories",
+        "n": 1024,
+        "pair": 1,
+        "arm": "a",
+        "absolute_mse_difference": 0.0
+      },
+      {
+        "corpus": "tinystories",
+        "n": 1024,
+        "pair": 1,
+        "arm": "b",
+        "absolute_mse_difference": 0.0
+      },
+      {
+        "corpus": "tinystories",
+        "n": 1024,
+        "pair": 2,
+        "arm": "a",
+        "absolute_mse_difference": 0.0
+      },
+      {
+        "corpus": "tinystories",
+        "n": 1024,
+        "pair": 2,
+        "arm": "b",
+        "absolute_mse_difference": 0.0
+      },
+      {
+        "corpus": "tinystories",
+        "n": 1024,
+        "pair": 3,
+        "arm": "a",
+        "absolute_mse_difference": 0.0
+      },
+      {
+        "corpus": "tinystories",
+        "n": 1024,
+        "pair": 3,
+        "arm": "b",
+        "absolute_mse_difference": 0.0
+      },
+      {
+        "corpus": "tinystories",
+        "n": 2048,
+        "pair": 1,
+        "arm": "a",
+        "absolute_mse_difference": 0.0
+      },
+      {
+        "corpus": "tinystories",
+        "n": 2048,
+        "pair": 1,
+        "arm": "b",
+        "absolute_mse_difference": 0.0
+      },
+      {
+        "corpus": "tinystories",
+        "n": 2048,
+        "pair": 2,
+        "arm": "a",
+        "absolute_mse_difference": 0.0
+      },
+      {
+        "corpus": "tinystories",
+        "n": 2048,
+        "pair": 2,
+        "arm": "b",
+        "absolute_mse_difference": 0.0
+      },
+      {
+        "corpus": "tinystories",
+        "n": 2048,
+        "pair": 3,
+        "arm": "a",
+        "absolute_mse_difference": 0.0
+      },
+      {
+        "corpus": "tinystories",
+        "n": 2048,
+        "pair": 3,
+        "arm": "b",
+        "absolute_mse_difference": 0.0
+      },
+      {
+        "corpus": "wikitext",
+        "n": 512,
+        "pair": 1,
+        "arm": "a",
+        "absolute_mse_difference": 0.0
+      },
+      {
+        "corpus": "wikitext",
+        "n": 512,
+        "pair": 1,
+        "arm": "b",
+        "absolute_mse_difference": 1.1102230246251565e-16
+      },
+      {
+        "corpus": "wikitext",
+        "n": 512,
+        "pair": 2,
+        "arm": "a",
+        "absolute_mse_difference": 0.0
+      },
+      {
+        "corpus": "wikitext",
+        "n": 512,
+        "pair": 2,
+        "arm": "b",
+        "absolute_mse_difference": 0.0
+      },
+      {
+        "corpus": "wikitext",
+        "n": 512,
+        "pair": 3,
+        "arm": "a",
+        "absolute_mse_difference": 0.0
+      },
+      {
+        "corpus": "wikitext",
+        "n": 512,
+        "pair": 3,
+        "arm": "b",
+        "absolute_mse_difference": 0.0
+      },
+      {
+        "corpus": "wikitext",
+        "n": 1024,
+        "pair": 1,
+        "arm": "a",
+        "absolute_mse_difference": 0.0
+      },
+      {
+        "corpus": "wikitext",
+        "n": 1024,
+        "pair": 1,
+        "arm": "b",
+        "absolute_mse_difference": 0.0
+      },
+      {
+        "corpus": "wikitext",
+        "n": 1024,
+        "pair": 2,
+        "arm": "a",
+        "absolute_mse_difference": 0.0
+      },
+      {
+        "corpus": "wikitext",
+        "n": 1024,
+        "pair": 2,
+        "arm": "b",
+        "absolute_mse_difference": 0.0
+      },
+      {
+        "corpus": "wikitext",
+        "n": 1024,
+        "pair": 3,
+        "arm": "a",
+        "absolute_mse_difference": 0.0
+      },
+      {
+        "corpus": "wikitext",
+        "n": 1024,
+        "pair": 3,
+        "arm": "b",
+        "absolute_mse_difference": 0.0
+      },
+      {
+        "corpus": "wikitext",
+        "n": 2048,
+        "pair": 1,
+        "arm": "a",
+        "absolute_mse_difference": 0.0
+      },
+      {
+        "corpus": "wikitext",
+        "n": 2048,
+        "pair": 1,
+        "arm": "b",
+        "absolute_mse_difference": 0.0
+      },
+      {
+        "corpus": "wikitext",
+        "n": 2048,
+        "pair": 2,
+        "arm": "a",
+        "absolute_mse_difference": 0.0
+      },
+      {
+        "corpus": "wikitext",
+        "n": 2048,
+        "pair": 2,
+        "arm": "b",
+        "absolute_mse_difference": 0.0
+      },
+      {
+        "corpus": "wikitext",
+        "n": 2048,
+        "pair": 3,
+        "arm": "a",
+        "absolute_mse_difference": 0.0
+      },
+      {
+        "corpus": "wikitext",
+        "n": 2048,
+        "pair": 3,
+        "arm": "b",
+        "absolute_mse_difference": 0.0
+      },
+      {
+        "corpus": "cnn_dailymail",
+        "n": 512,
+        "pair": 1,
+        "arm": "a",
+        "absolute_mse_difference": 0.0
+      },
+      {
+        "corpus": "cnn_dailymail",
+        "n": 512,
+        "pair": 1,
+        "arm": "b",
+        "absolute_mse_difference": 0.0
+      },
+      {
+        "corpus": "cnn_dailymail",
+        "n": 512,
+        "pair": 2,
+        "arm": "a",
+        "absolute_mse_difference": 0.0
+      },
+      {
+        "corpus": "cnn_dailymail",
+        "n": 512,
+        "pair": 2,
+        "arm": "b",
+        "absolute_mse_difference": 0.0
+      },
+      {
+        "corpus": "cnn_dailymail",
+        "n": 512,
+        "pair": 3,
+        "arm": "a",
+        "absolute_mse_difference": 0.0
+      },
+      {
+        "corpus": "cnn_dailymail",
+        "n": 512,
+        "pair": 3,
+        "arm": "b",
+        "absolute_mse_difference": 0.0
+      },
+      {
+        "corpus": "cnn_dailymail",
+        "n": 1024,
+        "pair": 1,
+        "arm": "a",
+        "absolute_mse_difference": 0.0
+      },
+      {
+        "corpus": "cnn_dailymail",
+        "n": 1024,
+        "pair": 1,
+        "arm": "b",
+        "absolute_mse_difference": 0.0
+      },
+      {
+        "corpus": "cnn_dailymail",
+        "n": 1024,
+        "pair": 2,
+        "arm": "a",
+        "absolute_mse_difference": 0.0
+      },
+      {
+        "corpus": "cnn_dailymail",
+        "n": 1024,
+        "pair": 2,
+        "arm": "b",
+        "absolute_mse_difference": 0.0
+      },
+      {
+        "corpus": "cnn_dailymail",
+        "n": 1024,
+        "pair": 3,
+        "arm": "a",
+        "absolute_mse_difference": 0.0
+      },
+      {
+        "corpus": "cnn_dailymail",
+        "n": 1024,
+        "pair": 3,
+        "arm": "b",
+        "absolute_mse_difference": 0.0
+      },
+      {
+        "corpus": "cnn_dailymail",
+        "n": 2048,
+        "pair": 1,
+        "arm": "a",
+        "absolute_mse_difference": 0.0
+      },
+      {
+        "corpus": "cnn_dailymail",
+        "n": 2048,
+        "pair": 1,
+        "arm": "b",
+        "absolute_mse_difference": 0.0
+      },
+      {
+        "corpus": "cnn_dailymail",
+        "n": 2048,
+        "pair": 2,
+        "arm": "a",
+        "absolute_mse_difference": 0.0
+      },
+      {
+        "corpus": "cnn_dailymail",
+        "n": 2048,
+        "pair": 2,
+        "arm": "b",
+        "absolute_mse_difference": 0.0
+      },
+      {
+        "corpus": "cnn_dailymail",
+        "n": 2048,
+        "pair": 3,
+        "arm": "a",
+        "absolute_mse_difference": 0.0
+      },
+      {
+        "corpus": "cnn_dailymail",
+        "n": 2048,
+        "pair": 3,
+        "arm": "b",
+        "absolute_mse_difference": 0.0
+      }
+    ],
+    "independent_full_sorts_per_model": 3,
+    "test_file": "tests/test_lag_topk.py"
+  }
+}

@@ -1,0 +1,61 @@
+FULL-CONTEXT AFFINE DENOISER: FROZEN EXPERIMENT DESIGN
+
+Question
+Does a denoiser with jointly estimated coefficients over the same visible
+64-token context better reproduce observed MDLM A/B disagreement than the
+radius-two reconstructor? This is an observed A/B comparison. It does not
+derive or validate an independent-reference forecast for the new denoiser.
+
+Data and scope
+Use the exact saved three corpora, three A/B pairs, nested 512/1024/2048
+chunk prefixes, 128 evaluation chunks and q=0.5 masks from mdlm_runpod_main_v1.
+Retain source IDs and verify saved hashes and separation. Compare both saved
+neural stages (8000 and 12000 updates). No MDLM training is performed.
+
+Estimator
+For each realized mask M, concatenate the one-hot token indicators at ALL
+visible positions V, divided by sqrt(|V|). Fit an unpenalized intercept and
+one jointly estimated coefficient matrix by minimizing
+  (1/n) sum_g ||Y_g - b - X_g W||_F^2 + lambda ||W||_F^2,
+where Y_g concatenates the full-vocabulary one-hot targets at hidden positions.
+Chunks have equal weight, matching the training-data weighting of the MDLM.
+This does not assume that chunks from one source are independent replicates.
+The family is affine in visible one-hot tokens conditional on M. Coefficients
+depend on M. It is not one universal mask-independent affine map.
+
+Compute it exactly in the dual. K_ab is the fraction of visible positions
+where training chunks a and b have equal tokens. With C=I-11'/n,
+alpha = (C K C + n lambda I)^(-1) C k_centered,
+and prediction weights are alpha - mean(alpha) + 1/n. Predictions are full
+50,257-coordinate scores and may be negative. Do not clip or apply softmax.
+No vocabulary reduction, embedding, random projection, or iterative training
+is used. The all-hidden case returns the position-specific empirical mean.
+
+Selection fixed before A/B result inspection
+Choose one lambda per corpus by masked MSE on the original 128 auxiliary
+validation chunks, using only the original auxiliary training sources.
+Grid: 0.00001, 0.0001, 0.001, 0.01, 0.1, 1.0.
+Use the smallest mean validation MSE. Exact ties choose the larger lambda.
+Keep this lambda fixed for every A/B pair and corpus size. Do not select by
+MDLM disagreement, evaluation MSE, or forecast agreement. Report all grid
+scores and flag boundary selections without silently expanding the grid.
+
+Measurements
+Per-chunk full-vocabulary squared A/B disagreement and masked MSE, followed
+by equal chunk means, exactly as in saved scores. RelImprove=1-MSE/MSE(p),
+using the existing common auxiliary unigram. Top-k uses k=1,2,4,8,16,32,64
+with ascending token ID for ties. Compare means, corpus-size response,
+within-pair Spearman correlations across evaluation inputs, and full-vector
+alignment with the actual neural B-minus-A differences. The latter is an
+observational diagnostic, never a prospective forecast. Report both neural
+stages. Existing source/multinomial curves refer only to the lag reconstructor.
+
+Checks and limits
+Verify the dual solve against a separately constructed explicit one-hot primal
+ridge regression on a small test. Check hidden targets cannot enter predictors,
+normal-equation residuals, and reproduction of original neural scores.
+Report pair ranges, not confidence intervals. There are only three A/B pairs.
+MDLM training minimizes masked cross-entropy, whereas the linear estimator
+minimizes squared error. Both are evaluated by the same MSE, but this does not
+make their finite-data training procedures identical. Mask-conditional linear
+coefficients and the finite neural training schedule also differ.

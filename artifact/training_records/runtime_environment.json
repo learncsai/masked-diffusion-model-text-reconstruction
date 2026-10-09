@@ -1,0 +1,12 @@
+{
+  "versions": {
+    "python": "3.12",
+    "torch": "2.8.0+cu128",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 4090"
+  },
+  "platform": "Linux-6.8.0-136-generic-x86_64-with-glibc2.39",
+  "cuda_runtime": "12.8"
+}

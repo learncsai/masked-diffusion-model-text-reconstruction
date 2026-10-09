@@ -1,0 +1,434 @@
+[
+  {
+    "case": "markov_sparse",
+    "n": 256,
+    "m": 128,
+    "method": "source_full",
+    "pairs": 80,
+    "banks": 4,
+    "forecast": 0.022566059979869678,
+    "observed": 0.031109797928966464,
+    "population_linear": 0.033551401782924824,
+    "ratio": 0.7253682595880292,
+    "ratio_ci": [
+      0.7054457738393044,
+      0.7470546231453615
+    ],
+    "absolute_log_error": 0.32139761518017873,
+    "paired_error_difference": 0.0,
+    "paired_error_difference_ci": [
+      0.0,
+      0.0
+    ],
+    "reference_error_fraction": -0.3531151770300201,
+    "propagation_error_fraction": 0.07848343661804925
+  },
+  {
+    "case": "markov_sparse",
+    "n": 256,
+    "m": 128,
+    "method": "source_jackknife",
+    "pairs": 80,
+    "banks": 4,
+    "forecast": 0.029184555154077786,
+    "observed": 0.031109797928966464,
+    "population_linear": 0.033551401782924824,
+    "ratio": 0.9381145843735592,
+    "ratio_ci": [
+      0.9056657739770603,
+      0.9712337723808543
+    ],
+    "absolute_log_error": 0.06442171250185007,
+    "paired_error_difference": -0.25697590267832865,
+    "paired_error_difference_ci": [
+      -0.2669137445216472,
+      -0.24807796931790038
+    ],
+    "reference_error_fraction": -0.14036885224449008,
+    "propagation_error_fraction": 0.07848343661804925
+  },
+  {
+    "case": "markov_sparse",
+    "n": 256,
+    "m": 128,
+    "method": "multinomial",
+    "pairs": 80,
+    "banks": 4,
+    "forecast": 0.029537174316093727,
+    "observed": 0.031109797928966464,
+    "population_linear": 0.033551401782924824,
+    "ratio": 0.9494492501538089,
+    "ratio_ci": [
+      0.9252770887195251,
+      0.9753439102568915
+    ],
+    "absolute_log_error": 0.05212952812896146,
+    "paired_error_difference": -0.2692680870512173,
+    "paired_error_difference_ci": [
+      -0.27303096111247993,
+      -0.26622054660898253
+    ],
+    "reference_error_fraction": -0.12903418646424034,
+    "propagation_error_fraction": 0.07848343661804925
+  },
+  {
+    "case": "markov_sparse",
+    "n": 256,
+    "m": 512,
+    "method": "source_full",
+    "pairs": 80,
+    "banks": 4,
+    "forecast": 0.02937739672293583,
+    "observed": 0.031109797928966464,
+    "population_linear": 0.033551401782924824,
+    "ratio": 0.9443133250178527,
+    "ratio_ci": [
+      0.9073429555783364,
+      0.9850340855102704
+    ],
+    "absolute_log_error": 0.058160999700458064,
+    "paired_error_difference": 0.0,
+    "paired_error_difference_ci": [
+      0.0,
+      0.0
+    ],
+    "reference_error_fraction": -0.13417011160019657,
+    "propagation_error_fraction": 0.07848343661804925
+  },
+  {
+    "case": "markov_sparse",
+    "n": 256,
+    "m": 512,
+    "method": "source_jackknife",
+    "pairs": 80,
+    "banks": 4,
+    "forecast": 0.032060414271612166,
+    "observed": 0.031109797928966464,
+    "population_linear": 0.033551401782924824,
+    "ratio": 1.0305568150849536,
+    "ratio_ci": [
+      0.9821332362861072,
+      1.0788717670876489
+    ],
+    "absolute_log_error": 0.049775974939079634,
+    "paired_error_difference": -0.00838502476137843,
+    "paired_error_difference_ci": [
+      -0.06095926868896387,
+      0.05579849115682641
+    ],
+    "reference_error_fraction": -0.04792662153309563,
+    "propagation_error_fraction": 0.07848343661804925
+  },
+  {
+    "case": "markov_sparse",
+    "n": 256,
+    "m": 512,
+    "method": "multinomial",
+    "pairs": 80,
+    "banks": 4,
+    "forecast": 0.030931403776867324,
+    "observed": 0.031109797928966464,
+    "population_linear": 0.033551401782924824,
+    "ratio": 0.9942656602107648,
+    "ratio_ci": [
+      0.9529289436987559,
+      1.0405435164278332
+    ],
+    "absolute_log_error": 0.03509171751572767,
+    "paired_error_difference": -0.023069282184730394,
+    "paired_error_difference_ci": [
+      -0.05049202182295909,
+      0.030143889874698286
+    ],
+    "reference_error_fraction": -0.0842177764072845,
+    "propagation_error_fraction": 0.07848343661804925
+  },
+  {
+    "case": "markov_sparse",
+    "n": 256,
+    "m": 2048,
+    "method": "source_full",
+    "pairs": 80,
+    "banks": 4,
+    "forecast": 0.032567422021115275,
+    "observed": 0.031109797928966464,
+    "population_linear": 0.033551401782924824,
+    "ratio": 1.0468541806500007,
+    "ratio_ci": [
+      1.0225795087690226,
+      1.0726689819016504
+    ],
+    "absolute_log_error": 0.045602997022420724,
+    "paired_error_difference": 0.0,
+    "paired_error_difference_ci": [
+      0.0,
+      0.0
+    ],
+    "reference_error_fraction": -0.03162925596804861,
+    "propagation_error_fraction": 0.07848343661804925
+  },
+  {
+    "case": "markov_sparse",
+    "n": 256,
+    "m": 2048,
+    "method": "source_jackknife",
+    "pairs": 80,
+    "banks": 4,
+    "forecast": 0.03342086585693107,
+    "observed": 0.031109797928966464,
+    "population_linear": 0.033551401782924824,
+    "ratio": 1.074287461887136,
+    "ratio_ci": [
+      1.04899633829079,
+      1.1008524499228218
+    ],
+    "absolute_log_error": 0.07146757117648078,
+    "paired_error_difference": 0.025864574154060058,
+    "paired_error_difference_ci": [
+      0.024780369098893494,
+      0.027664881121565107
+    ],
+    "reference_error_fraction": -0.004195974730913068,
+    "propagation_error_fraction": 0.07848343661804925
+  },
+  {
+    "case": "markov_sparse",
+    "n": 256,
+    "m": 2048,
+    "method": "multinomial",
+    "pairs": 80,
+    "banks": 4,
+    "forecast": 0.03213524140139156,
+    "observed": 0.031109797928966464,
+    "population_linear": 0.033551401782924824,
+    "ratio": 1.032962074352476,
+    "ratio_ci": [
+      1.0104484445402755,
+      1.0580643141473494
+    ],
+    "absolute_log_error": 0.03226689897570752,
+    "paired_error_difference": -0.013336098046713207,
+    "paired_error_difference_ci": [
+      -0.016636969054669132,
+      -0.01041227050606823
+    ],
+    "reference_error_fraction": -0.045521362265573254,
+    "propagation_error_fraction": 0.07848343661804925
+  },
+  {
+    "case": "markov_sparse",
+    "n": 1024,
+    "m": 128,
+    "method": "source_full",
+    "pairs": 80,
+    "banks": 4,
+    "forecast": 0.00873266344183072,
+    "observed": 0.026978597016190552,
+    "population_linear": 0.028372369525766,
+    "ratio": 0.32368856825986997,
+    "ratio_ci": [
+      0.3145296076876119,
+      0.3356149867376224
+    ],
+    "absolute_log_error": 1.128456041467885,
+    "paired_error_difference": 0.0,
+    "paired_error_difference_ci": [
+      0.0,
+      0.0
+    ],
+    "reference_error_fraction": -0.7279735885505457,
+    "propagation_error_fraction": 0.051662156810415694
+  },
+  {
+    "case": "markov_sparse",
+    "n": 1024,
+    "m": 128,
+    "method": "source_jackknife",
+    "pairs": 80,
+    "banks": 4,
+    "forecast": 0.01253193097306322,
+    "observed": 0.026978597016190552,
+    "population_linear": 0.028372369525766,
+    "ratio": 0.46451381313648316,
+    "ratio_ci": [
+      0.44880108413864006,
+      0.4833984579520841
+    ],
+    "absolute_log_error": 0.7674176555818244,
+    "paired_error_difference": -0.36103838588606063,
+    "paired_error_difference_ci": [
+      -0.371521311291271,
+      -0.3505554604808505
+    ],
+    "reference_error_fraction": -0.5871483436739325,
+    "propagation_error_fraction": 0.051662156810415694
+  },
+  {
+    "case": "markov_sparse",
+    "n": 1024,
+    "m": 128,
+    "method": "multinomial",
+    "pairs": 80,
+    "banks": 4,
+    "forecast": 0.018395616428642354,
+    "observed": 0.026978597016190552,
+    "population_linear": 0.028372369525766,
+    "ratio": 0.6818596392393077,
+    "ratio_ci": [
+      0.6602902015946157,
+      0.7049466105416597
+    ],
+    "absolute_log_error": 0.38340632994012064,
+    "paired_error_difference": -0.7450497115277643,
+    "paired_error_difference_ci": [
+      -0.7895306017007399,
+      -0.712594497486005
+    ],
+    "reference_error_fraction": -0.36980251757110794,
+    "propagation_error_fraction": 0.051662156810415694
+  },
+  {
+    "case": "markov_sparse",
+    "n": 1024,
+    "m": 512,
+    "method": "source_full",
+    "pairs": 80,
+    "banks": 4,
+    "forecast": 0.018349621836899283,
+    "observed": 0.026978597016190552,
+    "population_linear": 0.028372369525766,
+    "ratio": 0.6801547843976913,
+    "ratio_ci": [
+      0.622510658314933,
+      0.7288566265912406
+    ],
+    "absolute_log_error": 0.38866913260286734,
+    "paired_error_difference": 0.0,
+    "paired_error_difference_ci": [
+      0.0,
+      0.0
+    ],
+    "reference_error_fraction": -0.3715073724127244,
+    "propagation_error_fraction": 0.051662156810415694
+  },
+  {
+    "case": "markov_sparse",
+    "n": 1024,
+    "m": 512,
+    "method": "source_jackknife",
+    "pairs": 80,
+    "banks": 4,
+    "forecast": 0.02276136315490433,
+    "observed": 0.026978597016190552,
+    "population_linear": 0.028372369525766,
+    "ratio": 0.8436822397118964,
+    "ratio_ci": [
+      0.755762208568559,
+      0.9101200767891823
+    ],
+    "absolute_log_error": 0.1746373250660706,
+    "paired_error_difference": -0.21403180753679674,
+    "paired_error_difference_ci": [
+      -0.22782730073043786,
+      -0.19206316619021663
+    ],
+    "reference_error_fraction": -0.20797991709851937,
+    "propagation_error_fraction": 0.051662156810415694
+  },
+  {
+    "case": "markov_sparse",
+    "n": 1024,
+    "m": 512,
+    "method": "multinomial",
+    "pairs": 80,
+    "banks": 4,
+    "forecast": 0.023117501527240788,
+    "observed": 0.026978597016190552,
+    "population_linear": 0.028372369525766,
+    "ratio": 0.8568830140932598,
+    "ratio_ci": [
+      0.7823792232739711,
+      0.9226347238543584
+    ],
+    "absolute_log_error": 0.15796160019006103,
+    "paired_error_difference": -0.2307075324128063,
+    "paired_error_difference_ci": [
+      -0.23790225741479748,
+      -0.22351280741081517
+    ],
+    "reference_error_fraction": -0.19477914271715582,
+    "propagation_error_fraction": 0.051662156810415694
+  },
+  {
+    "case": "markov_sparse",
+    "n": 1024,
+    "m": 2048,
+    "method": "source_full",
+    "pairs": 80,
+    "banks": 4,
+    "forecast": 0.02557511450417937,
+    "observed": 0.026978597016190552,
+    "population_linear": 0.028372369525766,
+    "ratio": 0.9479779281639844,
+    "ratio_ci": [
+      0.9075743757465052,
+      0.9902942046359294
+    ],
+    "absolute_log_error": 0.05645753837315433,
+    "paired_error_difference": 0.0,
+    "paired_error_difference_ci": [
+      0.0,
+      0.0
+    ],
+    "reference_error_fraction": -0.10368422864643129,
+    "propagation_error_fraction": 0.051662156810415694
+  },
+  {
+    "case": "markov_sparse",
+    "n": 1024,
+    "m": 2048,
+    "method": "source_jackknife",
+    "pairs": 80,
+    "banks": 4,
+    "forecast": 0.027709973105779887,
+    "observed": 0.026978597016190552,
+    "population_linear": 0.028372369525766,
+    "ratio": 1.0271094930974511,
+    "ratio_ci": [
+      0.9814599862582243,
+      1.0726166914521844
+    ],
+    "absolute_log_error": 0.04172415522417215,
+    "paired_error_difference": -0.014733383148982176,
+    "paired_error_difference_ci": [
+      -0.07822322372671123,
+      0.05285190319455201
+    ],
+    "reference_error_fraction": -0.024552663712964513,
+    "propagation_error_fraction": 0.051662156810415694
+  },
+  {
+    "case": "markov_sparse",
+    "n": 1024,
+    "m": 2048,
+    "method": "multinomial",
+    "pairs": 80,
+    "banks": 4,
+    "forecast": 0.026786190482650907,
+    "observed": 0.026978597016190552,
+    "population_linear": 0.028372369525766,
+    "ratio": 0.9928681786742217,
+    "ratio_ci": [
+      0.9560692819166592,
+      1.0342017733702489
+    ],
+    "absolute_log_error": 0.03442489339084987,
+    "paired_error_difference": -0.022032644982304457,
+    "paired_error_difference_ci": [
+      -0.05288527658745868,
+      0.02197195527100825
+    ],
+    "reference_error_fraction": -0.058793978136193956,
+    "propagation_error_fraction": 0.051662156810415694
+  }
+]

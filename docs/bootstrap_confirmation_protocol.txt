@@ -1,0 +1,42 @@
+ADDED BOOTSTRAP COMPARISON ON THE SEPARATE CONFIRMATION PAIRS
+
+This comparison was proposed after the original and confirmation A/B outcomes
+were known. It is a transfer check across pair and reference allocations, not
+a new prospective experiment. Configuration, code and input hashes are saved
+locally before the new bootstrap forecasts. These timestamps are an audit
+trail, not external preregistration.
+
+Use all three corpora, three confirmation reference banks per corpus, m=2048
+reference chunks and n=1024 target chunks. Compare to the same six confirmation
+A/B pairs per corpus and the same auxiliary weights, unigram and evaluation
+inputs. No model training or A/B outcome use in the bootstrap forecast.
+
+Resample whole source groups with replacement until reaching n chunks,
+truncating only the final source. Rebuild all smoothed conditional rows for
+each sample. Twice the unbiased output sample variance estimates disagreement.
+Use three independent batches of 16 replicates for each component, matching
+the original bootstrap study. Split references by whole source using the
+same partition seed as the original confirmation analytic corrections.
+The corrected forecast is twice the full-reference forecast minus the
+source-count-weighted mean of the two half-reference forecasts. Preserve raw
+corrections and report any clipping at zero. Do not adapt seeds or draw counts
+after inspecting the result.
+
+Report mean bank absolute log error against the arithmetic mean of A/B
+disagreement, equally averaged over corpora. Report all banks and corpora,
+ratios, bootstrap batch Monte Carlo standard errors and 95% paired intervals.
+Intervals resample whole reference banks and A/B pairs independently within
+each corpus, preserving method pairing. They condition on the saved bootstrap
+Monte Carlo draws. Existing fixed and original-study-calibrated multipliers
+remain in the comparison. Refit calibrated factors only on original-study
+records in each uncertainty draw, never on confirmation outcomes.
+
+Also report the proposed switch on the original full grid: corrected
+multinomial if m<=n, corrected bootstrap if m>n. The switch was selected after
+seeing the original errors and its grid score is retrospective. It is not
+tested on the entire confirmation grid because bootstrap is computed only
+at the one m>n condition.
+
+Reviewer replay recomputes the summaries from scalar records and regenerates
+table rows. Full resampling requires locally acquired token data. The release
+does not include news articles or decodable news token arrays.

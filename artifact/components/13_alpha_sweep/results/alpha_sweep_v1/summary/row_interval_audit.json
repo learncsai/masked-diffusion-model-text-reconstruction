@@ -1,0 +1,17 @@
+{
+  "tinystories": {
+    "positive_energy_contrasts": 336,
+    "maximum_undefined_resamples": 0,
+    "minimum_energy": 0.0
+  },
+  "wikitext": {
+    "positive_energy_contrasts": 294,
+    "maximum_undefined_resamples": 0,
+    "minimum_energy": 0.0
+  },
+  "cnn_dailymail": {
+    "positive_energy_contrasts": 294,
+    "maximum_undefined_resamples": 0,
+    "minimum_energy": 0.0
+  }
+}

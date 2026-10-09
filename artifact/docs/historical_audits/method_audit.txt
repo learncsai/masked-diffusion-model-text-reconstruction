@@ -1,0 +1,168 @@
+SCIENTIFIC IMPLEMENTATION AUDIT
+Scope: paper/finalaistats.tex, its stated statistical estimands and algorithms,
+count-reconstructor code, source bootstrap, multinomial comparator, MDLM protocol,
+top-k scoring, and directional covariance comparison. Date: 2026-10-01.
+No paper or core code was edited by this audit.
+
+VERDICT
+No mathematical or algorithmic mismatch was found in the reviewed computations.
+This is evidence from reading the formula/code and the checks below, not a claim
+that finite-sample approximation error vanishes or that all possible bugs are absent.
+Numerical table/figure reconciliation is a separate root-agent audit.
+
+THEORY AND RECONSTRUCTOR
+1. The equal-size independent-output identity gives twice the output variance.
+   The unequal-size extension correctly retains squared mean differences.
+   Appendix A's renewal stopping argument uses bounded source chunk counts.
+   A_g = S_g - T_g S_ref/N_ref estimates the appropriate fixed-chunk-budget
+   centered source contribution, rather than treating chunks as independent.
+2. The quotient derivative includes the random row-total term. The smoothing
+   prior and weights are held fixed. Denominators are recomputed at target n.
+   src/diffusion_lm_rmt/categorical_lag.py:255-353 contains the direct dense law.
+   src/diffusion_lm_rmt/sparse_categorical_influence.py:23-132 evaluates precisely
+   the same source-level expression in sparse-plus-prior algebra. The full law
+   squares a sum over lags; the same-lag ablation sums their squared norms.
+3. src/diffusion_lm_rmt/sparse_categorical_lag.py:62-149 correctly counts only
+   within-chunk token pairs, uses visible in-bounds context tokens, returns p
+   when no context is visible, and represents the entire 50,257-token vector.
+   Negative affine scores are possible, as the paper states. They are not
+   normalized or clipped probabilities. Brier/MSE loss is computed accordingly.
+4. Auxiliary Gram matrices pool masked validation positions and zero unavailable
+   predictors. The code solves principal submatrices for each available pattern.
+   Appendix B's displayed weight formula matches this. For maximal precision,
+   say explicitly that unavailable predictors contribute zero to the pooled Gram
+   matrix. These are restricted pooled equations, not a separate regression on
+   only validation examples displaying exactly that visibility pattern.
+5. Appendix A's first-order remainder is consistent under its stated fixed-K,
+   bounded-source assumptions and positive relevant population row probabilities.
+   The proof does not supply a uniform guarantee for rare/growing vocabularies.
+
+BOOTSTRAP AND INDEPENDENCE
+6. categorical_lag.py:175-198 draws reference source groups uniformly with
+   replacement until n chunks, retaining their chunk order and truncating only
+   the last source. sparse_categorical_lag.py:192-235 recomputes nonlinear rows
+   and outputs each time and returns twice the unbiased sample output variance.
+   The source law preserves dependence among chunks and lags within a source.
+   The independent-chunk and independently-resampled-lag versions are explicitly
+   distinct ablations. Neither variant is silently substituted for source sampling.
+7. Source IDs and hashes establish allocation separation, not independence of
+   arbitrary real-world documents. The iid-source population assumption is a
+   modeling premise. WikiText units are paragraphs, so between-paragraph dependence
+   within one article is not corrected. The paper already acknowledges this.
+8. Nested sizes/references and repeated evaluation inputs do not add independent
+   corpus draws. Pair-level intervals condition on reference/auxiliary/evaluation
+   data. Directional tests split by evaluation source, not by token.
+
+MULTINOMIAL
+9. scripts/evaluate_lag_disagreement.py:119-151 implements
+   2 N/(N+alpha)^2 [1 - ||pi_hat||^2], with pi_hat smoothed at REFERENCE size,
+   expected row count scaled to target n, and weights squared per available lag.
+   All prior cross terms and squared prior terms are included. This is a plug-in
+   approximation to a fixed-row-count iid categorical model. It drops cross-lag
+   covariance. It is not the same as the same-lag source ablation.
+10. tests/test_lag_disagreement.py independently enumerates all two-class count
+    outcomes and both-corpus differences. It also checks a cancellation example
+    where cross-lag covariance matters. These tests passed.
+
+MDLM
+11. matched_mdlm.py:237-240 implements class-content cross entropy at masked
+    positions, summed over a chunk and divided by 64*t, then averaged over the
+    batch. t is Uniform[.05,.95]. Empty Bernoulli masks contribute zero. EOS is
+    a content class; MASK/PAD outputs are excluded. This matches Appendix C's
+    explicitly truncated-time masked-diffusion objective.
+12. matched_mdlm.py:283-388 uses a shared auxiliary parent, fresh AdamW optimizer,
+    seed 20260930, dedicated equal data/mask RNG streams for A/B at equal size,
+    batch 16 via 4x4 accumulation, no dropout, clipping at 1, and fixed updates.
+    Existing test confirms uninterrupted/resumed CPU parameters agree exactly.
+    Different n sees different effective passes, as the limitations state.
+13. Fresh independent audit checked all 27 matched conditions (54 A/B runs):
+    parent hashes, protocol, equal seed offsets, 12k completion, and actual
+    cached token-byte hash against the training identity. All passed.
+14. Six saved checkpoints were independently rescored on CPU (pair 1, n=2048,
+    12k, A and B, all three corpora), on the first four saved evaluation chunks.
+    Largest absolute differences from saved CUDA scores were 4.011e-6 in MSE
+    and 2.206e-6 in disagreement. Unigram scores agreed exactly. CPU/CUDA
+    attention kernels do not give bitwise identical predictions. This is a spot
+    inference check, not a complete new 108-checkpoint inference run.
+15. Runtime metadata records Linux, RTX 4090, Python 3.12, Torch 2.8.0+cu128,
+    CUDA runtime 12.8, NumPy 2.5.3, SciPy 1.18.1. Actual archived worker disables
+    TF32, enables deterministic algorithms, and disables cuDNN benchmarking.
+16. There are 66 model runs: 3 auxiliary + 54 A/B + 9 same-corpus alternate-seed
+    controls, with 129 model snapshots (3 auxiliary final + 126 8k/12k snapshots).
+    Optimizer/RNG resume files were not downloaded. Do not claim exact training
+    continuation from stored states. Historical RNG-state replay checked the nine
+    TinyStories conditions while the Pod was live; other corpora can now be checked
+    via archived code and stored identities, not by unavailable resume states.
+17. IMPORTANT PACKAGING DETAIL: current root matched_mdlm.load_inputs is TinyStories
+    only. Actual three-corpus implementation is in mdlm_three_corpora_runpod.zip.
+    Use that archived module for the three-corpus training rerun. It is identified
+    by manifest hash fb49f155876e332ebc4521cf5eccb423607c7b7e3d52e63db5bbe9e59e16a5b6.
+
+METRICS AND DIRECTIONS
+18. Loss and disagreement sum class coordinates, average hidden positions per
+    chunk, then average chunks equally. Relative MSE improvement is 1-L(f)/L(p).
+    It is distinct from top-k accuracy and relative top-k error reduction.
+    Top-k ranks use the complete vocabulary and break ties by smaller token ID.
+19. disagreement_subspaces.py constructs projected covariance matrices whose
+    traces match scalar forecasts, uses source-disjoint evaluation folds, and
+    evaluates held-out energy in leading eigenvectors. The random k-space mean
+    is k/d. These are unsigned energy directions, not agreement of pointwise
+    signed output differences. The frequency-only covariance control is essential.
+
+TEST RECEIPT
+.venv-cuda/Scripts/python.exe -m pytest
+  tests/test_categorical_lag.py tests/test_sparse_categorical_lag.py
+  tests/test_lag_disagreement.py tests/test_lag_reference_sensitivity.py
+  tests/test_reference_ratio.py tests/test_calibration_diagnostics.py
+  tests/test_matched_mdlm.py tests/test_mdlm_topk.py
+  tests/test_disagreement_subspaces.py -q
+Result: 46 passed in 13.95 seconds.
+
+New audit helper/evidence:
+  tmp/finalaistats_repro_audit/check_method_artifacts.py
+  tmp/finalaistats_repro_audit/method_artifact_checks.json
+
+TRAINING RERUN RECIPE (requires archived input data and adequate compute)
+Extract the archived mdlm_three_corpora_runpod.zip to a new directory and run
+from its mdlm_three_corpora_runpod root. Use the archive's src/, runpod/,
+colab/, configs/, scripts/, data/, and PACKAGE_ORIGIN.json. Do not call
+runpod/launch.py simply to reproduce training locally: that launcher also
+starts the billing cutoff and Pod-stop automation.
+
+A standalone Python wrapper can execute the same training core:
+
+  import os, sys
+  from pathlib import Path
+  root = Path.cwd().resolve()
+  os.environ.setdefault('CUBLAS_WORKSPACE_CONFIG', ':4096:8')
+  sys.path[:0] = [str(root/'src'), str(root/'runpod'), str(root/'colab')]
+  import torch
+  from runtime import configurations
+  from diffusion_lm_rmt import matched_mdlm as core
+  torch.set_num_threads(min(6, os.cpu_count() or 1))
+  torch.set_num_interop_threads(1)
+  torch.use_deterministic_algorithms(True)
+  torch.backends.cudnn.benchmark = False
+  torch.backends.cuda.matmul.allow_tf32 = False
+  torch.backends.cudnn.allow_tf32 = False
+  for config in configurations(root, 'reviewer_retrain_v1', 'full'):
+      core.run(root, config, torch.device('cuda'))
+
+Use a new label/output tree and unset inherited MDLM_TRAIN_DEADLINE if present.
+This wrapper has been checked against the archived worker logic but a full
+training rerun was not executed during this audit. The archived default config
+retains all 66 runs. No RunPod credentials or account state are needed.
+
+Required input files are pinned in each saved run manifest (58 unique paths):
+- processed_64_{tinystories_matched,wikitext_stats,cnn_dailymail_capped}/:
+  replicate3_train_a.pt, eval.pt, confirmatory_split_manifest.json.
+- reproducibility_followup_v1/<corpus>/: raw_documents.jsonl and
+  pair{1,2,3}_{a,b}.npz plus matching .json source/chunk records.
+- calibration_diagnostics_v1/<corpus>/: grid_512_512_q0.5.npz,
+  reference_original.npz, reference_original.json.
+- gpt2_tokenizer/tokenizer_metadata.json.
+The saved tensors are already tokenized. Full tokenizer assets are required
+only when recreating tokenization, not when rerunning from these token arrays.
+Source-allocation reconstruction from public downloads also needs the original
+dataset revisions/preprocessing. A fresh evolving public dataset download is
+not interchangeable with the hashed saved training inputs.

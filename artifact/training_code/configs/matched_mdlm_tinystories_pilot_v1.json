@@ -1,0 +1,41 @@
+{
+  "name": "matched_mdlm_tinystories_pilot_v1",
+  "output": "results/mdlm_tinystories_pilot_v1",
+  "seed": 20260930,
+  "pairs": 3,
+  "corpus_sizes": [512, 1024, 2048],
+  "classes": 50257,
+  "mask_token_id": 50257,
+  "mask_rate": 0.5,
+  "evaluation_chunks": 128,
+  "validation_chunks": 128,
+  "radius": 2,
+  "smoothing": 5.0,
+  "ridge": 0.01,
+  "model": {
+    "vocab_size": 50259,
+    "max_length": 64,
+    "hidden_size": 96,
+    "num_layers": 2,
+    "num_heads": 4,
+    "mlp_size": 384,
+    "dropout": 0.0
+  },
+  "training": {
+    "auxiliary_updates": 4000,
+    "checkpoints": [8000, 12000],
+    "microbatch_size": 4,
+    "gradient_accumulation": 4,
+    "learning_rate": 0.0005,
+    "minimum_learning_rate": 0.00005,
+    "warmup_updates": 400,
+    "weight_decay": 0.01,
+    "betas": [0.9, 0.98],
+    "time_min": 0.05,
+    "time_max": 0.95,
+    "log_every": 100,
+    "save_every": 1000,
+    "validation_every": 2000,
+    "same_corpus_seed_controls": true
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "seed": 20260929,
+  "radii": [1, 2, 4],
+  "fitted_sizes": [512, 2048],
+  "pairs": 7,
+  "mask_rate": 0.5,
+  "smoothing": 5.0,
+  "ridge": 0.01,
+  "classes": 50257,
+  "output": "results/full_vocabulary_v1/radius_sensitivity_v1",
+  "protocol": "Exploratory matched-radius sweep using the same source-disjoint fresh A/B pairs, evaluation IDs and masks for every radius. Auxiliary source halves and the auxiliary validation mask are shared across radii. All results are computed after the paper's fresh-pair outcomes were known and are not prospective."
+}

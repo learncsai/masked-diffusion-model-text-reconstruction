@@ -1,0 +1,74 @@
+POPULATION ORACLES AND MULTIPLIER TRANSFER
+
+Navigation
+----------
+Component 11_oracle_multiplier supports the added rows in Table 6,
+Figure 4, Table 10, and the corresponding main-text summaries.
+Component 12_bootstrap_confirmation assembles the expanded Table 6, preserving
+these multiplier results and adding a separate m>n bootstrap comparison.
+Stable manuscript labels are tab:confirmation, fig:multiplier-transfer,
+and tab:population-oracle.
+
+Run python reproduce.py from the archive root. The default CPU replay:
+1. Checks exact second moments against exhaustive enumeration on a tiny
+   population, including shared-topic clusters and overlapping token pairs.
+2. Recomputes population means and covariance contractions for all five
+   synthetic cases and both target sizes. This uses the generator and
+   shared auxiliary/evaluation draws from the existing controls.
+3. Compares each oracle to the saved 80-pair nonlinear outcomes and
+   recomputes uncertainty intervals.
+4. Recomputes fixed-multiplier, calibrated-multiplier, and jackknife
+   comparisons, with 5,000 bank/pair bootstrap draws.
+5. Regenerates the multiplier sweep, figure, and table rows, and checks
+   them against the paper's extracted numerical fixtures.
+
+This component requires no natural-language token arrays or neural weights.
+Its synthetic inputs are generated from the included seeds/configurations.
+The real-text portion uses the existing scalar bank forecasts and A/B scores.
+
+Results in the restored working copy
+-----------------------------------
+results/oracle_multiplier_v1/oracle_summary.json:
+  All ten oracle conditions, finite-reference comparisons, nonlinear scores,
+  linearized Monte Carlo scores, and paired error intervals.
+results/oracle_multiplier_v1/*_moments.npz:
+  Newly recomputed exact contractions and their component moments.
+results/oracle_multiplier_v1/multiplier_summary.json:
+  Fresh-data comparisons, held-out-corpus factors, every target-size and
+  size-ratio fold, intervals, and paired differences. Calibration factors
+  are reselected within each bootstrap draw.
+results/oracle_multiplier_v1/multiplier_cells.csv:
+  Exact retrospective cell optima and bootstrap intervals.
+results/oracle_multiplier_v1/multiplier_sweep.csv:
+  All 131 factors from 0.85 through 1.50 for every original cell.
+results/oracle_multiplier_v1/tables.json:
+  Added confirmation rows and the oracle table rows.
+
+Interpretation and provenance
+-----------------------------
+These diagnostics were designed after the existing outcomes were available.
+The factor-selection rules use only the designated training outcomes, but
+this is a retrospective transfer analysis, not a new prospective trial.
+The original four-method confirmation and its saved timing remain unchanged.
+No neural training or new natural-language corpus scoring was performed.
+
+The original full-grid optimum is 1.1179212206914677. The other-corpus factors
+are 1.085791967353408, 1.1164422425515272, and 1.1303411029042294 for testing
+TinyStories, WikiText, and CNN/DailyMail respectively. Training and test
+samples are disjoint for fresh transfer. Within-original size/ratio tests
+reuse nested banks and pairs, which remain together in bootstrap resampling.
+Reported intervals condition on shared auxiliary and evaluation quantities.
+
+Oracle does not mean exact nonlinear disagreement. Source moments are exact
+for the derivative evaluated at exact population mean counts. Multinomial
+uses exact population row totals and unsmoothed conditional probabilities.
+At alpha=5, multinomial is closer in all six conditions, because its lower
+variance partly offsets positive linearization error. The source law is
+closer at alpha=1, n=1024. All smoothing conditions are retained.
+
+Table policies
+--------------
+Table 2 and the ordinary jackknife rows use unrestricted correction.
+The m<=n source policy is a separate empirical recommendation and appears
+explicitly in Table 5's conditional row. Its full-grid error is 0.081,
+compared with 0.103 for unrestricted source jackknife.

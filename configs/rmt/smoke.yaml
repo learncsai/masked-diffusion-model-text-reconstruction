@@ -1,0 +1,32 @@
+seed: 7
+output_dir: results/rmt/smoke
+float_dtype: float64
+replicates: 3
+bootstrap_samples: 20
+covariance_seed: 11
+eigenvectors: random
+covariance_families: [isotropic, spiked, power_law, broad]
+covariance:
+  spike_strengths: [5.0, 2.0]
+  alpha: 1.0
+  broad_condition_number: 30.0
+classical:
+  d: 8
+  n_values: [16, 24, 40, 64]
+  gamma: 0.5
+high_dimensional:
+  d_values: [8, 10]
+  aspect_ratios: [0.2, 0.35, 0.5, 0.75]
+  gamma: 0.5
+  families: [isotropic, power_law]
+gamma_sweep:
+  d: 8
+  n: 40
+  values: [0.1, 0.3, 1.0]
+  family: power_law
+mask_sweep:
+  d: 8
+  n: 40
+  q_values: [0.3, 0.6, 0.9]
+  families: [isotropic, power_law]
+  monte_carlo_draws: 400

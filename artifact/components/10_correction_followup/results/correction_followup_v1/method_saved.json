@@ -1,0 +1,13 @@
+{
+  "saved_utc": "2026-10-01T23:43:39.562778+00:00",
+  "external_preregistration": false,
+  "config_sha256": "9701971697792124a32f4bc964f2c42efbc2295615066480a91f3792fcae1a0b",
+  "protocol_sha256": "c2e1a5235f1c39db227f6ae0846981850673d219c6a82a3d72f1a0f9a44a4aa3",
+  "code_sha256": {
+    "src/diffusion_lm_rmt/source_moment_forecast.py": "e014e2ac1c83423c5be1afeecb1985afac4bdb6234155f1132fb5511d8022f64",
+    "src/diffusion_lm_rmt/sparse_categorical_lag.py": "bdfd29a7c73bedf05b579cf95d38e211f113dd72543940bbb398d2a6093a6c0e",
+    "src/diffusion_lm_rmt/categorical_lag.py": "90e73f08863eac590358eb3e0dc7c619a7368701b02d462128aa6c893e43a9a6",
+    "src/diffusion_lm_rmt/neural_data.py": "b2dcf89063de7cc1bf469da538776072827fe57f877a1fc5683775c4bdb8dd72",
+    "scripts/run_correction_followup.py": "67c29479b798b582a62ab28a2498bc89b0797ab44f85d77a74707d4032ac2cf6"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "seed": 20260928,
+  "base_config": "configs/reproducibility_followup_v1.json",
+  "prepared": "data/diffusion_llm/full_vocabulary_4096_v1",
+  "output": "results/full_vocabulary_v1/size_4096_v1",
+  "prefix_size": 2048,
+  "extended_size": 4096,
+  "mask_rate": 0.5,
+  "bootstrap_draws": 48,
+  "candidate_pairs": 7,
+  "reference_banks": ["original", "pooled"]
+}

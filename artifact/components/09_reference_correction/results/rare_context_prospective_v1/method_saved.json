@@ -1,0 +1,56 @@
+{
+  "saved_utc": "2026-10-01T21:52:56.244386+00:00",
+  "signature": "5c10355cc748bf02940c7173a3533634df6948fcd7c37732ff813e36e6f5dc2e",
+  "config_sha256": "e90edba91e7930328ebc7a7646533e964490a6e89431e65cb47d4b2656d3e2ce",
+  "protocol_sha256": "2c8731228fb80a7240565549efe2e30dddca87fb87adad214dd69c15703aa721",
+  "code_sha256": {
+    "scripts/run_rare_context_study.py": "d9b16748d8e40bf46870e1aa7e23ddec28864133d93b281f6c98c05ab463a7f9",
+    "scripts/prepare_rare_context_study.py": "975ced23914511dc9b610d9c606fcf770604fd1bb5430d9a4fb64d52bcb5d4b9",
+    "src/diffusion_lm_rmt/source_moment_forecast.py": "e014e2ac1c83423c5be1afeecb1985afac4bdb6234155f1132fb5511d8022f64",
+    "src/diffusion_lm_rmt/reference_correction.py": "da0f1ade81ba668a80789befb9785f61b0ca94946079a08e779c573214b8088d",
+    "src/diffusion_lm_rmt/reference_ratio.py": "ca51cf8cd547d96eefc8599c3bec37b76a6c1a1554b5f2bd5096252de0c9fb57",
+    "src/diffusion_lm_rmt/sparse_categorical_lag.py": "bdfd29a7c73bedf05b579cf95d38e211f113dd72543940bbb398d2a6093a6c0e",
+    "src/diffusion_lm_rmt/categorical_lag.py": "90e73f08863eac590358eb3e0dc7c619a7368701b02d462128aa6c893e43a9a6",
+    "src/diffusion_lm_rmt/neural_data.py": "b2dcf89063de7cc1bf469da538776072827fe57f877a1fc5683775c4bdb8dd72",
+    "tests/test_source_moment_forecast.py": "b1277ed75d793e24a9174b75dfda3c56c931be87e0b9d189441ca0a2811ef937",
+    "tests/test_reference_correction.py": "6e04e94cc9665ae852df6088c32bd52af4ccfcd0cdb561a602d9fc12577e342d"
+  },
+  "development_results_sha256": {
+    "results\\rare_context_development_v1\\iid_sparse\\summary.json": "43c768678cbea0ed37216252244a5f09bd7dc1a588b26fb90063e098d8716a93",
+    "results\\rare_context_development_v1\\markov_sparse\\summary.json": "89e271d43bebac78f0668ae71695b7ce597432e1b48d90d6a588b2759cdde385",
+    "results\\rare_context_development_v1\\clustered_sparse\\summary.json": "7d35a1b34521bdfc91170d748c445e49a17fdc31237a8c70ef4ca4918a816aff"
+  },
+  "development_gate": [
+    {
+      "case": "iid_sparse",
+      "errors": {
+        "source_full": 0.5510669398444865,
+        "source_jackknife": 0.27608668013265364,
+        "multinomial": 0.20353643568714838
+      },
+      "all_scalar_forecasts_positive": true,
+      "passed": true
+    },
+    {
+      "case": "markov_sparse",
+      "errors": {
+        "source_full": 0.6128409297503103,
+        "source_jackknife": 0.33549223104991505,
+        "multinomial": 0.19783248608638104
+      },
+      "all_scalar_forecasts_positive": true,
+      "passed": true
+    },
+    {
+      "case": "clustered_sparse",
+      "errors": {
+        "source_full": 0.6044134332460611,
+        "source_jackknife": 0.29723310043731327,
+        "multinomial": 0.16502947157929546
+      },
+      "all_scalar_forecasts_positive": true,
+      "passed": true
+    }
+  ],
+  "external_preregistration": false
+}

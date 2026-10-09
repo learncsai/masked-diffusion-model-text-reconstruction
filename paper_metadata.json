@@ -1,0 +1,12 @@
+{
+  "title": "Predicting Corpus-to-Corpus Variation in Text Reconstruction",
+  "authors": [],
+  "arxiv_id": null,
+  "doi": null,
+  "publication": null,
+  "reference_version": "Submitted finalaistats_overleaf__2_.pdf supplied by the authors",
+  "tables": 9,
+  "figures": 5,
+  "appendices": ["A", "B", "C", "D", "E"],
+  "repository": "https://github.com/learncsai/masked-diffusion-model-text-reconstruction"
+}

@@ -1,0 +1,22 @@
+{
+  "seed": 20260921,
+  "corpora": {
+    "tinystories": "data/diffusion_llm/processed_64_tinystories_matched",
+    "wikitext": "data/diffusion_llm/processed_64_wikitext_stats",
+    "cnn_dailymail": "data/diffusion_llm/processed_64_cnn_dailymail_capped"
+  },
+  "auxiliary_split": "replicate3_train_a",
+  "reference_split": "replicate3_train_b",
+  "experimental_replicates": [1, 2],
+  "evaluation_split": "eval",
+  "evaluation_chunks": 64,
+  "vocabulary_classes": 513,
+  "lag_radius": 2,
+  "mask_rates": [0.5],
+  "chunk_counts": [512],
+  "smoothing": 5.0,
+  "stacking_ridge": 0.01,
+  "bootstrap_draws": 16,
+  "laws": ["source_cluster"],
+  "output": "results/prospective_lag_v1/classes513"
+}

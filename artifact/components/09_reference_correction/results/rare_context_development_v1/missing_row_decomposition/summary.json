@@ -1,0 +1,812 @@
+[
+  {
+    "case": "iid_sparse",
+    "n": 256,
+    "m": 128,
+    "component": "unseen_energy",
+    "fraction": 0.2002433806620047,
+    "low": 0.13636937349508202,
+    "high": 0.25149144425827
+  },
+  {
+    "case": "iid_sparse",
+    "n": 256,
+    "m": 128,
+    "component": "unseen_twice_cross",
+    "fraction": -0.0009433283763176376,
+    "low": -0.0033770032790473407,
+    "high": 0.0012877933754929893
+  },
+  {
+    "case": "iid_sparse",
+    "n": 256,
+    "m": 128,
+    "component": "coverage_gap",
+    "fraction": -0.19930005228568706,
+    "low": -0.2506915902973237,
+    "high": -0.1348358310913501
+  },
+  {
+    "case": "iid_sparse",
+    "n": 256,
+    "m": 128,
+    "component": "seen_reference_error",
+    "fraction": -0.18390487816009618,
+    "low": -0.24680287037529058,
+    "high": -0.14385081633810462
+  },
+  {
+    "case": "iid_sparse",
+    "n": 256,
+    "m": 128,
+    "component": "propagation_error",
+    "fraction": 0.06953570114681398,
+    "low": 0.05999997806283812,
+    "high": 0.07929900386898253
+  },
+  {
+    "case": "iid_sparse",
+    "n": 256,
+    "m": 512,
+    "component": "unseen_energy",
+    "fraction": 0.02854806523517284,
+    "low": 0.01825067359085631,
+    "high": 0.039029694556846455
+  },
+  {
+    "case": "iid_sparse",
+    "n": 256,
+    "m": 512,
+    "component": "unseen_twice_cross",
+    "fraction": -0.00026326535284531345,
+    "low": -0.001427443444838999,
+    "high": 0.0007676934123568158
+  },
+  {
+    "case": "iid_sparse",
+    "n": 256,
+    "m": 512,
+    "component": "coverage_gap",
+    "fraction": -0.02828479988232753,
+    "low": -0.03854273041348934,
+    "high": -0.01805653139217037
+  },
+  {
+    "case": "iid_sparse",
+    "n": 256,
+    "m": 512,
+    "component": "seen_reference_error",
+    "fraction": -0.08808772989108123,
+    "low": -0.10942940475891941,
+    "high": -0.061374188230241225
+  },
+  {
+    "case": "iid_sparse",
+    "n": 256,
+    "m": 512,
+    "component": "propagation_error",
+    "fraction": 0.06953570114681398,
+    "low": 0.059524961173294574,
+    "high": 0.07931396787187082
+  },
+  {
+    "case": "iid_sparse",
+    "n": 256,
+    "m": 2048,
+    "component": "unseen_energy",
+    "fraction": 0.0,
+    "low": 0.0,
+    "high": 0.0
+  },
+  {
+    "case": "iid_sparse",
+    "n": 256,
+    "m": 2048,
+    "component": "unseen_twice_cross",
+    "fraction": 1.4591170018246792e-17,
+    "low": -1.330844623268368e-16,
+    "high": 1.5938443386484516e-16
+  },
+  {
+    "case": "iid_sparse",
+    "n": 256,
+    "m": 2048,
+    "component": "coverage_gap",
+    "fraction": -1.4591170018246792e-17,
+    "low": -1.5938443386484518e-16,
+    "high": 1.3308446232683657e-16
+  },
+  {
+    "case": "iid_sparse",
+    "n": 256,
+    "m": 2048,
+    "component": "seen_reference_error",
+    "fraction": -0.02833691492654071,
+    "low": -0.04548852483169387,
+    "high": -0.011008259935746193
+  },
+  {
+    "case": "iid_sparse",
+    "n": 256,
+    "m": 2048,
+    "component": "propagation_error",
+    "fraction": 0.06953570114681398,
+    "low": 0.05990517299813158,
+    "high": 0.0794583566929267
+  },
+  {
+    "case": "iid_sparse",
+    "n": 1024,
+    "m": 128,
+    "component": "unseen_energy",
+    "fraction": 0.3175642920298048,
+    "low": 0.2325158107321718,
+    "high": 0.3816698131584631
+  },
+  {
+    "case": "iid_sparse",
+    "n": 1024,
+    "m": 128,
+    "component": "unseen_twice_cross",
+    "fraction": -0.0009134586319338283,
+    "low": -0.003483837743205292,
+    "high": 0.0017670544395273747
+  },
+  {
+    "case": "iid_sparse",
+    "n": 1024,
+    "m": 128,
+    "component": "coverage_gap",
+    "fraction": -0.316650833397871,
+    "low": -0.3810258176224657,
+    "high": -0.23090742160729913
+  },
+  {
+    "case": "iid_sparse",
+    "n": 1024,
+    "m": 128,
+    "component": "seen_reference_error",
+    "fraction": -0.3500515003761113,
+    "low": -0.44493263852045734,
+    "high": -0.2757399691873184
+  },
+  {
+    "case": "iid_sparse",
+    "n": 1024,
+    "m": 128,
+    "component": "propagation_error",
+    "fraction": 0.02915167275431966,
+    "low": 0.019305107622505258,
+    "high": 0.03918201255733042
+  },
+  {
+    "case": "iid_sparse",
+    "n": 1024,
+    "m": 512,
+    "component": "unseen_energy",
+    "fraction": 0.07885841343812994,
+    "low": 0.05707685979646501,
+    "high": 0.10225204086502877
+  },
+  {
+    "case": "iid_sparse",
+    "n": 1024,
+    "m": 512,
+    "component": "unseen_twice_cross",
+    "fraction": -0.0011398629130981424,
+    "low": -0.0032454120516744985,
+    "high": 0.00045847224859773037
+  },
+  {
+    "case": "iid_sparse",
+    "n": 1024,
+    "m": 512,
+    "component": "coverage_gap",
+    "fraction": -0.07771855052503178,
+    "low": -0.10030445653285176,
+    "high": -0.05621070781930051
+  },
+  {
+    "case": "iid_sparse",
+    "n": 1024,
+    "m": 512,
+    "component": "seen_reference_error",
+    "fraction": -0.17913458506508023,
+    "low": -0.20288190864101324,
+    "high": -0.15375523944026573
+  },
+  {
+    "case": "iid_sparse",
+    "n": 1024,
+    "m": 512,
+    "component": "propagation_error",
+    "fraction": 0.02915167275431966,
+    "low": 0.019125424200614537,
+    "high": 0.039004966374134975
+  },
+  {
+    "case": "iid_sparse",
+    "n": 1024,
+    "m": 2048,
+    "component": "unseen_energy",
+    "fraction": 0.0,
+    "low": 0.0,
+    "high": 0.0
+  },
+  {
+    "case": "iid_sparse",
+    "n": 1024,
+    "m": 2048,
+    "component": "unseen_twice_cross",
+    "fraction": -2.043143416146657e-16,
+    "low": -3.6764638184209694e-16,
+    "high": -4.3361824620590884e-17
+  },
+  {
+    "case": "iid_sparse",
+    "n": 1024,
+    "m": 2048,
+    "component": "coverage_gap",
+    "fraction": 2.043143416146657e-16,
+    "low": 4.3361824620590853e-17,
+    "high": 3.6764638184209694e-16
+  },
+  {
+    "case": "iid_sparse",
+    "n": 1024,
+    "m": 2048,
+    "component": "seen_reference_error",
+    "fraction": -0.05291580848351949,
+    "low": -0.0714744107090057,
+    "high": -0.0331216480643408
+  },
+  {
+    "case": "iid_sparse",
+    "n": 1024,
+    "m": 2048,
+    "component": "propagation_error",
+    "fraction": 0.02915167275431966,
+    "low": 0.019391760515022685,
+    "high": 0.03931802634629642
+  },
+  {
+    "case": "markov_sparse",
+    "n": 256,
+    "m": 128,
+    "component": "unseen_energy",
+    "fraction": 0.18562340992804438,
+    "low": 0.15641113704362763,
+    "high": 0.21340898220053447
+  },
+  {
+    "case": "markov_sparse",
+    "n": 256,
+    "m": 128,
+    "component": "unseen_twice_cross",
+    "fraction": -1.6907048458124624e-05,
+    "low": -0.0016978893547111584,
+    "high": 0.0015810751962152172
+  },
+  {
+    "case": "markov_sparse",
+    "n": 256,
+    "m": 128,
+    "component": "coverage_gap",
+    "fraction": -0.18560650287958627,
+    "low": -0.2136909470652042,
+    "high": -0.15617853485256644
+  },
+  {
+    "case": "markov_sparse",
+    "n": 256,
+    "m": 128,
+    "component": "seen_reference_error",
+    "fraction": -0.16750867415043386,
+    "low": -0.19143279852129516,
+    "high": -0.14581152881996765
+  },
+  {
+    "case": "markov_sparse",
+    "n": 256,
+    "m": 128,
+    "component": "propagation_error",
+    "fraction": 0.07848343661804907,
+    "low": 0.06685084165128069,
+    "high": 0.08992457384111133
+  },
+  {
+    "case": "markov_sparse",
+    "n": 256,
+    "m": 512,
+    "component": "unseen_energy",
+    "fraction": 0.0671765125827512,
+    "low": 0.042977659766783936,
+    "high": 0.0987729864507978
+  },
+  {
+    "case": "markov_sparse",
+    "n": 256,
+    "m": 512,
+    "component": "unseen_twice_cross",
+    "fraction": 8.389092083598517e-05,
+    "low": -0.0015702435511444283,
+    "high": 0.001555352009674819
+  },
+  {
+    "case": "markov_sparse",
+    "n": 256,
+    "m": 512,
+    "component": "coverage_gap",
+    "fraction": -0.0672604035035872,
+    "low": -0.0984191347078528,
+    "high": -0.04333390008716783
+  },
+  {
+    "case": "markov_sparse",
+    "n": 256,
+    "m": 512,
+    "component": "seen_reference_error",
+    "fraction": -0.06690970809660927,
+    "low": -0.0920366033046654,
+    "high": -0.04046697130374923
+  },
+  {
+    "case": "markov_sparse",
+    "n": 256,
+    "m": 512,
+    "component": "propagation_error",
+    "fraction": 0.07848343661804907,
+    "low": 0.06687639694381262,
+    "high": 0.08980398518848222
+  },
+  {
+    "case": "markov_sparse",
+    "n": 256,
+    "m": 2048,
+    "component": "unseen_energy",
+    "fraction": 0.0035714614080650164,
+    "low": 0.0,
+    "high": 0.008788366404178368
+  },
+  {
+    "case": "markov_sparse",
+    "n": 256,
+    "m": 2048,
+    "component": "unseen_twice_cross",
+    "fraction": -0.0001762822961919835,
+    "low": -0.0008097458164064101,
+    "high": 7.005501487556486e-05
+  },
+  {
+    "case": "markov_sparse",
+    "n": 256,
+    "m": 2048,
+    "component": "coverage_gap",
+    "fraction": -0.003395179111873033,
+    "low": -0.00822813526038974,
+    "high": -1.139698228398367e-16
+  },
+  {
+    "case": "markov_sparse",
+    "n": 256,
+    "m": 2048,
+    "component": "seen_reference_error",
+    "fraction": -0.028234076856175593,
+    "low": -0.052189328055786834,
+    "high": -0.002120423402130271
+  },
+  {
+    "case": "markov_sparse",
+    "n": 256,
+    "m": 2048,
+    "component": "propagation_error",
+    "fraction": 0.07848343661804907,
+    "low": 0.06688295133782726,
+    "high": 0.08995750138072138
+  },
+  {
+    "case": "markov_sparse",
+    "n": 1024,
+    "m": 128,
+    "component": "unseen_energy",
+    "fraction": 0.37321716260338667,
+    "low": 0.3366012856225349,
+    "high": 0.4095290868341158
+  },
+  {
+    "case": "markov_sparse",
+    "n": 1024,
+    "m": 128,
+    "component": "unseen_twice_cross",
+    "fraction": 0.0023645964150316406,
+    "low": 0.000262318657194832,
+    "high": 0.004531687732678656
+  },
+  {
+    "case": "markov_sparse",
+    "n": 1024,
+    "m": 128,
+    "component": "coverage_gap",
+    "fraction": -0.37558175901841834,
+    "low": -0.4121058997977871,
+    "high": -0.33900985572206294
+  },
+  {
+    "case": "markov_sparse",
+    "n": 1024,
+    "m": 128,
+    "component": "seen_reference_error",
+    "fraction": -0.35239182953212744,
+    "low": -0.38854253914671255,
+    "high": -0.31997219123872545
+  },
+  {
+    "case": "markov_sparse",
+    "n": 1024,
+    "m": 128,
+    "component": "propagation_error",
+    "fraction": 0.05166215681041554,
+    "low": 0.03944100221881114,
+    "high": 0.06355146790804028
+  },
+  {
+    "case": "markov_sparse",
+    "n": 1024,
+    "m": 512,
+    "component": "unseen_energy",
+    "fraction": 0.17787569364699232,
+    "low": 0.12413532305367528,
+    "high": 0.2399546048303486
+  },
+  {
+    "case": "markov_sparse",
+    "n": 1024,
+    "m": 512,
+    "component": "unseen_twice_cross",
+    "fraction": 0.002583586608090265,
+    "low": 0.00032660584873168833,
+    "high": 0.005616991367888544
+  },
+  {
+    "case": "markov_sparse",
+    "n": 1024,
+    "m": 512,
+    "component": "coverage_gap",
+    "fraction": -0.18045928025508262,
+    "low": -0.24379902935713568,
+    "high": -0.1250782313236134
+  },
+  {
+    "case": "markov_sparse",
+    "n": 1024,
+    "m": 512,
+    "component": "seen_reference_error",
+    "fraction": -0.19104809215764176,
+    "low": -0.20510021595912822,
+    "high": -0.1774903275223249
+  },
+  {
+    "case": "markov_sparse",
+    "n": 1024,
+    "m": 512,
+    "component": "propagation_error",
+    "fraction": 0.05166215681041554,
+    "low": 0.03981384210167415,
+    "high": 0.06385188248187838
+  },
+  {
+    "case": "markov_sparse",
+    "n": 1024,
+    "m": 2048,
+    "component": "unseen_energy",
+    "fraction": 0.014782536037917184,
+    "low": 0.0,
+    "high": 0.03690401929621758
+  },
+  {
+    "case": "markov_sparse",
+    "n": 1024,
+    "m": 2048,
+    "component": "unseen_twice_cross",
+    "fraction": 0.0004221440806822213,
+    "low": -1.5609163369764248e-16,
+    "high": 0.0016087547942611744
+  },
+  {
+    "case": "markov_sparse",
+    "n": 1024,
+    "m": 2048,
+    "component": "coverage_gap",
+    "fraction": -0.015204680118599406,
+    "low": -0.038515726651577605,
+    "high": 2.0747190754835493e-17
+  },
+  {
+    "case": "markov_sparse",
+    "n": 1024,
+    "m": 2048,
+    "component": "seen_reference_error",
+    "fraction": -0.08847954852783188,
+    "low": -0.12479344469279884,
+    "high": -0.05461141500953406
+  },
+  {
+    "case": "markov_sparse",
+    "n": 1024,
+    "m": 2048,
+    "component": "propagation_error",
+    "fraction": 0.05166215681041554,
+    "low": 0.03962269622419829,
+    "high": 0.06345535811017347
+  },
+  {
+    "case": "clustered_sparse",
+    "n": 256,
+    "m": 128,
+    "component": "unseen_energy",
+    "fraction": 0.2173335030052665,
+    "low": 0.17721477835531424,
+    "high": 0.24221812762004497
+  },
+  {
+    "case": "clustered_sparse",
+    "n": 256,
+    "m": 128,
+    "component": "unseen_twice_cross",
+    "fraction": 0.001445641642245314,
+    "low": -0.0015483263792324695,
+    "high": 0.0046056982641217254
+  },
+  {
+    "case": "clustered_sparse",
+    "n": 256,
+    "m": 128,
+    "component": "coverage_gap",
+    "fraction": -0.21877914464751178,
+    "low": -0.24462631521888972,
+    "high": -0.1778606917929179
+  },
+  {
+    "case": "clustered_sparse",
+    "n": 256,
+    "m": 128,
+    "component": "seen_reference_error",
+    "fraction": -0.21115600512804603,
+    "low": -0.24923820696373367,
+    "high": -0.1770247476659826
+  },
+  {
+    "case": "clustered_sparse",
+    "n": 256,
+    "m": 128,
+    "component": "propagation_error",
+    "fraction": 0.09813678255502553,
+    "low": 0.08407616634841493,
+    "high": 0.1123353677149943
+  },
+  {
+    "case": "clustered_sparse",
+    "n": 256,
+    "m": 512,
+    "component": "unseen_energy",
+    "fraction": 0.017071830914596978,
+    "low": 0.007424868927042908,
+    "high": 0.02519335564576023
+  },
+  {
+    "case": "clustered_sparse",
+    "n": 256,
+    "m": 512,
+    "component": "unseen_twice_cross",
+    "fraction": 0.0011134734215541447,
+    "low": -0.00013245116124208466,
+    "high": 0.002987832065391006
+  },
+  {
+    "case": "clustered_sparse",
+    "n": 256,
+    "m": 512,
+    "component": "coverage_gap",
+    "fraction": -0.018185304336151124,
+    "low": -0.026265402697082187,
+    "high": -0.007905192148628169
+  },
+  {
+    "case": "clustered_sparse",
+    "n": 256,
+    "m": 512,
+    "component": "seen_reference_error",
+    "fraction": -0.08739481646357392,
+    "low": -0.11611688646378178,
+    "high": -0.058911689403616435
+  },
+  {
+    "case": "clustered_sparse",
+    "n": 256,
+    "m": 512,
+    "component": "propagation_error",
+    "fraction": 0.09813678255502553,
+    "low": 0.08394422208014951,
+    "high": 0.11205025635450863
+  },
+  {
+    "case": "clustered_sparse",
+    "n": 256,
+    "m": 2048,
+    "component": "unseen_energy",
+    "fraction": 0.0,
+    "low": 0.0,
+    "high": 0.0
+  },
+  {
+    "case": "clustered_sparse",
+    "n": 256,
+    "m": 2048,
+    "component": "unseen_twice_cross",
+    "fraction": 2.5125092219726303e-17,
+    "low": -1.6643452664964117e-16,
+    "high": 2.1865270302691747e-16
+  },
+  {
+    "case": "clustered_sparse",
+    "n": 256,
+    "m": 2048,
+    "component": "coverage_gap",
+    "fraction": -2.5125092219726303e-17,
+    "low": -2.1865270302691754e-16,
+    "high": 1.6643452664964112e-16
+  },
+  {
+    "case": "clustered_sparse",
+    "n": 256,
+    "m": 2048,
+    "component": "seen_reference_error",
+    "fraction": -0.017413592422109273,
+    "low": -0.042780087523144696,
+    "high": 0.008131809595565441
+  },
+  {
+    "case": "clustered_sparse",
+    "n": 256,
+    "m": 2048,
+    "component": "propagation_error",
+    "fraction": 0.09813678255502553,
+    "low": 0.08425214693557728,
+    "high": 0.11225551857736323
+  },
+  {
+    "case": "clustered_sparse",
+    "n": 1024,
+    "m": 128,
+    "component": "unseen_energy",
+    "fraction": 0.3241033338159533,
+    "low": 0.2786040542662457,
+    "high": 0.3552985090278521
+  },
+  {
+    "case": "clustered_sparse",
+    "n": 1024,
+    "m": 128,
+    "component": "unseen_twice_cross",
+    "fraction": 0.0022665857793741353,
+    "low": -0.0008134693029160006,
+    "high": 0.005309893903641648
+  },
+  {
+    "case": "clustered_sparse",
+    "n": 1024,
+    "m": 128,
+    "component": "coverage_gap",
+    "fraction": -0.3263699195953274,
+    "low": -0.357421453646802,
+    "high": -0.28019207695344134
+  },
+  {
+    "case": "clustered_sparse",
+    "n": 1024,
+    "m": 128,
+    "component": "seen_reference_error",
+    "fraction": -0.386040237499182,
+    "low": -0.419996269745045,
+    "high": -0.35331497902665043
+  },
+  {
+    "case": "clustered_sparse",
+    "n": 1024,
+    "m": 128,
+    "component": "propagation_error",
+    "fraction": 0.03248712354771112,
+    "low": 0.018644042805297113,
+    "high": 0.04662380738859111
+  },
+  {
+    "case": "clustered_sparse",
+    "n": 1024,
+    "m": 512,
+    "component": "unseen_energy",
+    "fraction": 0.03927778615185644,
+    "low": 0.0226917399408446,
+    "high": 0.04974619639706502
+  },
+  {
+    "case": "clustered_sparse",
+    "n": 1024,
+    "m": 512,
+    "component": "unseen_twice_cross",
+    "fraction": 0.0011147183776967283,
+    "low": -0.00015514929043063767,
+    "high": 0.0030182346286551035
+  },
+  {
+    "case": "clustered_sparse",
+    "n": 1024,
+    "m": 512,
+    "component": "coverage_gap",
+    "fraction": -0.04039250452955317,
+    "low": -0.051504262057494685,
+    "high": -0.0229559825840263
+  },
+  {
+    "case": "clustered_sparse",
+    "n": 1024,
+    "m": 512,
+    "component": "seen_reference_error",
+    "fraction": -0.22008820938717477,
+    "low": -0.2465600336855069,
+    "high": -0.19293824060353548
+  },
+  {
+    "case": "clustered_sparse",
+    "n": 1024,
+    "m": 512,
+    "component": "propagation_error",
+    "fraction": 0.03248712354771112,
+    "low": 0.01816351081246054,
+    "high": 0.0468255456386372
+  },
+  {
+    "case": "clustered_sparse",
+    "n": 1024,
+    "m": 2048,
+    "component": "unseen_energy",
+    "fraction": 0.0,
+    "low": 0.0,
+    "high": 0.0
+  },
+  {
+    "case": "clustered_sparse",
+    "n": 1024,
+    "m": 2048,
+    "component": "unseen_twice_cross",
+    "fraction": -1.2245749257056672e-16,
+    "low": -2.9229527113079104e-16,
+    "high": 4.5253265978895623e-17
+  },
+  {
+    "case": "clustered_sparse",
+    "n": 1024,
+    "m": 2048,
+    "component": "coverage_gap",
+    "fraction": 1.2245749257056672e-16,
+    "low": -4.525326597889566e-17,
+    "high": 2.9229527113079104e-16
+  },
+  {
+    "case": "clustered_sparse",
+    "n": 1024,
+    "m": 2048,
+    "component": "seen_reference_error",
+    "fraction": -0.07200509232934772,
+    "low": -0.09625370779168305,
+    "high": -0.047863498188782404
+  },
+  {
+    "case": "clustered_sparse",
+    "n": 1024,
+    "m": 2048,
+    "component": "propagation_error",
+    "fraction": 0.03248712354771112,
+    "low": 0.018361450599273733,
+    "high": 0.04656780897073876
+  }
+]

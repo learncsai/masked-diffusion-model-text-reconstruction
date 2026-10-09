@@ -1,0 +1,36 @@
+seed: 20260815
+output_dir: results/rmt/default
+float_dtype: float64
+replicates: 16
+bootstrap_samples: 300
+covariance_seed: 1701
+eigenvectors: random
+covariance_families:
+  - isotropic
+  - spiked
+  - power_law
+  - broad
+covariance:
+  spike_strengths: [8.0, 3.0]
+  alpha: 1.25
+  broad_condition_number: 100.0
+classical:
+  d: 32
+  n_values: [64, 128, 256, 512]
+  gamma: 0.5
+high_dimensional:
+  d_values: [16, 32, 48]
+  aspect_ratios: [0.125, 0.25, 0.5, 0.75]
+  gamma: 0.5
+  families: [isotropic, power_law]
+gamma_sweep:
+  d: 32
+  n: 256
+  values: [0.05, 0.15, 0.5, 1.5, 5.0]
+  family: power_law
+mask_sweep:
+  d: 32
+  n: 256
+  q_values: [0.3, 0.5, 0.7, 0.85, 0.95]
+  families: [isotropic, power_law]
+  monte_carlo_draws: 2000

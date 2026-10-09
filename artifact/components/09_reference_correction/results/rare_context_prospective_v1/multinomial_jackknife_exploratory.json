@@ -1,0 +1,41 @@
+{
+  "status": "exploratory baseline added after primary outcomes",
+  "methods": [
+    "source_full",
+    "source_jackknife",
+    "multinomial",
+    "multinomial_jackknife"
+  ],
+  "mean_absolute_log_error": [
+    0.46852735521824357,
+    0.20346176463577123,
+    0.20511237394552986,
+    0.08471518930267974
+  ],
+  "intervals": [
+    [
+      0.4627382056600325,
+      0.4745668599191184
+    ],
+    [
+      0.19671795223595398,
+      0.21082185934771042
+    ],
+    [
+      0.19837193649005724,
+      0.2118642459086726
+    ],
+    [
+      0.07673262291047678,
+      0.0928015290942322
+    ]
+  ],
+  "source_jackknife_minus_multinomial_jackknife": 0.11874657533309149,
+  "difference_interval": [
+    0.11421872687165013,
+    0.12394665272818872
+  ],
+  "no_new_outcomes": true,
+  "no_parameter_tuning": true,
+  "primary_analysis_unchanged": true
+}

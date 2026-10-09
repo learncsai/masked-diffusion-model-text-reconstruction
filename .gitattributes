@@ -1,0 +1,7 @@
+* text=auto eol=lf
+artifact/** -text
+src/diffusion_lm_rmt/matched_mdlm.py -text
+provenance/original_package_sha256.json -text
+*.npz binary
+*.npy binary
+*.png binary

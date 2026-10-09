@@ -1,0 +1,106 @@
+FINITE-REFERENCE CORRECTION STUDY
+
+Purpose
+Measure how much error comes from estimating count variation with a finite
+reference, separately from propagating that variation through a linear
+approximation. Test a source-split jackknife before developing a model for
+contexts that have never been observed. No neural models are trained.
+
+Development experiment
+The known-population simulator has exact population mean lag counts. Independent
+sources generate one or four non-overlapping chunks. The four-chunk sources share
+a latent topic. Within a chunk, a reset/successor process produces overlapping
+lag pairs. Controls remove the topic and successor dependence or vary alpha.
+The experiment compares the nonlinear A/B disagreement, the same A/B count
+differences propagated at the exact population mean, and finite-reference
+forecasts. Their differences give an additive reference/propagation decomposition.
+Strata defined by reference row counts partition masked evaluation positions.
+They locate errors but are not causal interventions and change with reference m.
+
+Candidate correction
+Let F_S(n) be the paper's full-source forecast from S independent sources. Split
+the sources randomly into two groups, retaining every chunk from each source.
+The candidate is
+
+    F_J(n) = 2 F_S(n) - (S_1/S) F_{S_1}(n) - (S_2/S) F_{S_2}(n).
+
+Each component recomputes its baseline conditional rows at target size n. The
+source counts, within-source dependence, source-length correction and cross-lag
+terms remain intact. The split weights use source counts, not chunk counts.
+The regular expansion E[F_S] = F_infinity + b/S + o(1/S) explains cancellation
+of the leading reference bias. We do not assume that expansion is uniform over
+rare or unseen rows. The correction can increase variance and cannot create an
+unseen context. Retain raw signed point estimates. Set a negative final scalar
+variance estimate to zero, report that event, and treat its log error as infinite.
+No correction coefficient is tuned to A/B outcomes.
+
+Development gate
+Advance only if the correction lowers average bank absolute log error for m<n
+in each of the independent-token, dependent-token, and clustered alpha=5 cases,
+with no nonpositive scalar forecasts. Report alpha=1 and alpha=20 sensitivity
+regardless of their direction. Development results are not confirmation.
+
+Prospective text test
+Use the pinned dataset revisions and tokenizer from the existing study. Collect
+128000 unique source texts after the previously used 64000-source prefix, excluding
+all historical source texts and chunks. Shuffle each new pool once and allocate
+six separate 8192-chunk reference banks and twenty separate A/B pairs of 4096
+chunks per arm. All new roles have disjoint source IDs, text hashes and chunk
+hashes. Within a bank or arm, smaller sizes are nested prefixes. TinyStories
+stories and WikiText paragraphs retain all full chunks. News articles contribute
+at most two chunks using the existing position rule. The paragraph-level
+WikiText sampling assumption remains a limitation.
+
+All methods use the same fixed auxiliary unigram, reconstruction weights,
+evaluation chunks and mask at q=0.5 as the existing matched protocol. Vocabulary
+size is 50257. Reference sizes are 1024, 2048 and 4096 chunks. Target sizes are
+512, 1024, 2048 and 4096. An uncorrected 8192-chunk reference provides a larger-data
+baseline. The new source block differs from the historical prefix, so this is
+a new matched experiment, not a replication of the exact old source mixture.
+
+Freeze sequence
+Save this protocol, configuration, core-code hashes and development decision
+before running new forecasts. Save and hash every forecast and stability target
+before evaluating any new A/B outcome. The score command must refuse to run if
+files differ. This is a timestamped local protocol, not an external registration.
+Report every planned cell and every nonpositive forecast. No outcome-based
+method switching, dropped banks, or selection of a favorable reference size.
+
+Inference
+Each A/B pair provides one mean disagreement over common evaluation chunks.
+The primary loss is each reference bank's absolute log error against the mean
+of the twenty A/B outcomes. Average equally over the three corpora and the
+three specified m<n conditions. Compare methods on identical bank and A/B
+draws. Use crossed resampling of banks and pairs with 5000 draws, retaining
+all nested sizes, methods and cells together. Resample corpora independently
+within this fixed three-corpus comparison. Do not count six banks times twenty
+pairs as 120 independent observations. Intervals condition on auxiliary data,
+evaluation data, masks and the stated source sampling frame. Six reference
+banks give limited precision for the reference component.
+
+Practical decision
+Before scoring A/B, set a common corpus-specific target equal to 80% of the
+median six-bank large-reference forecast at n=512. Each method chooses the
+smallest n in the fixed grid meeting this target, or abstains. Verify every
+choice against the observed mean and its pair interval. Distinguish an observed
+mean below target from an upper confidence bound below target. There is no
+claim of calibrated probabilistic guarantees for this selection rule.
+
+Interpretation and next step
+This jackknife is a reference-bias control, not an empirical-Bayes missing-row
+model. If it fails the development gate, retain the negative result and do not
+spend the prospective outcomes on it. If it succeeds, its prospective results
+determine whether a reference-only correction is useful before adding stronger
+assumptions for unseen conditional distributions and cross-lag covariance.
+
+Related work
+Quenouille (1956), Notes on Bias in Estimation, Biometrika 43(3-4), 353-360.
+https://doi.org/10.1093/biomet/43.3-4.353
+Pananjady, Muthukumar and Thangaraj (2024), Just Wing It: Near-Optimal Estimation
+of Missing Mass in a Markovian Sequence, JMLR 25(312), 1-43.
+https://jmlr.org/papers/v25/24-0511.html
+
+Dataset terms
+The existing CNN/DailyMail article-permissions issue is unchanged by this
+analysis. No new redistribution permission is asserted. Raw articles and
+tokenized text from the new study are not added to the reviewer archive.

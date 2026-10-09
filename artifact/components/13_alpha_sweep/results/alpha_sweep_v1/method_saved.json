@@ -1,0 +1,16 @@
+{
+  "saved_utc": "2026-10-03T03:08:26.411676+00:00",
+  "signature": "38e75d5e952e76ecd55841de4315cce2ca46777b6ca5b1c3d73e5eb5083f9c1a",
+  "config_sha256": "94bb549f1dd0a33aadb9569c5cd2da02f51448d2884bba6cbd6ecb734a9a2b97",
+  "protocol_sha256": "299b72de24f76ceda97cd44980a226e2639d27b039fe76e44d87c96a92317bff",
+  "code_sha256": {
+    "scripts/run_alpha_sweep.py": "f93490c07bf1355913ca24764ef115bedead78bf0d1dbf4b5302fc0620e1f9ff",
+    "src/diffusion_lm_rmt/alpha_sweep.py": "67e41456f7d5788b489d87aff532790e96d1f5517e4fbd67b3ee59e4067c7c7a",
+    "src/diffusion_lm_rmt/sparse_categorical_lag.py": "bdfd29a7c73bedf05b579cf95d38e211f113dd72543940bbb398d2a6093a6c0e",
+    "src/diffusion_lm_rmt/source_moment_forecast.py": "e014e2ac1c83423c5be1afeecb1985afac4bdb6234155f1132fb5511d8022f64",
+    "src/diffusion_lm_rmt/categorical_lag.py": "90e73f08863eac590358eb3e0dc7c619a7368701b02d462128aa6c893e43a9a6",
+    "tests/test_alpha_sweep.py": "3d0c8f21b6e4e80e8b691250ccbdd5fe37ff86d6bbab6484c3692dcf7d1f53c0"
+  },
+  "status": "Existing allocations, known alpha=5 outcomes. No new-alpha A/B scores yet.",
+  "external_preregistration": false
+}

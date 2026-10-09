@@ -1,0 +1,24 @@
+{
+  "output": "results/oracle_multiplier_v1",
+  "status": "Retrospective diagnostics on existing A/B outcomes. No new prospective claim.",
+  "seed": 710821,
+  "bootstrap_draws": 5000,
+  "fixed_multiplier": 1.25,
+  "multiplier_grid": [0.85, 1.50, 131],
+  "multiplier_tests": [
+    "original full grid to fresh full grid, one global factor",
+    "original primary subset to fresh primary condition, one global factor",
+    "two original corpora to third fresh corpus, one global factor per held-out corpus",
+    "all other original target sizes to held-out target size",
+    "all other original m/n ratios to held-out ratio"
+  ],
+  "oracle_cases": [
+    ["configs/rare_context_development_v1.json", 0],
+    ["configs/rare_context_development_v1.json", 1],
+    ["configs/rare_context_development_v1.json", 2],
+    ["configs/rare_context_alpha1_matched_v1.json", 2],
+    ["configs/rare_context_alpha20_matched_v1.json", 2]
+  ],
+  "oracle_quantities": "Exact population count means and source covariance contractions. Population conditional probabilities replace empirical collision estimates in multinomial. Shared prior, weights, masks and nonlinear outcomes match the existing controls.",
+  "reporting": "Report every planned case and transfer split. Choose constants by minimum original-study mean absolute log error, with no test outcomes entering factor selection. Resample entire banks and A/B pairs across nested sizes, and reselect factors in each bootstrap draw."
+}

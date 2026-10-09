@@ -1,0 +1,66 @@
+{
+  "corpus": "cnn_dailymail",
+  "pairs": 4,
+  "n": 4096,
+  "mean_observed": 0.020894539511366973,
+  "mean_skill": 0.04967265875268698,
+  "size_reduction": {
+    "geometric_mean": 1.143640976764348,
+    "count": 4,
+    "lower": 1.137702910933979,
+    "upper": 1.1496100354184737
+  },
+  "forecasts": [
+    {
+      "bank": "original",
+      "method": "analytic",
+      "prediction": 0.01530939782172782,
+      "reference_chunks": 2048,
+      "reference_sources": 1025,
+      "reference_sha256": "da8c63469a7dce9d9fe44c34e8ca743bed8684aed97ab5d87f70f948e919573a",
+      "ratio": {
+        "geometric_mean": 0.7327346059415498,
+        "count": 4,
+        "lower": 0.7194848101836226,
+        "upper": 0.7462284055827306
+      }
+    },
+    {
+      "bank": "original",
+      "method": "bootstrap",
+      "prediction": 0.015418280204552444,
+      "draws": 48,
+      "nonlinear_rebuilds": 48,
+      "reference_chunks": 2048,
+      "reference_sources": 1025,
+      "reference_sha256": "da8c63469a7dce9d9fe44c34e8ca743bed8684aed97ab5d87f70f948e919573a",
+      "ratio": {
+        "geometric_mean": 0.7379459075748347,
+        "count": 4,
+        "lower": 0.7246018775856946,
+        "upper": 0.7515356768338541
+      }
+    },
+    {
+      "bank": "pooled",
+      "method": "analytic",
+      "prediction": 0.019201074471027466,
+      "reference_chunks": 6144,
+      "reference_sources": 3078,
+      "reference_sha256": "201d6eb09fae38046f77f290c7775c7878e81d536ec668ce54f78e9e1ceae4b8",
+      "ratio": {
+        "geometric_mean": 0.9189970696440365,
+        "count": 4,
+        "lower": 0.9023791518110573,
+        "upper": 0.9359210175892466
+      }
+    }
+  ],
+  "mean_occupancy": {
+    "queried_rows": 8036.0,
+    "empty_fraction": 0.03492098058735689,
+    "below_smoothing_fraction": 0.12655550024888002,
+    "median_row_total": 133.875,
+    "mean_smoothing_share": 0.17307358500622658
+  }
+}

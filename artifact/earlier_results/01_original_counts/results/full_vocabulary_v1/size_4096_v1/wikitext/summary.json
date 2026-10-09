@@ -1,0 +1,66 @@
+{
+  "corpus": "wikitext",
+  "pairs": 5,
+  "n": 4096,
+  "mean_observed": 0.027607129247826066,
+  "mean_skill": 0.05983576963807028,
+  "size_reduction": {
+    "geometric_mean": 1.0995146516764402,
+    "count": 5,
+    "lower": 1.094086437698404,
+    "upper": 1.1049697972624153
+  },
+  "forecasts": [
+    {
+      "bank": "original",
+      "method": "analytic",
+      "prediction": 0.01863329869530279,
+      "reference_chunks": 2048,
+      "reference_sources": 895,
+      "reference_sha256": "973a17b3473facb7498a119ff567a544c42040667b93632cfb868baa32d27fbf",
+      "ratio": {
+        "geometric_mean": 0.6749762889641073,
+        "count": 5,
+        "lower": 0.6660439762449809,
+        "upper": 0.6840283928882562
+      }
+    },
+    {
+      "bank": "original",
+      "method": "bootstrap",
+      "prediction": 0.019243486645006837,
+      "draws": 48,
+      "nonlinear_rebuilds": 48,
+      "reference_chunks": 2048,
+      "reference_sources": 895,
+      "reference_sha256": "973a17b3473facb7498a119ff567a544c42040667b93632cfb868baa32d27fbf",
+      "ratio": {
+        "geometric_mean": 0.697079857666394,
+        "count": 5,
+        "lower": 0.6878550369124141,
+        "upper": 0.7064283924493138
+      }
+    },
+    {
+      "bank": "pooled",
+      "method": "analytic",
+      "prediction": 0.024996854355999285,
+      "reference_chunks": 6144,
+      "reference_sources": 2749,
+      "reference_sha256": "6aab4f55553cf3198b45567a4ceb7e77916bf972029deae3221a91e3d90c86ed",
+      "ratio": {
+        "geometric_mean": 0.9054909849774457,
+        "count": 5,
+        "lower": 0.8935081512477138,
+        "upper": 0.917634520435521
+      }
+    }
+  ],
+  "mean_occupancy": {
+    "queried_rows": 7973.0,
+    "empty_fraction": 0.044512730465320456,
+    "below_smoothing_fraction": 0.1537188009532171,
+    "median_row_total": 107.0,
+    "mean_smoothing_share": 0.19789753562612264
+  }
+}

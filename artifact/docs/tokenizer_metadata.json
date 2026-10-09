@@ -1,0 +1,11 @@
+{
+  "base_model": "openai-community/gpt2",
+  "vocab_size": 50259,
+  "mask_token": "[MASK]",
+  "mask_token_id": 50257,
+  "pad_token": "[PAD]",
+  "pad_token_id": 50258,
+  "eos_token": "<|endoftext|>",
+  "eos_token_id": 50256,
+  "vocabulary_sha256": "2659571a0bfa02b45ef641b1d9243cb512b3497e1989ca11bdffbb709955d096"
+}

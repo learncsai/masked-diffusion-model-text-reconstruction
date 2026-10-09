@@ -1,0 +1,62 @@
+[
+  {
+    "corpus": "tinystories",
+    "radius": 1,
+    "n": 512,
+    "pairs": 7,
+    "mean_observed": 0.025855041530684717,
+    "mean_relative_improvement": 0.1098274005195399,
+    "mean_absolute_log_error": 0.0255612328698727,
+    "geometric_prediction_ratio": 0.995663864523148
+  },
+  {
+    "corpus": "tinystories",
+    "radius": 1,
+    "n": 2048,
+    "pairs": 7,
+    "mean_observed": 0.015731351266725938,
+    "mean_relative_improvement": 0.1235370472767359,
+    "mean_absolute_log_error": 0.21044736090739408,
+    "geometric_prediction_ratio": 0.8102217033661311
+  },
+  {
+    "corpus": "tinystories",
+    "radius": 2,
+    "n": 512,
+    "pairs": 7,
+    "mean_observed": 0.037733234108727726,
+    "mean_relative_improvement": 0.12688634453805955,
+    "mean_absolute_log_error": 0.028872258350608273,
+    "geometric_prediction_ratio": 1.0014951779452763
+  },
+  {
+    "corpus": "tinystories",
+    "radius": 2,
+    "n": 2048,
+    "pairs": 7,
+    "mean_observed": 0.022825258218657215,
+    "mean_relative_improvement": 0.1434258411356818,
+    "mean_absolute_log_error": 0.19238691305266245,
+    "geometric_prediction_ratio": 0.8249876082587695
+  },
+  {
+    "corpus": "tinystories",
+    "radius": 4,
+    "n": 512,
+    "pairs": 7,
+    "mean_observed": 0.0475924796106028,
+    "mean_relative_improvement": 0.13076049795320108,
+    "mean_absolute_log_error": 0.028945869464789477,
+    "geometric_prediction_ratio": 1.0019583800339609
+  },
+  {
+    "corpus": "tinystories",
+    "radius": 4,
+    "n": 2048,
+    "pairs": 7,
+    "mean_observed": 0.028600070191090315,
+    "mean_relative_improvement": 0.14887394246854646,
+    "mean_absolute_log_error": 0.18302134601006073,
+    "geometric_prediction_ratio": 0.8327503796493853
+  }
+]

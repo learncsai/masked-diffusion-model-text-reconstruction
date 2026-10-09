@@ -1,0 +1,23 @@
+{
+  "seed": 20261023,
+  "corpora": ["tinystories", "wikitext", "cnn_dailymail"],
+  "inputs": "data/diffusion_llm/rare_context_prospective_v1",
+  "output": "results/alpha_sweep_v1",
+  "alphas": [0.5, 1, 2, 5, 10, 20, 50],
+  "bootstrap_alphas": [1, 5, 20],
+  "weight_arms": ["fixed", "refit"],
+  "sizes": [512, 1024, 2048, 4096],
+  "reference_sizes": [1024, 2048, 4096, 8192],
+  "pairs": 20,
+  "banks": 6,
+  "mask_rate": 0.5,
+  "radius": 2,
+  "ridge": 0.01,
+  "bootstrap_batches": 3,
+  "bootstrap_draws": 16,
+  "inference_draws": 5000,
+  "primary_reference": 8192,
+  "secondary_reference": 2048,
+  "row_rate_edges": [0, 0.000244140625, 0.0009765625, 0.00390625, 0.015625, 0.0625, 0.25, 1, 4, 16, 1000000],
+  "no_neural_training": true
+}

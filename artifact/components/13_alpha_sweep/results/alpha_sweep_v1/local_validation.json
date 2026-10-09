@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "forecast_files": 360,
+  "observed_pairs": 60,
+  "all_new_alpha_forecasts_precede_new_alpha_scores": true,
+  "analysis_saved_before_scoring": true,
+  "maximum_absolute_alpha5_discrepancies": {
+    "analytic": 4.163336342344337e-17,
+    "bootstrap": 3.903127820947816e-16,
+    "observed": 1.3877787807814457e-17,
+    "mse": 3.3306690738754696e-16,
+    "weight_arm_alpha5": 1.3877787807814457e-17
+  },
+  "presentation_amendment": true,
+  "scope": "Local audit against original arrays. No fresh corpus allocations or neural training."
+}

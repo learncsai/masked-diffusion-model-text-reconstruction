@@ -1,0 +1,11 @@
+{
+  "seed": 20260928,
+  "base_config": "configs/reproducibility_followup_v1.json",
+  "output": "results/full_vocabulary_v1/timing_v1",
+  "corpora": ["tinystories", "wikitext", "cnn_dailymail"],
+  "fitted_sizes": [512, 2048],
+  "mask_rate": 0.5,
+  "reference_bank": "original",
+  "bootstrap_draws": 48,
+  "repeats": 3
+}

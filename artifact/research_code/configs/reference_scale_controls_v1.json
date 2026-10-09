@@ -1,0 +1,42 @@
+{
+  "seed": 20260922,
+  "corpora": {
+    "tinystories": "data/diffusion_llm/processed_64_tinystories_matched",
+    "wikitext": "data/diffusion_llm/processed_64_wikitext_stats",
+    "cnn_dailymail": "data/diffusion_llm/processed_64_cnn_dailymail_capped"
+  },
+  "reference_split": "replicate3_train_b",
+  "prepared": "data/diffusion_llm/calibration_diagnostics_v1",
+  "sparsity_case": "grid_512_512_q0.5",
+  "lag_radius": 2,
+  "smoothing": 5,
+  "stacking_ridge": 0.01,
+  "chunk_length": 64,
+  "fitted_sizes": [512, 2048],
+  "reference_banks": [1024, 2048, 4096, 6144],
+  "regimes": {
+    "dense": {
+      "classes": 20,
+      "chunk_length": 32,
+      "pairs": 150,
+      "topics": 6,
+      "topic_weight": 0.45,
+      "zipf_exponent": null
+    },
+    "sparse": {
+      "classes": 6000,
+      "chunk_length": 64,
+      "pairs": 60,
+      "topics": 400,
+      "topic_size": 400,
+      "topic_weight": 0.55,
+      "repeat_rate": 0.25,
+      "zipf_exponent": 1.05
+    }
+  },
+  "auxiliary_chunks": 1500,
+  "prior_chunks": 4000,
+  "evaluation_chunks": 128,
+  "mask_rate": 0.5,
+  "output": "results/full_vocabulary_v1/reference_scale_controls_v1"
+}

@@ -1,0 +1,10 @@
+{
+  "saved_utc": "2026-10-03T03:32:07.461716+00:00",
+  "code_sha256": {
+    "scripts/summarize_alpha_sweep.py": "f1013501e81755b06ea5a5ae7655454bc76214a529ab47476b5af5218eec77e6",
+    "paper/make_alpha_sweep_figures.py": "536048f83d13f901554a59bfd1767b3d2b3e6240bf80c7794c1c76c5153317af",
+    "tests/test_alpha_sweep_analysis.py": "14e0a5955a88d62fc4e1e616e5910e7fd6a70f31876a51ca29abfe4cf56e7902",
+    "scripts/validate_alpha_sweep.py": "954b0f5c7eae378f1c55638b5a78310096b52cc7b83c307e798fea3dbefef3d6"
+  },
+  "scope": "Analysis saved before all new-alpha forecast records were finalized and before any new-alpha A/B scoring. Existing alpha=5 outcomes were already known. This is a sensitivity study on existing allocations."
+}

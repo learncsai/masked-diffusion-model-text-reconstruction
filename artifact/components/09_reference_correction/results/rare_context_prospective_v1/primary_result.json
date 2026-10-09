@@ -1,0 +1,71 @@
+{
+  "primary_cells": [
+    [
+      1024,
+      2048
+    ],
+    [
+      1024,
+      4096
+    ],
+    [
+      2048,
+      4096
+    ]
+  ],
+  "methods": [
+    {
+      "method": "source_full",
+      "mean_absolute_log_error": 0.46852735521824357,
+      "interval": [
+        0.46281945240218836,
+        0.4745237203554004
+      ],
+      "difference_vs_source": 0.0,
+      "difference_vs_source_interval": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "method": "source_jackknife",
+      "mean_absolute_log_error": 0.20346176463577123,
+      "interval": [
+        0.19678789267419752,
+        0.21054926470012914
+      ],
+      "difference_vs_source": -0.26506559058247237,
+      "difference_vs_source_interval": [
+        -0.2668208698544147,
+        -0.26323431361468597
+      ]
+    },
+    {
+      "method": "multinomial",
+      "mean_absolute_log_error": 0.20511237394552986,
+      "interval": [
+        0.19837230740560705,
+        0.21183684053349952
+      ],
+      "difference_vs_source": -0.2634149812727137,
+      "difference_vs_source_interval": [
+        -0.26694162651979114,
+        -0.26009086644783497
+      ]
+    }
+  ],
+  "fixed_corpora": [
+    "tinystories",
+    "wikitext",
+    "cnn_dailymail"
+  ],
+  "banks_per_corpus": 6,
+  "pairs_per_corpus": 20,
+  "reference_and_pair_uncertainty": true,
+  "auxiliary_and_evaluation_conditioned_on": true,
+  "jackknife_vs_multinomial": -0.0016506093097586327,
+  "jackknife_vs_multinomial_interval": [
+    -0.005155253117747821,
+    0.0019956700832779784
+  ]
+}

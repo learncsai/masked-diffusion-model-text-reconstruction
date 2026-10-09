@@ -1,0 +1,234 @@
+[
+  {
+    "n": 512,
+    "reference_chunks": 2048,
+    "pairs": 200,
+    "reference_repeats": 8,
+    "observed": {
+      "mean": 0.03414008423944428,
+      "lower": 0.033933078239982435,
+      "upper": 0.03434709023890612,
+      "standard_error": 0.00010497492962789176,
+      "count": 200,
+      "scale": "linear"
+    },
+    "linear": {
+      "mean": 0.036012314173539554,
+      "lower": 0.03573326986666075,
+      "upper": 0.03629135848041836,
+      "standard_error": 0.00014150631650203157,
+      "count": 200,
+      "scale": "linear"
+    },
+    "reference_prediction": {
+      "mean": 0.034128939267113634,
+      "lower": 0.03376532784285747,
+      "upper": 0.0344925506913698,
+      "standard_error": 0.00015377133344176723,
+      "count": 8,
+      "scale": "linear"
+    },
+    "propagation_error": {
+      "mean": 0.0018722299340952662,
+      "lower": 0.0016980511015793108,
+      "upper": 0.0020464087666112215,
+      "standard_error": 8.832792640582999e-05,
+      "count": 200,
+      "scale": "linear"
+    },
+    "total_ratio": 0.9996735517038424,
+    "total_ratio_ci": [
+      0.9891695460409021,
+      1.009570618217818
+    ],
+    "linear_ratio": 1.0548396401416071,
+    "linear_ratio_ci": [
+      1.0497933433133122,
+      1.0598904769115878
+    ],
+    "reference_error_fraction": -0.05516608843776472,
+    "reference_error_fraction_ci": [
+      -0.06685587806953074,
+      -0.043979198333300176
+    ],
+    "propagation_error_fraction": 0.0548396401416071,
+    "propagation_error_fraction_ci": [
+      0.04979334331331231,
+      0.05989047691158781
+    ]
+  },
+  {
+    "n": 512,
+    "reference_chunks": 6144,
+    "pairs": 200,
+    "reference_repeats": 8,
+    "observed": {
+      "mean": 0.03414008423944428,
+      "lower": 0.033933078239982435,
+      "upper": 0.03434709023890612,
+      "standard_error": 0.00010497492962789176,
+      "count": 200,
+      "scale": "linear"
+    },
+    "linear": {
+      "mean": 0.036012314173539554,
+      "lower": 0.03573326986666075,
+      "upper": 0.03629135848041836,
+      "standard_error": 0.00014150631650203157,
+      "count": 200,
+      "scale": "linear"
+    },
+    "reference_prediction": {
+      "mean": 0.03530419844230909,
+      "lower": 0.03517453581949155,
+      "upper": 0.03543386106512662,
+      "standard_error": 5.483434534268906e-05,
+      "count": 8,
+      "scale": "linear"
+    },
+    "propagation_error": {
+      "mean": 0.0018722299340952662,
+      "lower": 0.0016980511015793108,
+      "upper": 0.0020464087666112215,
+      "standard_error": 8.832792640582999e-05,
+      "count": 200,
+      "scale": "linear"
+    },
+    "total_ratio": 1.034098164336684,
+    "total_ratio_ci": [
+      1.0272961949946917,
+      1.0411699409615987
+    ],
+    "linear_ratio": 1.0548396401416071,
+    "linear_ratio_ci": [
+      1.0498490328888708,
+      1.059873000335773
+    ],
+    "reference_error_fraction": -0.020741475804923023,
+    "reference_error_fraction_ci": [
+      -0.029107059481301042,
+      -0.01200365277562613
+    ],
+    "propagation_error_fraction": 0.0548396401416071,
+    "propagation_error_fraction_ci": [
+      0.049849032888870694,
+      0.059873000335772975
+    ]
+  },
+  {
+    "n": 2048,
+    "reference_chunks": 2048,
+    "pairs": 200,
+    "reference_repeats": 8,
+    "observed": {
+      "mean": 0.0212779961182933,
+      "lower": 0.021134680883983792,
+      "upper": 0.021421311352602806,
+      "standard_error": 7.26766696393194e-05,
+      "count": 200,
+      "scale": "linear"
+    },
+    "linear": {
+      "mean": 0.021260924449055654,
+      "lower": 0.021099151094400272,
+      "upper": 0.021422697803711036,
+      "standard_error": 8.203697750193595e-05,
+      "count": 200,
+      "scale": "linear"
+    },
+    "reference_prediction": {
+      "mean": 0.019758914753694415,
+      "lower": 0.019501930062810854,
+      "upper": 0.020015899444577975,
+      "standard_error": 0.00010867886968107476,
+      "count": 8,
+      "scale": "linear"
+    },
+    "propagation_error": {
+      "mean": -1.7071669237637804e-05,
+      "lower": -0.0001263389885408879,
+      "upper": 9.21956500656123e-05,
+      "standard_error": 5.541061217697451e-05,
+      "count": 200,
+      "scale": "linear"
+    },
+    "total_ratio": 0.9286078747193263,
+    "total_ratio_ci": [
+      0.9170289916659726,
+      0.9394765505370396
+    ],
+    "linear_ratio": 0.9991976843522888,
+    "linear_ratio_ci": [
+      0.9941374467807859,
+      1.0043758285202877
+    ],
+    "reference_error_fraction": -0.07058980963296252,
+    "reference_error_fraction_ci": [
+      -0.08246358045114113,
+      -0.059079386712115635
+    ],
+    "propagation_error_fraction": -0.0008023156477112012,
+    "propagation_error_fraction_ci": [
+      -0.005862553219214135,
+      0.004375828520287724
+    ]
+  },
+  {
+    "n": 2048,
+    "reference_chunks": 6144,
+    "pairs": 200,
+    "reference_repeats": 8,
+    "observed": {
+      "mean": 0.0212779961182933,
+      "lower": 0.021134680883983792,
+      "upper": 0.021421311352602806,
+      "standard_error": 7.26766696393194e-05,
+      "count": 200,
+      "scale": "linear"
+    },
+    "linear": {
+      "mean": 0.021260924449055654,
+      "lower": 0.021099151094400272,
+      "upper": 0.021422697803711036,
+      "standard_error": 8.203697750193595e-05,
+      "count": 200,
+      "scale": "linear"
+    },
+    "reference_prediction": {
+      "mean": 0.020815597749448952,
+      "lower": 0.020657277868933913,
+      "upper": 0.020973917629963992,
+      "standard_error": 6.695350451912081e-05,
+      "count": 8,
+      "scale": "linear"
+    },
+    "propagation_error": {
+      "mean": -1.7071669237637804e-05,
+      "lower": -0.0001263389885408879,
+      "upper": 9.21956500656123e-05,
+      "standard_error": 5.541061217697451e-05,
+      "count": 200,
+      "scale": "linear"
+    },
+    "total_ratio": 0.9782687069649942,
+    "total_ratio_ci": [
+      0.9698852489073686,
+      0.9871009764511676
+    ],
+    "linear_ratio": 0.9991976843522888,
+    "linear_ratio_ci": [
+      0.994079721747138,
+      1.0043332460185088
+    ],
+    "reference_error_fraction": -0.020928977387294555,
+    "reference_error_fraction_ci": [
+      -0.03001256623297883,
+      -0.011455467853019733
+    ],
+    "propagation_error_fraction": -0.0008023156477112012,
+    "propagation_error_fraction_ci": [
+      -0.005920278252862023,
+      0.004333246018508795
+    ]
+  }
+]

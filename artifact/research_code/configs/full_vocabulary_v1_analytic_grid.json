@@ -1,0 +1,42 @@
+{
+  "seed": 20260921,
+  "corpora": {
+    "tinystories": "data/diffusion_llm/processed_64_tinystories_matched",
+    "wikitext": "data/diffusion_llm/processed_64_wikitext_stats",
+    "cnn_dailymail": "data/diffusion_llm/processed_64_cnn_dailymail_capped"
+  },
+  "auxiliary_split": "replicate3_train_a",
+  "reference_split": "replicate3_train_b",
+  "experimental_replicates": [
+    1,
+    2
+  ],
+  "evaluation_split": "eval",
+  "evaluation_chunks": 128,
+  "vocabulary_classes": 50257,
+  "lag_radius": 2,
+  "mask_rates": [
+    0.2,
+    0.5,
+    0.8
+  ],
+  "chunk_counts": [
+    512,
+    1024,
+    2048
+  ],
+  "smoothing": 5,
+  "stacking_ridge": 0.01,
+  "bootstrap_draws": 48,
+  "laws": [
+    "source_cluster",
+    "independent_chunks",
+    "same_lag"
+  ],
+  "full_vocabulary": true,
+  "backend": "sparse",
+  "analytic_source_influence": true,
+  "analytic_only": true,
+  "save_input_details": true,
+  "output": "results/full_vocabulary_v1/analytic_grid"
+}

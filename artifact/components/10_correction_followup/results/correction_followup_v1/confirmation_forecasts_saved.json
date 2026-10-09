@@ -1,0 +1,10 @@
+{
+  "saved_utc": "2026-10-01T23:53:29.723831+00:00",
+  "files_sha256": {
+    "confirmation/tinystories/forecasts.npz": "aa29f4d0e9856b4ffaa3b810801b17933fe6d8c8d351868f54c82ace4dc18e77",
+    "confirmation/wikitext/forecasts.npz": "b11593cd8c01f66b8ab93b2e77a308be96acc0042f752ec41fc61a8470f3d4de",
+    "confirmation/cnn_dailymail/forecasts.npz": "243013463ef9913f42607877d9330d9e858c086e591735f7a69ca9431045cc08"
+  },
+  "method_sha256": "8f9dcb6b6551d40d8209dd8ecf0a2c9975cfbb3b20ca88a38d97414165e2400a",
+  "external_preregistration": false
+}

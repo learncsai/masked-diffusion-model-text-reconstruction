@@ -1,0 +1,13 @@
+{
+  "seed": 20260922,
+  "prepared": "data/diffusion_llm/calibration_diagnostics_v1",
+  "base_config": "configs/calibration_diagnostics_v1.json",
+  "context_case": "unequal_sizes_512_2048_q0.5",
+  "bank": "original",
+  "sizes": [512, 2048],
+  "comparisons": [[512, 512], [2048, 2048], [512, 2048]],
+  "batches": 8,
+  "draws_per_arm": 16,
+  "corpora": ["tinystories", "wikitext", "cnn_dailymail"],
+  "output": "results/full_vocabulary_v1/equal_size_mean_control_v1"
+}

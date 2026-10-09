@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "model_checkpoints": 108,
+  "per_model_rows": 756,
+  "summary_rows": 126,
+  "validator_sha256": "8c977fdefb581f2582863951cdf11c23e9cd4ac983b9223de515c7c90ec41081",
+  "checks": "Output hashes, masks, targets, ranks and ties, equal chunk weighting, MSE reconciliation, top-k monotonicity, summary aggregation"
+}

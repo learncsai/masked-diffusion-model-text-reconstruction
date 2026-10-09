@@ -1,0 +1,34 @@
+{
+  "source_revision": "98462c39a8550c78d35e71ab193d2a2ded43e999",
+  "source_archive": "finalaistats_reproducibility.zip",
+  "archive_sha256": "aba7d4bfda44f853f870805b514e631b75d7c3fd5ce119d2b39a961eb52dc6cb",
+  "submitted_reference": "finalaistats_overleaf__2_.pdf",
+  "submitted_reference_sha256": "ab111e773dcdea79a69e9514c8ba112c59c3b28b6015d7250001a41136dc85cd",
+  "local_manuscript_sha256": "cc42163482650b8803530101d991f60fdd0579bf6148bab6b9992d1aae2b2e0f",
+  "omitted_files": [
+    "components/09_reference_correction/rebuilt/decision_rows.tex",
+    "components/09_reference_correction/rebuilt/primary_rows.tex",
+    "components/10_correction_followup/results/correction_followup_v1/rebuilt/tab_confirmation.tex",
+    "components/10_correction_followup/results/correction_followup_v1/rebuilt/tab_correction-decisions.tex",
+    "components/10_correction_followup/results/correction_followup_v1/rebuilt/tab_correction-primary.tex",
+    "components/10_correction_followup/results/correction_followup_v1/rebuilt/tab_decision-targets.tex",
+    "components/10_correction_followup/results/correction_followup_v1/rebuilt/tab_followup-intervals.tex",
+    "components/11_oracle_multiplier/results/oracle_multiplier_v1/tab_confirmation.tex",
+    "components/11_oracle_multiplier/results/oracle_multiplier_v1/tab_population-oracle.tex",
+    "components/12_bootstrap_confirmation/results/bootstrap_confirmation_v1/tab_confirmation.tex",
+    "components/13_alpha_sweep/results/alpha_sweep_v1/summary/tab_alpha-calibration.tex",
+    "components/13_alpha_sweep/results/alpha_sweep_v1/summary/tab_alpha-contrasts.tex",
+    "components/13_alpha_sweep/results/alpha_sweep_v1/summary/tab_alpha-slopes.tex"
+  ],
+  "changes": [
+    "Unpacked archive; omitted every PDF/TeX file.",
+    "Filtered artifact hash manifest; original retained in provenance.",
+    "Added full experiment code and docs; preserved archived training implementation.",
+    "Repository paper numbering follows attached submission, not archive numbering.",
+    "Adapted the root training runtime import for package use; archived implementation preserved.",
+    "Deferred tokenizer imports during preprocessing integrity tests.",
+    "Added an all-corpus default to the root smoothing runner.",
+    "Root training manifests use this repository Git revision for new runs."
+  ],
+  "source_workspace_had_uncommitted_changes": true
+}

@@ -1,0 +1,590 @@
+{
+  "status": "Exploratory additions to already observed twenty-pair study",
+  "methods": [
+    "source_full",
+    "source_jackknife",
+    "multinomial",
+    "multinomial_jackknife",
+    "source_times_1.25",
+    "multinomial_times_1.25",
+    "source_gated",
+    "multinomial_gated"
+  ],
+  "primary": {
+    "error": [
+      0.46852735521824357,
+      0.20346176463577123,
+      0.20511237394552986,
+      0.08471518930267974,
+      0.2453838039040338,
+      0.05358511464665241,
+      0.20346176463577123,
+      0.08471518930267974
+    ],
+    "interval": [
+      [
+        0.4629137049676951,
+        0.4745404892591059
+      ],
+      [
+        0.19678695973147425,
+        0.21065377264547658
+      ],
+      [
+        0.1985509733162455,
+        0.21170627253211596
+      ],
+      [
+        0.07672155484797527,
+        0.09253383138310328
+      ],
+      [
+        0.2397701536534853,
+        0.25139693794489615
+      ],
+      [
+        0.051009273336961494,
+        0.05654442069557735
+      ],
+      [
+        0.19678695973147425,
+        0.21065377264547658
+      ],
+      [
+        0.07672155484797527,
+        0.09253383138310328
+      ]
+    ],
+    "corrected_multinomial_minus_plain": -0.12039718464285012,
+    "corrected_multinomial_difference_interval": [
+      -0.1233575886806226,
+      -0.11762664799034825
+    ]
+  },
+  "full_grid": {
+    "error": [
+      0.187916277961254,
+      0.10278702393046084,
+      0.11536903700311073,
+      0.060977837806927275,
+      0.18356819499653657,
+      0.11712697789090813,
+      0.08148322353826697,
+      0.07103178833891453
+    ],
+    "interval": [
+      [
+        0.1853020313001698,
+        0.19063410272433645
+      ],
+      [
+        0.10054647856280824,
+        0.10500310441071851
+      ],
+      [
+        0.11158059134568388,
+        0.11916433339103652
+      ],
+      [
+        0.05683052744534317,
+        0.06513540698161574
+      ],
+      [
+        0.1810114383150125,
+        0.18607385897215245
+      ],
+      [
+        0.11404304942200881,
+        0.12034515765193247
+      ],
+      [
+        0.07899545935471546,
+        0.0840717023902216
+      ],
+      [
+        0.06694225946984157,
+        0.07495694417594186
+      ]
+    ],
+    "corrected_multinomial_minus_plain": -0.05439119919618345,
+    "corrected_multinomial_difference_interval": [
+      -0.05624730040784296,
+      -0.05240983887726621
+    ]
+  },
+  "m_le_n": {
+    "error": [
+      0.3238890659418674,
+      0.11102295709589327,
+      0.16164561829660298,
+      0.07297112096821062,
+      0.14507044384223142,
+      0.079274901656593,
+      0.11102295709589327,
+      0.07297112096821062
+    ],
+    "interval": [
+      [
+        0.3190179927605983,
+        0.3289273797335307
+      ],
+      [
+        0.10634088502121555,
+        0.11605876227362896
+      ],
+      [
+        0.1567606604249836,
+        0.16660158550955606
+      ],
+      [
+        0.06716874172619897,
+        0.0785741491394325
+      ],
+      [
+        0.1435152409246222,
+        0.14680109288879065
+      ],
+      [
+        0.07643083973229148,
+        0.0823137860388599
+      ],
+      [
+        0.10634088502121555,
+        0.11605876227362896
+      ],
+      [
+        0.06716874172619897,
+        0.0785741491394325
+      ]
+    ],
+    "corrected_multinomial_minus_plain": -0.08867449732839236,
+    "corrected_multinomial_difference_interval": [
+      -0.09092288956966477,
+      -0.08643888993951998
+    ]
+  },
+  "m_gt_n": {
+    "error": [
+      0.051943489980640654,
+      0.09455109076502842,
+      0.06909245570961843,
+      0.04898455464564392,
+      0.22206594615084174,
+      0.15497905412522328,
+      0.051943489980640654,
+      0.06909245570961843
+    ],
+    "interval": [
+      [
+        0.050942289580669396,
+        0.052967283496140806
+      ],
+      [
+        0.08846142946707816,
+        0.10021731990763381
+      ],
+      [
+        0.06545404861541983,
+        0.07281839565550406
+      ],
+      [
+        0.04522127426953705,
+        0.052760462129965185
+      ],
+      [
+        0.21708735420196393,
+        0.22687741005270531
+      ],
+      [
+        0.15109166734812937,
+        0.15904931661981964
+      ],
+      [
+        0.050942289580669396,
+        0.052967283496140806
+      ],
+      [
+        0.06545404861541983,
+        0.07281839565550406
+      ]
+    ],
+    "corrected_multinomial_minus_plain": -0.02010790106397451,
+    "corrected_multinomial_difference_interval": [
+      -0.02239033509246608,
+      -0.01774230686540708
+    ]
+  },
+  "m_eq_n": {
+    "error": [
+      0.17925077666549127,
+      0.018584149556015322,
+      0.11817886264767612,
+      0.06122705263374149,
+      0.044757083780428995,
+      0.10496468866653359,
+      0.018584149556015322,
+      0.06122705263374149
+    ],
+    "interval": [
+      [
+        0.1748800448342903,
+        0.1837906356493546
+      ],
+      [
+        0.014614484749720262,
+        0.02282052978239548
+      ],
+      [
+        0.1142592446499175,
+        0.122096472008453
+      ],
+      [
+        0.05699778899445565,
+        0.0654068619986892
+      ],
+      [
+        0.04098117171200498,
+        0.048683478909560235
+      ],
+      [
+        0.10104707930575672,
+        0.10888430666429229
+      ],
+      [
+        0.014614484749720262,
+        0.02282052978239548
+      ],
+      [
+        0.05699778899445565,
+        0.0654068619986892
+      ]
+    ],
+    "corrected_multinomial_minus_plain": -0.05695181001393463,
+    "corrected_multinomial_difference_interval": [
+      -0.05869854392067697,
+      -0.055075890025920025
+    ]
+  },
+  "decisions": [
+    {
+      "target": "original",
+      "method": "source_full",
+      "success": 21,
+      "failure": 33,
+      "uncertain": 0,
+      "abstain": 0,
+      "successes_at_grid_min": 21,
+      "successes_above_grid_min": 0
+    },
+    {
+      "target": "original",
+      "method": "source_jackknife",
+      "success": 42,
+      "failure": 12,
+      "uncertain": 0,
+      "abstain": 0,
+      "successes_at_grid_min": 42,
+      "successes_above_grid_min": 0
+    },
+    {
+      "target": "original",
+      "method": "multinomial",
+      "success": 18,
+      "failure": 36,
+      "uncertain": 0,
+      "abstain": 0,
+      "successes_at_grid_min": 18,
+      "successes_above_grid_min": 0
+    },
+    {
+      "target": "original",
+      "method": "multinomial_jackknife",
+      "success": 36,
+      "failure": 18,
+      "uncertain": 0,
+      "abstain": 0,
+      "successes_at_grid_min": 36,
+      "successes_above_grid_min": 0
+    },
+    {
+      "target": "original",
+      "method": "source_times_1.25",
+      "success": 42,
+      "failure": 12,
+      "uncertain": 0,
+      "abstain": 0,
+      "successes_at_grid_min": 30,
+      "successes_above_grid_min": 12
+    },
+    {
+      "target": "original",
+      "method": "multinomial_times_1.25",
+      "success": 38,
+      "failure": 0,
+      "uncertain": 0,
+      "abstain": 16,
+      "successes_at_grid_min": 33,
+      "successes_above_grid_min": 5
+    },
+    {
+      "target": "original",
+      "method": "source_gated",
+      "success": 33,
+      "failure": 21,
+      "uncertain": 0,
+      "abstain": 0,
+      "successes_at_grid_min": 33,
+      "successes_above_grid_min": 0
+    },
+    {
+      "target": "original",
+      "method": "multinomial_gated",
+      "success": 30,
+      "failure": 24,
+      "uncertain": 0,
+      "abstain": 0,
+      "successes_at_grid_min": 30,
+      "successes_above_grid_min": 0
+    },
+    {
+      "target": "0.02",
+      "method": "source_full",
+      "success": 6,
+      "failure": 42,
+      "uncertain": 0,
+      "abstain": 6,
+      "successes_at_grid_min": 6,
+      "successes_above_grid_min": 0
+    },
+    {
+      "target": "0.02",
+      "method": "source_jackknife",
+      "success": 12,
+      "failure": 18,
+      "uncertain": 0,
+      "abstain": 24,
+      "successes_at_grid_min": 12,
+      "successes_above_grid_min": 0
+    },
+    {
+      "target": "0.02",
+      "method": "multinomial",
+      "success": 0,
+      "failure": 27,
+      "uncertain": 0,
+      "abstain": 27,
+      "successes_at_grid_min": 0,
+      "successes_above_grid_min": 0
+    },
+    {
+      "target": "0.02",
+      "method": "multinomial_jackknife",
+      "success": 4,
+      "failure": 14,
+      "uncertain": 0,
+      "abstain": 36,
+      "successes_at_grid_min": 4,
+      "successes_above_grid_min": 0
+    },
+    {
+      "target": "0.02",
+      "method": "source_times_1.25",
+      "success": 12,
+      "failure": 18,
+      "uncertain": 0,
+      "abstain": 24,
+      "successes_at_grid_min": 12,
+      "successes_above_grid_min": 0
+    },
+    {
+      "target": "0.02",
+      "method": "multinomial_times_1.25",
+      "success": 18,
+      "failure": 0,
+      "uncertain": 0,
+      "abstain": 36,
+      "successes_at_grid_min": 18,
+      "successes_above_grid_min": 0
+    },
+    {
+      "target": "0.02",
+      "method": "source_gated",
+      "success": 12,
+      "failure": 18,
+      "uncertain": 0,
+      "abstain": 24,
+      "successes_at_grid_min": 12,
+      "successes_above_grid_min": 0
+    },
+    {
+      "target": "0.02",
+      "method": "multinomial_gated",
+      "success": 4,
+      "failure": 14,
+      "uncertain": 0,
+      "abstain": 36,
+      "successes_at_grid_min": 4,
+      "successes_above_grid_min": 0
+    },
+    {
+      "target": "0.025",
+      "method": "source_full",
+      "success": 16,
+      "failure": 38,
+      "uncertain": 0,
+      "abstain": 0,
+      "successes_at_grid_min": 16,
+      "successes_above_grid_min": 0
+    },
+    {
+      "target": "0.025",
+      "method": "source_jackknife",
+      "success": 30,
+      "failure": 16,
+      "uncertain": 0,
+      "abstain": 8,
+      "successes_at_grid_min": 30,
+      "successes_above_grid_min": 0
+    },
+    {
+      "target": "0.025",
+      "method": "multinomial",
+      "success": 17,
+      "failure": 36,
+      "uncertain": 0,
+      "abstain": 1,
+      "successes_at_grid_min": 17,
+      "successes_above_grid_min": 0
+    },
+    {
+      "target": "0.025",
+      "method": "multinomial_jackknife",
+      "success": 36,
+      "failure": 5,
+      "uncertain": 0,
+      "abstain": 13,
+      "successes_at_grid_min": 36,
+      "successes_above_grid_min": 0
+    },
+    {
+      "target": "0.025",
+      "method": "source_times_1.25",
+      "success": 30,
+      "failure": 18,
+      "uncertain": 0,
+      "abstain": 6,
+      "successes_at_grid_min": 24,
+      "successes_above_grid_min": 6
+    },
+    {
+      "target": "0.025",
+      "method": "multinomial_times_1.25",
+      "success": 26,
+      "failure": 1,
+      "uncertain": 0,
+      "abstain": 27,
+      "successes_at_grid_min": 26,
+      "successes_above_grid_min": 0
+    },
+    {
+      "target": "0.025",
+      "method": "source_gated",
+      "success": 28,
+      "failure": 18,
+      "uncertain": 0,
+      "abstain": 8,
+      "successes_at_grid_min": 28,
+      "successes_above_grid_min": 0
+    },
+    {
+      "target": "0.025",
+      "method": "multinomial_gated",
+      "success": 31,
+      "failure": 10,
+      "uncertain": 0,
+      "abstain": 13,
+      "successes_at_grid_min": 31,
+      "successes_above_grid_min": 0
+    },
+    {
+      "target": "0.03",
+      "method": "source_full",
+      "success": 37,
+      "failure": 17,
+      "uncertain": 0,
+      "abstain": 0,
+      "successes_at_grid_min": 31,
+      "successes_above_grid_min": 6
+    },
+    {
+      "target": "0.03",
+      "method": "source_jackknife",
+      "success": 48,
+      "failure": 6,
+      "uncertain": 0,
+      "abstain": 0,
+      "successes_at_grid_min": 20,
+      "successes_above_grid_min": 28
+    },
+    {
+      "target": "0.03",
+      "method": "multinomial",
+      "success": 36,
+      "failure": 18,
+      "uncertain": 0,
+      "abstain": 0,
+      "successes_at_grid_min": 36,
+      "successes_above_grid_min": 0
+    },
+    {
+      "target": "0.03",
+      "method": "multinomial_jackknife",
+      "success": 37,
+      "failure": 17,
+      "uncertain": 0,
+      "abstain": 0,
+      "successes_at_grid_min": 37,
+      "successes_above_grid_min": 0
+    },
+    {
+      "target": "0.03",
+      "method": "source_times_1.25",
+      "success": 48,
+      "failure": 6,
+      "uncertain": 0,
+      "abstain": 0,
+      "successes_at_grid_min": 15,
+      "successes_above_grid_min": 33
+    },
+    {
+      "target": "0.03",
+      "method": "multinomial_times_1.25",
+      "success": 48,
+      "failure": 0,
+      "uncertain": 0,
+      "abstain": 6,
+      "successes_at_grid_min": 12,
+      "successes_above_grid_min": 36
+    },
+    {
+      "target": "0.03",
+      "method": "source_gated",
+      "success": 43,
+      "failure": 11,
+      "uncertain": 0,
+      "abstain": 0,
+      "successes_at_grid_min": 37,
+      "successes_above_grid_min": 6
+    },
+    {
+      "target": "0.03",
+      "method": "multinomial_gated",
+      "success": 37,
+      "failure": 17,
+      "uncertain": 0,
+      "abstain": 0,
+      "successes_at_grid_min": 37,
+      "successes_above_grid_min": 0
+    }
+  ]
+}

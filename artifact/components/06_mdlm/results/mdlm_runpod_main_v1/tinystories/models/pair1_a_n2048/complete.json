@@ -1,0 +1,15 @@
+{
+  "identity": {
+    "protocol_sha256": "6efba4a6503cf461d9256aa2f111a57573a3c0ce0fe055f6c6a34e3a1266ab05",
+    "name": "pair1_a_n2048",
+    "data_sha256": "991b424d3a6d2047c56aa75cc0e86dd3ecb44a394a7f119e3e4f11e8fa6a5e0c",
+    "parent_sha256": "ffee9b93473dc50517f411253a8471b8db55c873c3cdd3daf20edf5ee3bfca44",
+    "seed_offset": 0
+  },
+  "completed_utc": "2026-09-30T20:10:47.125671+00:00",
+  "steps": 12000,
+  "sha256": {
+    "step_8000.pt": "bd38790022cd9d3ff75560ed94033c24573c48cbfdabfcd94db9f708ffddf42a",
+    "step_12000.pt": "caade0b40a05aec1a979776be9ae807602d0da0266ac219f87ac605f21939e41"
+  }
+}

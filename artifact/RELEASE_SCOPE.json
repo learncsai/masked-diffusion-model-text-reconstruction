@@ -1,0 +1,29 @@
+{
+  "scope": "Main text and Appendices A through E. Appendix F is not submitted.",
+  "source_archive_sha256": "55035006a5e3fb4f4911601cc1567d711d2b0abe2135872f5a667384b97edb81",
+  "manuscript_sha256": "9ca92665b8e8226ce7516eea245f6384750f21ec15d8b09807bcfe0235f7675d",
+  "tables": {
+    "tab:data-roles": 1,
+    "tab:correction-primary": 2,
+    "tab:main-alpha-ablation": 3,
+    "tab:main-mdlm": 4,
+    "tab:followup-intervals": 5,
+    "tab:confirmation": 6,
+    "tab:correction-decisions": 7,
+    "tab:image-text-map": 8,
+    "tab:mdlm-quality": 9,
+    "tab:population-oracle": 10
+  },
+  "figures": {
+    "fig_reference_correction.pdf": 1,
+    "fig_mdlm_disagreement.pdf": 2,
+    "fig_reference_correction_all.pdf": 3,
+    "fig_multiplier_transfer.pdf": 4,
+    "fig_lag_topk_comparison.pdf": 5
+  },
+  "changes": [
+    "Explicit independent rebuild for Table 3 and Appendix E checks.",
+    "Submission inventory ends at E. Full alpha records retained as supporting evidence.",
+    "Paper and neural weights excluded. No training or data download."
+  ]
+}

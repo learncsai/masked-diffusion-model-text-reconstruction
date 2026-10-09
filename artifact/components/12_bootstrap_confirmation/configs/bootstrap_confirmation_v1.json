@@ -1,0 +1,20 @@
+{
+  "seed": 920821,
+  "interval_seed": 920713,
+  "interval_draws": 5000,
+  "corpora": ["tinystories", "wikitext", "cnn_dailymail"],
+  "inputs": "data/diffusion_llm/correction_followup_v1",
+  "output": "results/bootstrap_confirmation_v1",
+  "reference_banks": 3,
+  "m": 2048,
+  "n": 1024,
+  "bootstrap_batches": 3,
+  "draws_per_batch": 16,
+  "partition_seed": 20261017,
+  "smoothing": 5,
+  "ridge": 0.01,
+  "status": "Added comparison on existing confirmation outcomes. Settings saved before new bootstrap forecasts. Not a new prospective outcome test.",
+  "policy": "Corrected multinomial for m <= n, corrected nonlinear source bootstrap for m > n. Retrospective original-grid evaluation only.",
+  "reporting": "Report all three corpora, all three banks, uncorrected and corrected bootstrap, all existing analytic and multiplier comparators, paired error differences, and Monte Carlo batch standard errors. No selection by outcome.",
+  "uncertainty": "Resample whole banks and whole A/B pairs independently within each corpus. Preserve methods and nested sizes. Intervals condition on saved Monte Carlo draws and auxiliary/evaluation inputs. Reselect calibrated multipliers on resampled original-study records only."
+}

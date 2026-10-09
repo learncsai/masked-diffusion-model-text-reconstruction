@@ -1,0 +1,25 @@
+{
+  "python": "3.14.2",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "numpy": "2.5.0",
+  "scipy": "1.16.3",
+  "thread_env": {
+    "OPENBLAS_NUM_THREADS": null,
+    "OMP_NUM_THREADS": null,
+    "MKL_NUM_THREADS": null
+  },
+  "thread_pools": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 12,
+      "prefix": "libscipy_openblas",
+      "version": "0.3.33.112.0",
+      "threading_layer": "pthreads",
+      "architecture": "Haswell",
+      "library": "libscipy_openblas64_-b788215d9d47792bcba3a2e2a7114320.dll"
+    }
+  ],
+  "training": false,
+  "execution": "Three concurrent corpus processes. Default OpenBLAS thread setting, no timing comparison asserted."
+}

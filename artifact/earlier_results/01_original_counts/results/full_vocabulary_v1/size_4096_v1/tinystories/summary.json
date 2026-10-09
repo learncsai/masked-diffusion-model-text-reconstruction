@@ -1,0 +1,66 @@
+{
+  "corpus": "tinystories",
+  "pairs": 7,
+  "n": 4096,
+  "mean_observed": 0.016889594527599867,
+  "mean_skill": 0.14816387648573595,
+  "size_reduction": {
+    "geometric_mean": 1.355351431556952,
+    "count": 7,
+    "lower": 1.3267160228038006,
+    "upper": 1.3846048976941747
+  },
+  "forecasts": [
+    {
+      "bank": "original",
+      "method": "analytic",
+      "prediction": 0.011932141298224782,
+      "reference_chunks": 2048,
+      "reference_sources": 768,
+      "reference_sha256": "3bade2780c94f8867d778510d4d22a605d8cb6884234675d134bf49c04ddde0a",
+      "ratio": {
+        "geometric_mean": 0.706575360761415,
+        "count": 7,
+        "lower": 0.6950099486272925,
+        "upper": 0.7183332287849767
+      }
+    },
+    {
+      "bank": "original",
+      "method": "bootstrap",
+      "prediction": 0.012615025178330384,
+      "draws": 48,
+      "nonlinear_rebuilds": 48,
+      "reference_chunks": 2048,
+      "reference_sources": 768,
+      "reference_sha256": "3bade2780c94f8867d778510d4d22a605d8cb6884234675d134bf49c04ddde0a",
+      "ratio": {
+        "geometric_mean": 0.7470131088473816,
+        "count": 7,
+        "lower": 0.7347858009716837,
+        "upper": 0.7594438869829693
+      }
+    },
+    {
+      "bank": "pooled",
+      "method": "analytic",
+      "prediction": 0.015043651975781988,
+      "reference_chunks": 6144,
+      "reference_sources": 2277,
+      "reference_sha256": "600ca32015c9f8900692a198f71a36658b5e936bf15b8a7bc56a669231c2fc56",
+      "ratio": {
+        "geometric_mean": 0.8908270155616365,
+        "count": 7,
+        "lower": 0.8762457236749814,
+        "upper": 0.905650949514711
+      }
+    }
+  ],
+  "mean_occupancy": {
+    "queried_rows": 7988.0,
+    "empty_fraction": 0.009925602689748911,
+    "below_smoothing_fraction": 0.02729093640460691,
+    "median_row_total": 995.1071428571429,
+    "mean_smoothing_share": 0.05810367730105651
+  }
+}

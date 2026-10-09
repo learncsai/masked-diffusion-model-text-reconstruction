@@ -1,0 +1,45 @@
+name: Reproducibility checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  offline-reproduction:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.14'
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - run: python scripts/check_repository.py
+      - run: python reproduce.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: reproduced-tables-and-figures
+          path: |
+            results/reproduction/
+            artifact/reproduced/REPORT.json
+            artifact/reproduced/logs/
+          retention-days: 14
+
+  scientific-checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: python -m pip install -r requirements.txt pytest
+      - run: python -m pip install torch==2.8.0 --index-url https://download.pytorch.org/whl/cpu
+      - run: python -m pytest tests/test_source_moment_forecast.py tests/test_reference_correction.py tests/test_population_oracle.py tests/test_alpha_sweep.py tests/test_public_preparation.py

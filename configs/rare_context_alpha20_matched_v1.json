@@ -1,0 +1,51 @@
+{
+  "seed": 20261002,
+  "output": "results/rare_context_alpha20_matched_v1",
+  "stage": "Matched sensitivity: same population, sources, prior and masks as clustered_sparse development. Alpha changes the conditional tables and auxiliary weights.",
+  "sizes": [
+    256,
+    1024
+  ],
+  "reference_sizes": [
+    128,
+    512,
+    2048
+  ],
+  "reference_banks": 4,
+  "pairs": 80,
+  "prior_chunks": 4096,
+  "auxiliary_chunks": 1024,
+  "evaluation_chunks": 32,
+  "mask_rate": 0.5,
+  "radius": 2,
+  "ridge": 0.01,
+  "population": {
+    "classes": 512,
+    "chunk_length": 8,
+    "topics": 32,
+    "topic_size": 32,
+    "topic_weight": 0.55,
+    "repeat_rate": 0.25,
+    "zipf_exponent": 1.05
+  },
+  "cases": [
+    {
+      "name": "iid_sparse",
+      "topic_weight": 0.0,
+      "repeat_rate": 0.0,
+      "chunks_per_source": 1,
+      "smoothing": 5.0
+    },
+    {
+      "name": "markov_sparse",
+      "chunks_per_source": 1,
+      "smoothing": 5.0
+    },
+    {
+      "name": "clustered_alpha20_matched",
+      "chunks_per_source": 4,
+      "smoothing": 20.0
+    }
+  ],
+  "development_gate": "Advance a correction only if it lowers average bank absolute log error for m<n in the three alpha=5 cases and no case has a nonpositive scalar forecast. Record every case. Synthetic success is not a real-text result."
+}

@@ -1,0 +1,8 @@
+-r requirements.txt
+torch==2.8.0
+transformers>=4.52,<5
+datasets>=3.6,<5
+huggingface-hub>=0.34,<1
+PyYAML>=6.0
+psutil>=6.1
+pytest>=8.0

@@ -1,0 +1,52 @@
+MDLM DISAGREEMENT SUBSPACES: DESIGN FIXED BEFORE COMPUTATION
+
+Scope: the existing TinyStories, WikiText-103 and CNN/DailyMail runs.
+Three A/B pairs at n=512,1024,2048, both 8000 and 12000 update stages.
+Use the exact 128 evaluation chunks, q=0.5 masks, 50257-token vocabulary,
+auxiliary prior/weights and source-disjoint assignments already saved.
+No neural retraining. This is exploratory analysis of existing outcomes.
+
+Readout: a fixed random orthonormal vocabulary projection in the zero-sum
+subspace, independent of every model and corpus. Generate 128 columns using
+NumPy PCG64 seed 20261001, center each column over tokens, then QR with
+positive diagonal convention. Primary analysis uses the first 64 columns.
+Use all 128 as a prespecified projection-dimension sensitivity check.
+Results describe projected energy, not a fraction of full-vocabulary energy.
+
+Methods: empirical radius-two reconstructor, full source covariance,
+source covariance with cross-lag products removed, smoothed multinomial
+covariance, empirical full-context affine model, and auxiliary unigram
+covariance diag(p)-p p^T as a frequency-only control.
+Keep the same 2048-chunk reference as the matched main-text experiment.
+Do not select a reference or tuning value from neural alignment outcomes.
+
+Empirical matrix: average Delta Delta^T over masked positions within each
+chunk, then equally over chunks. Do not subtract the across-input mean.
+For reference forecasts use the matrix version of the existing formula.
+Source influence is centered by each source's chunk count, with factor
+2*(n*G/n_ref)/(G-1). Keep whole sources and all overlapping token pairs.
+Multinomial uses reference-smoothed probabilities, target-size row counts,
+and diag(P)-P P^T with the same scalar coefficients as the existing trace.
+
+Primary evaluation: split evaluation source IDs into two groups with fixed
+seed 20261002, balancing chunk counts without splitting any source. Learn
+method eigenspaces from one group's inputs. Measure neural energy captured
+on the other group, then swap. Pool held-out captured energy and total
+energy with chunk-count weights before division, separately within each
+A/B pair, size, corpus, neural stage and readout dimension. Average the
+three pair fractions and display their range, not a confidence interval.
+Also save the pooled-input result for comparison with the older experiment.
+
+Ranks k=1,2,4,8,16. Primary compact table: n=2048, 12000 updates, d=64,k=4.
+No choice of rank, projection, model stage or method based on observed gains.
+Random-subspace null: Haar orthonormal k-dimensional subspaces in the same
+d-dimensional readout, with exact expected fraction k/d. Save 500 simulated
+draws per condition for a descriptive 95th-percentile reference, not a
+significance test across nonindependent evaluation tokens.
+
+Interpretation: subspace overlap does not imply calibrated total variance
+or pointwise signed alignment. Positive overlap against a random null may
+reflect token frequency, hence the unigram control. An advantage of full
+source covariance requires comparison with multinomial and same-lag source
+predictions. Neural and linear procedures retain their documented training
+differences. Three pairs, one mask rate and one reference bank limit claims.

@@ -1,0 +1,62 @@
+[
+  {
+    "corpus": "cnn_dailymail",
+    "radius": 1,
+    "n": 512,
+    "pairs": 7,
+    "mean_observed": 0.023083575290828755,
+    "mean_relative_improvement": 0.029265922341819153,
+    "mean_absolute_log_error": 0.03978886341753171,
+    "geometric_prediction_ratio": 1.0405910441598694
+  },
+  {
+    "corpus": "cnn_dailymail",
+    "radius": 1,
+    "n": 2048,
+    "pairs": 7,
+    "mean_observed": 0.0203974272389515,
+    "mean_relative_improvement": 0.0400533372764888,
+    "mean_absolute_log_error": 0.14231928189237827,
+    "geometric_prediction_ratio": 0.8673442849476269
+  },
+  {
+    "corpus": "cnn_dailymail",
+    "radius": 2,
+    "n": 512,
+    "pairs": 7,
+    "mean_observed": 0.027319751566036592,
+    "mean_relative_improvement": 0.03160170208368513,
+    "mean_absolute_log_error": 0.04090096836428351,
+    "geometric_prediction_ratio": 1.0417489343359838
+  },
+  {
+    "corpus": "cnn_dailymail",
+    "radius": 2,
+    "n": 2048,
+    "pairs": 7,
+    "mean_observed": 0.024139686337602235,
+    "mean_relative_improvement": 0.04368503539438278,
+    "mean_absolute_log_error": 0.14054881964989785,
+    "geometric_prediction_ratio": 0.8688812454191278
+  },
+  {
+    "corpus": "cnn_dailymail",
+    "radius": 4,
+    "n": 512,
+    "pairs": 7,
+    "mean_observed": 0.02823451867045315,
+    "mean_relative_improvement": 0.03195855236422098,
+    "mean_absolute_log_error": 0.041599578337098486,
+    "geometric_prediction_ratio": 1.0424769648057437
+  },
+  {
+    "corpus": "cnn_dailymail",
+    "radius": 4,
+    "n": 2048,
+    "pairs": 7,
+    "mean_observed": 0.024911699782361733,
+    "mean_relative_improvement": 0.04428221059413001,
+    "mean_absolute_log_error": 0.13839643294828596,
+    "geometric_prediction_ratio": 0.8707534279646726
+  }
+]

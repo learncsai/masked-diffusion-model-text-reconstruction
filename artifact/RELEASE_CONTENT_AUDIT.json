@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "npz_checked": 853,
+  "corpus_token_arrays": 0,
+  "neural_model_weights": 0,
+  "manuscripts": 0,
+  "raw_corpus_text": 0,
+  "basis": "Hash-verified previously reviewed compact inputs, unchanged numerical payload, refreshed reviewer scripts/docs/fixtures, and rescanned containers and file types."
+}

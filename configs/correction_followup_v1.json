@@ -1,0 +1,26 @@
+{
+  "seed": 20261017,
+  "corpora": ["tinystories", "wikitext", "cnn_dailymail"],
+  "output": "results/correction_followup_v1",
+  "inputs": "data/diffusion_llm/correction_followup_v1",
+  "existing_study": "results/rare_context_prospective_v1",
+  "existing_inputs": "data/diffusion_llm/rare_context_prospective_v1",
+  "bootstrap_batches": 3,
+  "bootstrap_draws_per_batch": 16,
+  "fixed_inflation": 1.25,
+  "gate": "Use corrected forecast when m <= n, otherwise uncorrected.",
+  "absolute_decision_targets": [0.02, 0.025, 0.03],
+  "confirmatory": {
+    "pairs": 6,
+    "reference_banks": 3,
+    "reference_sizes": [1024, 2048],
+    "sizes": [1024, 2048],
+    "primary_cells": [[1024, 2048]],
+    "primary_method": "multinomial_jackknife",
+    "primary_comparator": "multinomial",
+    "primary_metric": "Mean bank absolute log error against arithmetic mean A/B disagreement, equally weighted across corpora.",
+    "primary_test": "Paired error difference corrected minus uncorrected multinomial, 95% crossed bootstrap interval, 5000 draws.",
+    "data": "Previously unallocated sources in the 128000-text block. Fresh banks and all A/B arms are mutually source, text and chunk disjoint. Auxiliary and evaluation data remain fixed.",
+    "no_new_neural_training": true
+  }
+}

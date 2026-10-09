@@ -1,0 +1,62 @@
+[
+  {
+    "corpus": "wikitext",
+    "radius": 1,
+    "n": 512,
+    "pairs": 7,
+    "mean_observed": 0.024542004187688943,
+    "mean_relative_improvement": 0.03808130744488915,
+    "mean_absolute_log_error": 0.06735296306179485,
+    "geometric_prediction_ratio": 1.0696729665963556
+  },
+  {
+    "corpus": "wikitext",
+    "radius": 1,
+    "n": 2048,
+    "pairs": 7,
+    "mean_observed": 0.02310972493127412,
+    "mean_relative_improvement": 0.04795523566878768,
+    "mean_absolute_log_error": 0.1847275354150168,
+    "geometric_prediction_ratio": 0.8313307611880287
+  },
+  {
+    "corpus": "wikitext",
+    "radius": 2,
+    "n": 512,
+    "pairs": 7,
+    "mean_observed": 0.03128612252520811,
+    "mean_relative_improvement": 0.043245555129511566,
+    "mean_absolute_log_error": 0.07234158359637269,
+    "geometric_prediction_ratio": 1.0750224914032844
+  },
+  {
+    "corpus": "wikitext",
+    "radius": 2,
+    "n": 2048,
+    "pairs": 7,
+    "mean_observed": 0.02957608374187437,
+    "mean_relative_improvement": 0.05450583930936996,
+    "mean_absolute_log_error": 0.17729441745907099,
+    "geometric_prediction_ratio": 0.8375331638340733
+  },
+  {
+    "corpus": "wikitext",
+    "radius": 4,
+    "n": 512,
+    "pairs": 7,
+    "mean_observed": 0.032714874692856846,
+    "mean_relative_improvement": 0.04359133381651697,
+    "mean_absolute_log_error": 0.07464992691696015,
+    "geometric_prediction_ratio": 1.0775068786970434
+  },
+  {
+    "corpus": "wikitext",
+    "radius": 4,
+    "n": 2048,
+    "pairs": 7,
+    "mean_observed": 0.030908791816172308,
+    "mean_relative_improvement": 0.05523054792155713,
+    "mean_absolute_log_error": 0.17401902221399354,
+    "geometric_prediction_ratio": 0.8402809135030536
+  }
+]

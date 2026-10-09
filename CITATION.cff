@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Please cite the associated paper when using these experiments. Author and publication metadata will be added with the paper release."
+type: software
+authors:
+  - name: "learncsai"
+    website: "https://github.com/learncsai"
+title: "Masked Diffusion Model Text Reconstruction"
+version: 0.1.0
+repository-code: "https://github.com/learncsai/masked-diffusion-model-text-reconstruction"

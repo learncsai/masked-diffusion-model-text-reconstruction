@@ -1,0 +1,20 @@
+{
+  "tables": [
+    {"number": 1, "label": "tab:data-roles", "title": "Source-disjoint data roles", "kind": "protocol", "columns": ["Role", "Purpose"]},
+    {"number": 2, "label": "tab:correction-primary", "title": "Calibration of ten forecasts", "kind": "empirical", "columns": ["Forecast", "m < n", "Full grid"]},
+    {"number": 3, "label": "tab:main-alpha-ablation", "title": "Smoothing ablation", "kind": "empirical", "columns": ["alpha", "TinyStories source", "TinyStories multinomial", "WikiText source", "WikiText multinomial", "CNN/DailyMail source", "CNN/DailyMail multinomial"]},
+    {"number": 4, "label": "tab:main-mdlm", "title": "Matched count and MDLM comparison", "kind": "empirical", "columns": ["Corpus", "Count disagreement", "MDLM disagreement", "Count MSE improvement (%)", "MDLM MSE improvement (%)"]},
+    {"number": 5, "label": "tab:followup-intervals", "title": "Calibration intervals and conditional correction", "kind": "empirical", "columns": ["Forecast", "m < n", "Full grid", "m > n"]},
+    {"number": 6, "label": "tab:confirmation", "title": "Fresh-source confirmation", "kind": "empirical", "columns": ["Forecast", "Primary", "Full grid", "m > n"]},
+    {"number": 7, "label": "tab:image-text-map", "title": "Image and text comparison", "kind": "conceptual", "columns": ["Quantity", "Image diffusion", "Text reconstructor", "Trained MDLM"]},
+    {"number": 8, "label": "tab:mdlm-quality", "title": "Reconstruction quality", "kind": "empirical", "columns": ["Corpus", "Method", "MSE", "MSE improvement (%)", "Top-1 (%)", "Top-64 (%)"]},
+    {"number": 9, "label": "tab:population-oracle", "title": "Exact population moments", "kind": "empirical", "columns": ["Control", "n", "Source oracle", "Multinomial oracle"]}
+  ],
+  "figures": [
+    {"number": 1, "title": "Analytic calibration at n=4096", "file": "fig_reference_correction.pdf"},
+    {"number": 2, "title": "Full reference and target grid", "file": "fig_reference_correction_all.pdf"},
+    {"number": 3, "title": "Multiplier transfer", "file": "fig_multiplier_transfer.pdf"},
+    {"number": 4, "title": "Matched MDLM corpus-size response", "file": "fig_mdlm_disagreement.pdf"},
+    {"number": 5, "title": "Top-k accuracy", "file": "fig_lag_topk_comparison.pdf"}
+  ]
+}

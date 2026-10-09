@@ -1,0 +1,176 @@
+{
+  "status": "passed",
+  "corpora": 3,
+  "pairs_per_corpus": 20,
+  "banks_per_corpus": 6,
+  "slope_rows": 42,
+  "quality_rows": 168,
+  "calibration_rows": 3936,
+  "hypotheses": [
+    {
+      "corpus": "tinystories",
+      "arm": "fixed",
+      "test": "beta20_minus_beta1",
+      "method": "observed",
+      "estimate": 0.19689378090433013,
+      "low": 0.18793742503527233,
+      "high": 0.2059306145735512
+    },
+    {
+      "corpus": "tinystories",
+      "arm": "fixed",
+      "test": "slope_error_minus_inverse_size",
+      "method": "multinomial",
+      "estimate": -0.5518627424537872,
+      "low": -0.5585915458647857,
+      "high": -0.5447246965532089
+    },
+    {
+      "corpus": "tinystories",
+      "arm": "fixed",
+      "test": "slope_error_minus_inverse_size",
+      "method": "source_full",
+      "estimate": -0.503012994362629,
+      "low": -0.5039563146810974,
+      "high": -0.502121233611719
+    },
+    {
+      "corpus": "tinystories",
+      "arm": "refit",
+      "test": "beta20_minus_beta1",
+      "method": "observed",
+      "estimate": 0.19625724423754953,
+      "low": 0.18738128218023403,
+      "high": 0.20523298963150852
+    },
+    {
+      "corpus": "tinystories",
+      "arm": "refit",
+      "test": "slope_error_minus_inverse_size",
+      "method": "multinomial",
+      "estimate": -0.5525829842484358,
+      "low": -0.5591579808147915,
+      "high": -0.545595951242746
+    },
+    {
+      "corpus": "tinystories",
+      "arm": "refit",
+      "test": "slope_error_minus_inverse_size",
+      "method": "source_full",
+      "estimate": -0.5030306205574979,
+      "low": -0.5040398797659676,
+      "high": -0.5020849962577733
+    },
+    {
+      "corpus": "wikitext",
+      "arm": "fixed",
+      "test": "beta20_minus_beta1",
+      "method": "observed",
+      "estimate": 0.2200145246410678,
+      "low": 0.21523787195714308,
+      "high": 0.22507394635733494
+    },
+    {
+      "corpus": "wikitext",
+      "arm": "fixed",
+      "test": "slope_error_minus_inverse_size",
+      "method": "multinomial",
+      "estimate": -0.8490246466605404,
+      "low": -0.8519780045886644,
+      "high": -0.8457415727720008
+    },
+    {
+      "corpus": "wikitext",
+      "arm": "fixed",
+      "test": "slope_error_minus_inverse_size",
+      "method": "source_full",
+      "estimate": -0.7886146515163058,
+      "low": -0.7903376981765398,
+      "high": -0.7868916511289836
+    },
+    {
+      "corpus": "wikitext",
+      "arm": "refit",
+      "test": "beta20_minus_beta1",
+      "method": "observed",
+      "estimate": 0.2219100471680491,
+      "low": 0.21722859818547696,
+      "high": 0.2268909093766347
+    },
+    {
+      "corpus": "wikitext",
+      "arm": "refit",
+      "test": "slope_error_minus_inverse_size",
+      "method": "multinomial",
+      "estimate": -0.848607845012529,
+      "low": -0.8514143857617522,
+      "high": -0.8456534413850674
+    },
+    {
+      "corpus": "wikitext",
+      "arm": "refit",
+      "test": "slope_error_minus_inverse_size",
+      "method": "source_full",
+      "estimate": -0.7877388335802209,
+      "low": -0.7896185447665277,
+      "high": -0.7859362807292657
+    },
+    {
+      "corpus": "cnn_dailymail",
+      "arm": "fixed",
+      "test": "beta20_minus_beta1",
+      "method": "observed",
+      "estimate": 0.23296078495309933,
+      "low": 0.22824300298634273,
+      "high": 0.23754320956743274
+    },
+    {
+      "corpus": "cnn_dailymail",
+      "arm": "fixed",
+      "test": "slope_error_minus_inverse_size",
+      "method": "multinomial",
+      "estimate": -0.8137757311338305,
+      "low": -0.8177965546458524,
+      "high": -0.809372743514068
+    },
+    {
+      "corpus": "cnn_dailymail",
+      "arm": "fixed",
+      "test": "slope_error_minus_inverse_size",
+      "method": "source_full",
+      "estimate": -0.7738894820558347,
+      "low": -0.7764621854648303,
+      "high": -0.7710635596412804
+    },
+    {
+      "corpus": "cnn_dailymail",
+      "arm": "refit",
+      "test": "beta20_minus_beta1",
+      "method": "observed",
+      "estimate": 0.2328639325946341,
+      "low": 0.228027794400649,
+      "high": 0.2375712292879774
+    },
+    {
+      "corpus": "cnn_dailymail",
+      "arm": "refit",
+      "test": "slope_error_minus_inverse_size",
+      "method": "multinomial",
+      "estimate": -0.8143772002423982,
+      "low": -0.8182360259139967,
+      "high": -0.8101693601629779
+    },
+    {
+      "corpus": "cnn_dailymail",
+      "arm": "refit",
+      "test": "slope_error_minus_inverse_size",
+      "method": "source_full",
+      "estimate": -0.7735798594927956,
+      "low": -0.7761283744607992,
+      "high": -0.7708326649772845
+    }
+  ],
+  "row_partition_identities": true,
+  "forecast_before_new_alpha_scoring": true,
+  "external_preregistration": false
+}

@@ -1,0 +1,40 @@
+{
+  "status": "passed",
+  "validated_date": "2026-10-08",
+  "timezone": "America/Chicago",
+  "python": "3.14.2",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "numpy": "2.5.0",
+    "scipy": "1.16.3",
+    "matplotlib": "3.10.8",
+    "torch": "2.10.0",
+    "pytest": "9.0.2"
+  },
+  "checks": {
+    "evidence_sha256_files": 1542,
+    "tracked_evidence_complete": true,
+    "clean_checkout_numerical_reproduction": "passed",
+    "submitted_tables": 9,
+    "submitted_empirical_tables": 7,
+    "submitted_definition_tables": 2,
+    "submitted_figures": 5,
+    "archive_empirical_tables": 8,
+    "independent_table3_recalculation": true,
+    "scientific_and_preprocessing_tests": 26,
+    "tests_passed": 26,
+    "local_document_links": 35,
+    "python_syntax_files": 121,
+    "citation_schema": "passed",
+    "source_disjoint_preparation_and_archived_trainer_input_loading": "passed",
+    "tracked_pdf_files": 0,
+    "tracked_tex_files": 0
+  },
+  "unexecuted_stages": [
+    "Full public-corpus acquisition",
+    "New real-text forecasts",
+    "GPU neural training",
+    "Neural checkpoint rescoring"
+  ],
+  "scope": "Repository packaging and numerical replay verified. New public-data and GPU recipes are supplied; no new empirical GPU results are claimed."
+}

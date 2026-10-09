@@ -1,0 +1,10 @@
+# Architecture target for a later scaled run; milestone_1 uses pilot.yaml.
+model:
+  max_length: 128
+  hidden_size: 192
+  num_layers: 4
+  num_heads: 4
+  mlp_size: 768
+  dropout: 0.0
+  norm_eps: 1.0e-5
+

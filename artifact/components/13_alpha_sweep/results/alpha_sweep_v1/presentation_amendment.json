@@ -1,0 +1,14 @@
+{
+  "saved_utc": "2026-10-03T04:22:04.030153+00:00",
+  "reason": "After rendering completed results, shorten alpha tick labels and explicitly label normalized-disagreement ticks at 0.125, 0.25, 0.5 and 1. No observations, estimates, intervals or statistical analysis changed. The validator recognizes this recorded presentation amendment.",
+  "code_sha256": {
+    "paper/make_alpha_sweep_figures.py": {
+      "before": "536048f83d13f901554a59bfd1767b3d2b3e6240bf80c7794c1c76c5153317af",
+      "after": "8745c45292f9a623764abc8799b4945b480219d459b970bb7a53f175f03bf79c"
+    },
+    "scripts/validate_alpha_sweep.py": {
+      "before": "954b0f5c7eae378f1c55638b5a78310096b52cc7b83c307e798fea3dbefef3d6",
+      "after": "b5b0a05d0efbffbdfe9b7d975a4cc11343e1bd84cb9bad9297963c404136161c"
+    }
+  }
+}

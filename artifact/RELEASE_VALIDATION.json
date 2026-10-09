@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "validated_utc": "2026-10-04T00:31:05.785973+00:00",
+  "command": "python reproduce.py",
+  "clean_extraction": true,
+  "runtime_seconds": 63.07052930002101,
+  "empirical_tables": 8,
+  "definition_tables": 2,
+  "submission_figures": 5,
+  "table3_values_independently_checked": 18,
+  "table3_bank_cell_losses": 324,
+  "appendix_e_checks": "Table 3 recomputed independently from scalar full/half reference forecasts and observed pair scores. E.1 checks saved decomposition summaries, not a new simulation. Table 10 exact moments and intervals are rebuilt by component 11. E.4 historical GPU rescoring audits are supplied as records.",
+  "unchanged_computational_files_after_run": 1502,
+  "content_note": "Final documentation updates do not change the tested scripts, fixtures or numerical evidence. Final delivered file hashes are in PACKAGE_SHA256.json.",
+  "figures_visually_checked": [
+    "fig_reference_correction.pdf",
+    "fig_mdlm_disagreement.pdf"
+  ],
+  "scope": "Offline numerical recomputation from compact saved measurements, exact synthetic population moments and recorded covariance blocks. No corpus tokens, new real-text forecasts, neural inference or training. Historical source audits are supplied as records, not rerun from raw inputs."
+}

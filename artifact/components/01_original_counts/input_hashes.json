@@ -1,0 +1,8 @@
+{
+  "data/diffusion_llm/processed_64_tinystories_matched/replicate3_train_b.pt": "9729745454c033067b8f2827d0f34a78a7ff5e6bc21d5e93d51055793b0edb09",
+  "data/diffusion_llm/calibration_diagnostics_v1/tinystories/grid_512_512_q0.5.npz": "ee6508a34c651b25b6caf9a6d8f4b386f5ae7b8d9821764fddc9b3f3c3423cfe",
+  "data/diffusion_llm/processed_64_wikitext_stats/replicate3_train_b.pt": "7a9629da293910128d9e139d0cb7705c5996ab76bd2a5508b086f58b25b3b983",
+  "data/diffusion_llm/calibration_diagnostics_v1/wikitext/grid_512_512_q0.5.npz": "8294b39c135a4ded7cf2bcc37feeaae5c9338eab45add4ba91d8782078c28440",
+  "data/diffusion_llm/processed_64_cnn_dailymail_capped/replicate3_train_b.pt": "d5270eb829e6b7ba67a9b0dc2e143fac8b20ab32b4c265bc5f033019b4120733",
+  "data/diffusion_llm/calibration_diagnostics_v1/cnn_dailymail/grid_512_512_q0.5.npz": "d940af7ae79919752946853a4247f59fee5f87c9072899e1e767fd69fc629abb"
+}

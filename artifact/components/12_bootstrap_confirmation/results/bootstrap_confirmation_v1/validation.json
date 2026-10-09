@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "banks": 9,
+  "bank_method_records": 81,
+  "methods": 9,
+  "source_partition_and_role_checks": true,
+  "settings_precede_new_bootstrap": true,
+  "outcomes_already_known": true,
+  "local_token_hashes_checked": false,
+  "omitted_inputs": [
+    "data/diffusion_llm/correction_followup_v1/tinystories/context.npz",
+    "data/diffusion_llm/correction_followup_v1/tinystories/reference0.npz",
+    "data/diffusion_llm/correction_followup_v1/tinystories/reference1.npz",
+    "data/diffusion_llm/correction_followup_v1/tinystories/reference2.npz",
+    "data/diffusion_llm/correction_followup_v1/wikitext/context.npz",
+    "data/diffusion_llm/correction_followup_v1/wikitext/reference0.npz",
+    "data/diffusion_llm/correction_followup_v1/wikitext/reference1.npz",
+    "data/diffusion_llm/correction_followup_v1/wikitext/reference2.npz",
+    "data/diffusion_llm/correction_followup_v1/cnn_dailymail/context.npz",
+    "data/diffusion_llm/correction_followup_v1/cnn_dailymail/reference0.npz",
+    "data/diffusion_llm/correction_followup_v1/cnn_dailymail/reference1.npz",
+    "data/diffusion_llm/correction_followup_v1/cnn_dailymail/reference2.npz"
+  ]
+}

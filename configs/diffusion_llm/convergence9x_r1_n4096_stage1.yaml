@@ -1,0 +1,76 @@
+experiment_name: convergence9x_r1_n4096_stage1
+device: auto
+data:
+  source: roneneldan/TinyStories
+  raw_path: data/diffusion_llm/tinystories_documents_gate.jsonl
+  processed_dir: data/diffusion_llm/processed_64_confirmatory/replicate1
+  tokenizer_dir: data/diffusion_llm/gpt2_tokenizer
+  seed: 271828
+  document_counts:
+    train_a: 2200
+    train_b: 2200
+    eval: 300
+  max_chunks:
+    train_a: 4096
+    train_b: 4096
+    eval: 512
+model:
+  max_length: 64
+  hidden_size: 96
+  num_layers: 2
+  num_heads: 4
+  mlp_size: 384
+  dropout: 0.0
+  norm_eps: 1.0e-05
+diffusion:
+  schedule: linear
+  t_min: 0.05
+  t_max: 0.95
+  objective: mdlm_weighted
+  weight_cap: 20.0
+optimizer:
+  name: adamw
+  learning_rate: 0.0005
+  minimum_lr_ratio: 0.1
+  weight_decay: 0.01
+  beta1: 0.9
+  beta2: 0.98
+  gradient_clip: 1.0
+  warmup_steps: 3600
+  total_steps: 72000
+training:
+  microbatch_size: 4
+  gradient_accumulation: 4
+  validation_interval: 7200
+  checkpoint_interval: 9000
+  validation_batches: 16
+  mixed_precision: false
+  num_workers: 0
+evaluation:
+  seed: 515151
+  mask_fractions:
+  - 0.1
+  - 0.2
+  - 0.3
+  - 0.4
+  - 0.5
+  - 0.6
+  - 0.7
+  - 0.8
+  - 0.9
+  batch_size: 4
+  vocabulary_chunk_size: 4096
+  bootstrap_samples: 500
+  hidden_state_max_tokens: 4096
+  hidden_layers:
+  - 0
+  - 1
+representation_gate:
+  mask_fraction: 0.5
+  evaluation_sequences: 64
+  minimum_unique_top1_tokens: 20
+  maximum_dominant_top1_fraction: 0.75
+  maximum_context_replacement_correlation: 0.98
+  minimum_normalized_effective_rank: 10.0
+  maximum_heldout_masked_ce: 5.5
+  minimum_heldout_accuracy: 0.12

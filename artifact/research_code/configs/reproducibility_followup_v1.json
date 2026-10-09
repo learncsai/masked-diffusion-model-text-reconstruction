@@ -1,0 +1,30 @@
+{
+  "seed": 20260925,
+  "prepared": "data/diffusion_llm/reproducibility_followup_v1",
+  "output": "results/full_vocabulary_v1/reproducibility_followup_v1",
+  "base_config": "configs/calibration_diagnostics_v1.json",
+  "raw_document_count": 32000,
+  "pairs": 7,
+  "fitted_sizes": [512, 2048],
+  "mask_rate": 0.5,
+  "context_case": "grid_512_512_q0.5",
+  "reference_banks": ["original", "pooled"],
+  "synthetic": {
+    "classes": 512,
+    "chunk_length": 8,
+    "topics": 32,
+    "topic_size": 32,
+    "topic_weight": 0.55,
+    "repeat_rate": 0.25,
+    "zipf_exponent": 1.05,
+    "smoothing": 5,
+    "ridge": 0.01,
+    "radius": 2,
+    "prior_chunks": 8192,
+    "auxiliary_chunks": 2048,
+    "evaluation_chunks": 64,
+    "pairs": 200,
+    "reference_sizes": [2048, 6144],
+    "reference_repeats": 8
+  }
+}

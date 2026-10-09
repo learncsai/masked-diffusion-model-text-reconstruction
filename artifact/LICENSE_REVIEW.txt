@@ -1,0 +1,76 @@
+DATASET LICENSE REVIEW
+Reviewed: 2026-10-01
+
+Status
+------
+The published license information is documented. Permission to redistribute
+CNN/DailyMail 3.0.0 article text has not been established from the sources below.
+This also applies to token arrays that can be decoded into article passages.
+The current submission package excludes news article text, token sequences,
+and individual target ranks that could identify tokens. The nested input ZIP
+has also been removed. NEWS_EXCLUSIONS.json lists the changes. News top-k
+results use exact per-chunk accuracy summaries. Code, numerical measurements,
+source identifiers, text/chunk hashes and acquisition instructions are retained.
+These exclusions do not establish the legal basis for the study's research use.
+
+Checklist item 4(b) asks whether asset license information is included. The
+qualified Yes in the manuscript answers that disclosure question. It does not
+certify permission for the underlying articles. The experiments still use
+CNN/DailyMail. No replacement results have been computed or substituted.
+
+Sources checked
+---------------
+1. Hugging Face dataset card for abisee/cnn_dailymail.
+   https://huggingface.co/datasets/abisee/cnn_dailymail/blob/96df5e686bee6baa90b8bee7c28b81fa3fa6223d/README.md
+
+   The YAML metadata declares Apache-2.0 for the dataset and lists configuration
+   3.0.0. The body licensing paragraph explicitly names only version 1.0.0.
+   The study uses the article field of cased configuration 3.0.0.
+
+   This revision was found in the local Hugging Face cache during this review.
+   The original downloader did not pin a revision. The cached revision alone
+   does not prove the exact repository revision used by every historical run.
+   The stored source and chunk hashes identify the experimental inputs.
+
+2. Original processing repository license.
+   https://github.com/abisee/cnn-dailymail/blob/master/LICENSE.md
+
+   MIT license, copyright 2018 Abi See. A license for processing software is
+   not evidence of a grant from the news publishers for their article text.
+
+3. Dataset maintainer's explanation of the original distribution choice.
+   https://github.com/abisee/cnn-dailymail/issues/9#issuecomment-320394101
+
+   Abigail See explained that legal advice prevented the team from providing
+   processed data, so it supplied download and processing code. The comment was
+   read through the public GitHub issue-comments API. It does not determine
+   whether this study's particular research use is permitted, but it prevents
+   treating the processing code license as article redistribution permission.
+
+Consequence
+-----------
+No clear article-level permission was found. The release therefore provides
+NEWS_DATA_ACCESS.md for separate acquisition and preprocessing, instead of
+redistributing news passages. This is not a determination that
+research use is unlawful. It is an unresolved scope question. A replacement
+must be evaluated on new data. The existing news measurements and checkpoints
+cannot be relabeled as results for another corpus.
+
+An investigated replacement is an explicitly licensed PubMed Central subset.
+PMC explains that terms vary by article:
+https://pmc.ncbi.nlm.nih.gov/tools/openftlist/
+
+The Common Pile filtered PubMed release supplies article IDs, authors, citations,
+source URLs and per-record license metadata:
+https://huggingface.co/datasets/common-pile/pubmed_filtered
+Revision inspected: c156f0569a92d8f2edc33cebe1f72f7d3e1cae84
+
+PLOS also provides a publisher-level policy permitting reuse with attribution:
+https://journals.plos.org/plosone/s/licenses-and-copyright
+
+A replacement could restrict records to PLOS articles with an explicit CC BY
+license and retain the original article's attribution and license version.
+Dataset metadata must not silently replace an older license version with 4.0.
+This would change the third domain from news to scientific articles. It would
+require new count experiments, forecasts, MDLM training and evaluations. That
+replacement has not been performed. This package reports the original study.

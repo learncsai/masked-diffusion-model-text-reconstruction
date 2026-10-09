@@ -1,0 +1,105 @@
+REAL-TEXT SMOOTHING SENSITIVITY, VERSION 1
+
+Purpose
+Test how smoothing changes the size response, how well both analytic laws
+track it, and whether the change appears in rare-row and coverage diagnostics.
+This is a pre-specified sensitivity study on existing source allocations.
+The alpha=5 outcomes are known. No independent fresh-corpus confirmation or
+external preregistration is claimed. All planned conditions will be reported.
+No neural training is performed. Results belong in a new, separate appendix.
+
+Design
+Reuse all three corpora, 20 A/B pairs and six reference banks from
+rare_context_prospective_v1. Sizes are nested 512/1024/2048/4096 chunks per arm.
+Reference sizes are nested 1024/2048/4096/8192 chunks per bank. Reuse the same
+128 evaluation chunks, q=0.5 masks, unigram, auxiliary source partition,
+radius two and trace-scaled ridge coefficient .01.
+Alpha grid: .5,1,2,5,10,20,50. Primary arm fixes all mask-pattern weights at
+their original alpha=5 values. Robustness arm recomputes auxiliary Gram and
+cross-products at each alpha using the original auxiliary mask and ridge rule.
+Weights in that arm are shared by A and B and all sizes/references at that alpha.
+Report evaluation-pattern-weighted squared weight norms.
+
+Methods
+Uncorrected full source and smoothed multinomial, plus source-split jackknife
+of both, over the full grid. Retain same-lag source estimates as diagnostics.
+Nonlinear source bootstrap and its jackknife at alpha=1,5,20, both weight arms,
+and every target/reference size. Use three batches of sixteen draws. Sources
+are resampled jointly across lags until n chunks, truncating only the last
+source. Preserve the original source partitions and seed rule from the
+correction study and follow-up. Common draws across alpha/weight arms reduce
+Monte Carlo noise but do not eliminate it. Report batch Monte Carlo SEs.
+Jackknife source fractions count sources, not chunks. Store raw estimates,
+including negative values. Never silently clip before taking a logarithm.
+Nonpositive scalar forecasts are reported as failures with undefined log error.
+
+Sequence
+1. Save this protocol/configuration before new-alpha A/B scoring.
+2. Check source identities, original alpha=5 outputs, dense/sparse identities,
+   whole-source sampling and the fixed-weight large-alpha limit. Timing pilots
+   use reference data or synthetic inputs, not new-alpha A/B outcomes.
+3. Save code and input hashes, reference-only diagnostics, and ALL forecasts
+   for ALL corpora/arms/alpha values before new-alpha A/B scoring.
+4. Score every planned pair, compute summaries using the specified resampling,
+   then write a separate appendix. Subsequent bug fixes must retain a dated
+   record and state whether outcomes had already been scored.
+
+Primary comparisons
+Within each corpus, beta is OLS slope of log(arithmetic mean pair disagreement)
+on log n over the four sizes. Forecast beta uses log(arithmetic mean bank
+forecast), primarily m=8192 uncorrected and secondarily m=2048 jackknife.
+H1: beta(20)-beta(1)>0 for the fixed-weight arm. Report paired 95% percentile
+intervals and effect magnitudes for each corpus. Consistent positive intervals
+across all three corpora support the directional prediction. Other alpha
+contrasts and the refit arm are secondary. An imprecise interval is inconclusive.
+H2: For each law and corpus, average absolute forecast-slope error over seven
+alphas is smaller than the error of beta=-1. Report their paired difference
+and 95% interval. Report every alpha cell and its 512-to-2048 percentage decline.
+An interval containing regression slope one is not an accuracy criterion.
+Identity scatterplots are descriptive. Neither 21 cells nor evaluation chunks
+are treated as independent experimental replications.
+
+Reference and row diagnostics
+Before scoring, report query-weighted reference counts scaled by n/m: fraction
+below alpha and mean alpha/(scaled_count+alpha), for each bank/alpha/size.
+Bin queried lag/context rows by their per-chunk rate in auxiliary TRAINING
+counts, independently of A/B and reference counts. Auxiliary-unseen rows have
+their own bin. Fixed bin edges are in the configuration. A bin's rate location
+is the query-weighted geometric mean of its positive auxiliary rates.
+For each pair/alpha/size/weight arm, compute exact weighted same-lag energies
+per bin, signed cross-lag energy, and same-lag energies for contexts seen in
+both A/B or in exactly one. Both-unseen contributions are zero. Check their
+additive identities against full observed disagreement. Coverage shares use
+same-lag energy as denominator. They are not shares of full energy with
+cross-lag interactions allocated implicitly.
+Adjacent-size bin elasticities use the same bin members and geometric-mean n.
+Zero-energy bins have undefined elasticity, not artificial epsilon values.
+Compare with the Poisson conditional-multinomial total-variance identity.
+For its illustrative curves use auxiliary empirical conditional probabilities
+on observed rows and calculate row-level curves before query-weighted bin
+aggregation. Auxiliary-unseen rows have no identified conditional curve.
+Signs near lambda=alpha and collapse versus lambda/alpha are diagnostics,
+not necessary properties of dependent real text. The random-row-total term
+includes fluctuations among positive counts as well as zero/nonzero coverage.
+
+Quality and inference
+Report full-vocabulary MSE, relative MSE improvement and exact top-1 accuracy
+for both arms and every alpha/size. Break score ties by the smallest token ID.
+Average masked positions within chunks, chunks within model, then A/B models
+and pairs equally. Disagreement averages chunks and then pairs equally.
+For 5000 draws, resample six banks and twenty pairs independently within each
+corpus, using the same indices for all alphas, sizes and methods. Recompute
+means and slopes inside each draw. Observed-only slope intervals resample pairs.
+Auxiliary/evaluation inputs and saved bootstrap draws remain fixed. Pair nesting
+and bank nesting are preserved. Report calibration ratios and mean bank absolute
+log error. Small-reference primary calibration cells remain m<n from the
+original study, with full-grid and m>n results also reported.
+
+Interpretation
+Increasing alpha need not monotonically reduce realized or expected A/B
+disagreement when row counts fluctuate. Only fixed-weight convergence to the
+shared unigram at sufficiently large alpha is a general sanity check here.
+No monotonicity requirement is used to filter outcomes. A negative or weak H1
+result narrows the smoothing explanation. Different behavior after refitting
+weights distinguishes direct smoothing from auxiliary adaptation. Calibration
+rankings and coverage trends are exploratory, not predetermined winners.

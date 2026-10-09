@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "source_audit": [
+    {
+      "corpus": "tinystories",
+      "roles": 15,
+      "new_sources": 10638,
+      "new_chunks": 30720,
+      "source_text_chunk_overlap": 0,
+      "input_manifest_sha256": "7a5407f89db0153bcf8d17a91648e783998e96191a9a0cd27c168b122bfd168e"
+    },
+    {
+      "corpus": "wikitext",
+      "roles": 15,
+      "new_sources": 13556,
+      "new_chunks": 30720,
+      "source_text_chunk_overlap": 0,
+      "input_manifest_sha256": "46783acba776d3327cab64966a150eb325dd40f9bf2b3ee59e1087114f914be3"
+    },
+    {
+      "corpus": "cnn_dailymail",
+      "roles": 15,
+      "new_sources": 15376,
+      "new_chunks": 30720,
+      "source_text_chunk_overlap": 0,
+      "input_manifest_sha256": "2ebf6bc5572525116a609258f9c0e70c5789fceabf8b5e44e1d3b6e01be9c43e"
+    }
+  ],
+  "all_forecasts_precede_all_outcomes": true,
+  "analysis_saved_before_outcomes": true,
+  "method_and_code_hashes_unchanged": true,
+  "tokenizer_vocabulary_matches_original": true,
+  "raw_pool_and_selected_text_hashes_verified": true,
+  "tests": "Three independent checks: dense output sample variance, whole-source split, unequal-size inverse law.",
+  "no_neural_training": true,
+  "external_preregistration": false
+}

@@ -1,0 +1,49 @@
+experiment_name: milestone_1_pilot
+device: auto
+data:
+  source: roneneldan/TinyStories
+  raw_path: data/diffusion_llm/tinystories_documents.jsonl
+  processed_dir: data/diffusion_llm/processed_64_expanded
+  tokenizer_dir: data/diffusion_llm/gpt2_tokenizer
+  seed: 314159
+  document_counts: {train_a: 300, train_b: 300, eval: 80}
+  max_chunks: {train_a: 512, train_b: 512, eval: 128}
+model:
+  max_length: 64
+  hidden_size: 192
+  num_layers: 4
+  num_heads: 4
+  mlp_size: 768
+  dropout: 0.0
+  norm_eps: 1.0e-5
+diffusion:
+  schedule: linear
+  t_min: 0.05
+  t_max: 0.95
+  objective: mdlm_weighted
+  weight_cap: 20.0
+optimizer:
+  name: adamw
+  learning_rate: 0.0005
+  weight_decay: 0.01
+  beta1: 0.9
+  beta2: 0.98
+  gradient_clip: 1.0
+  warmup_steps: 40
+  total_steps: 600
+training:
+  microbatch_size: 1
+  gradient_accumulation: 8
+  validation_interval: 100
+  checkpoint_interval: 200
+  validation_batches: 8
+  mixed_precision: false
+  num_workers: 0
+evaluation:
+  seed: 424242
+  mask_fractions: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
+  batch_size: 2
+  vocabulary_chunk_size: 4096
+  bootstrap_samples: 500
+  hidden_state_max_tokens: 2048
+  hidden_layers: [0, 1]

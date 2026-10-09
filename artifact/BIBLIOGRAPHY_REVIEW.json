@@ -1,0 +1,318 @@
+{
+  "reviewed_date": "2026-10-01",
+  "references_in_current_paper": 31,
+  "author_style": "Initials and surnames throughout",
+  "title_style": "Sentence case for article titles, title case for book titles, with proper nouns preserved",
+  "page_range_style": "LaTeX double hyphens, rendered as en dashes",
+  "changes": [
+    "Hermann 2015 added for original CNN/DailyMail data, alongside See 2017.",
+    "Durbin 1959 added in the ratio-estimator bias-correction discussion. Publisher metadata checked, not a claim to have read the paywalled full article.",
+    "Jaeckel 1972 added for infinitesimal-jackknife attribution. The author-authorized retypeset memorandum was read.",
+    "Dunning 1993 moved from smoothing to sparse-row asymptotic limitations. Original paper introduction checked.",
+    "Agresti and Cochran book URLs removed, edition and publisher retained.",
+    "Four requested DOIs and See 2017 DOI added from publisher/ACL metadata.",
+    "Sahoo 2024 uses NeurIPS volume 37 and pages 130136-130184, with a published proceedings link.",
+    "Radford 2019 uses the official OpenAI technical-report PDF. No verified arXiv entry was found, so no arXiv identifier is supplied.",
+    "Levy and Goldberg page range 2177-2185 added. Merity links to the ICLR/OpenReview record. TinyStories links to arXiv."
+  ],
+  "primary_source_metadata": {
+    "antoniak": {
+      "url": "https://aclanthology.org/Q18-1008.bib",
+      "info": "@article{antoniak-mimno-2018-evaluating,\n    title = \"Evaluating the Stability of Embedding-based Word Similarities\",\n    author = \"Antoniak, Maria  and\n      Mimno, David\",\n    editor = \"Lee, Lillian  and\n      Johnson, Mark  and\n      Toutanova, Kristina  and\n      Roark, Brian\",\n    journal = \"Transactions of the Association for Computational Linguistics\",\n    volume = \"6\",\n    year = \"2018\",\n    address = \"Cambridge, MA\",\n    publisher = \"MIT Press\",\n    url = \"https://aclanthology.org/Q18-1008/\",\n    doi = \"10.1162/tacl_a_00008\",\n    pages = \"107--119\"\n}\n\n"
+    },
+    "pennington": {
+      "url": "https://aclanthology.org/D14-1162.bib",
+      "info": "@inproceedings{pennington-etal-2014-glove,\n    title = \"{G}lo{V}e: Global Vectors for Word Representation\",\n    author = \"Pennington, Jeffrey  and\n      Socher, Richard  and\n      Manning, Christopher\",\n    editor = \"Moschitti, Alessandro  and\n      Pang, Bo  and\n      Daelemans, Walter\",\n    booktitle = \"Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing ({EMNLP})\",\n    month = oct,\n    year = \"2014\",\n    address = \"Doha, Qatar\",\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/D14-1162/\",\n    doi = \"10.3115/v1/D14-1162\",\n    pages = \"1532--1543\"\n}\n\n"
+    },
+    "vallebueno": {
+      "url": "https://aclanthology.org/2024.emnlp-main.510.bib",
+      "info": "@inproceedings{vallebueno-etal-2024-statistical,\n    title = \"Statistical Uncertainty in Word Embeddings: {G}lo{V}e-{V}\",\n    author = \"Vallebueno, Andrea  and\n      Handan-Nader, Cassandra  and\n      Manning, Christopher D  and\n      Ho, Daniel E.\",\n    editor = \"Al-Onaizan, Yaser  and\n      Bansal, Mohit  and\n      Chen, Yun-Nung\",\n    booktitle = \"Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing\",\n    month = nov,\n    year = \"2024\",\n    address = \"Miami, Florida, USA\",\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2024.emnlp-main.510/\",\n    doi = \"10.18653/v1/2024.emnlp-main.510\",\n    pages = \"9032--9047\"\n}\n\n"
+    },
+    "see": {
+      "url": "https://aclanthology.org/P17-1099.bib",
+      "info": "@inproceedings{see-etal-2017-get,\n    title = \"Get To The Point: Summarization with Pointer-Generator Networks\",\n    author = \"See, Abigail  and\n      Liu, Peter J.  and\n      Manning, Christopher D.\",\n    editor = \"Barzilay, Regina  and\n      Kan, Min-Yen\",\n    booktitle = \"Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)\",\n    month = jul,\n    year = \"2017\",\n    address = \"Vancouver, Canada\",\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/P17-1099/\",\n    doi = \"10.18653/v1/P17-1099\",\n    pages = \"1073--1083\"\n}\n\n"
+    },
+    "pananjady": {
+      "url": "https://jmlr.org/papers/v25/24-0511.html",
+      "info": [
+        "<meta name=\"citation_title\" content=\"Just Wing It: Near-Optimal Estimation of Missing Mass in a Markovian Sequence\">",
+        "<meta name=\"citation_author\" content=\"Ashwin Pananjady\">",
+        "<meta name=\"citation_author\" content=\"Vidya Muthukumar\">",
+        "<meta name=\"citation_author\" content=\"Andrew Thangaraj\">",
+        "<meta name=\"citation_journal_title\" content=\"Journal of Machine Learning Research\">",
+        "<meta name=\"citation_volume\" content=\"25\">",
+        "<meta name=\"citation_issue\" content=\"312\">",
+        "<meta name=\"citation_firstpage\" content=\"1\">",
+        "<meta name=\"citation_lastpage\" content=\"43\">",
+        "<meta name=\"citation_pdf_url\" content=\"http://jmlr.org/papers/volume25/24-0511/24-0511.pdf\">",
+        "<meta name=\"citation_publication_date\" content=\"2024\">",
+        "<meta name=\"citation_public_url\" content=\"http://jmlr.org/papers/v25/24-0511.html\">",
+        "<meta name=\"citation_abstract_html_url\" content=\"http://jmlr.org/papers/v25/24-0511.html\">",
+        "<meta name=\"citation_issn\" content=\"1533-7928\">"
+      ]
+    },
+    "jaeckel": {
+      "url": "https://faculty.washington.edu/fscholz/Jaeckel.html",
+      "info": {
+        "text": " \n   Fritz Scholz \n    -->  -->\n  \n \n \n \n \n \n \n \n  \nThe Infinitesimal Jackknife   \nby Louis A. Jaeckel\n \n \n \nThis is a retypeset version of the original unpublished \nBell Laboratories\nmemorandum  MM 72-1215-11. \n \n \nAlthough this version was checked\nfor typos by Louis Jaeckel, all remaining typos are mine (F.W. Scholz).\n \n \nThe term \"The Infinitesimal Jackknife\" appeared as part of the title\nof Chapter 6 in \n Bradley Efron's (1982) \"The Jackknife, the Bootstrap and \nOther Resampling Plans.\" \n \n \n\"The Infinitesimal Jackknife\" also registered 172 hits in a Google search.\n \n \nThe posting of this memorandum was done with permission of the author. \n \n \nFritz Scholz \n \nfw.scholz at u.washington.edu\n \n \nHit count:\n \n \nvar sc_project=2258779; \nvar sc_invisible=0; \nvar sc_partition=20; \nvar sc_security=\"3f1a2919\"; \nvar sc_text=3; \n \n \n        \n \n  \n",
+        "links": [
+          "./Reports/InfinitesimalJackknife.pdf",
+          "http://www.statcounter.com/"
+        ]
+      }
+    },
+    "hermann": {
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2015/hash/afdec7005cc9f14302cd0474fd0f3c96-Abstract.html",
+      "info": [
+        "<meta name=\"citation_title\" content=\"Teaching Machines to Read and Comprehend\">",
+        "<meta name=\"citation_author\" content=\"Hermann, Karl Moritz\">",
+        "<meta name=\"citation_author\" content=\"Kocisky, Tomas\">",
+        "<meta name=\"citation_author\" content=\"Grefenstette, Edward\">",
+        "<meta name=\"citation_author\" content=\"Espeholt, Lasse\">",
+        "<meta name=\"citation_author\" content=\"Kay, Will\">",
+        "<meta name=\"citation_author\" content=\"Suleyman, Mustafa\">",
+        "<meta name=\"citation_author\" content=\"Blunsom, Phil\">",
+        "<meta name=\"citation_journal_title\" content=\"Advances in Neural Information Processing Systems\">",
+        "<meta name=\"citation_volume\" content=\"28\">",
+        "<meta name=\"citation_pdf_url\" content=\"https://proceedings.neurips.cc/paper_files/paper/2015/file/afdec7005cc9f14302cd0474fd0f3c96-Paper.pdf\">",
+        "<meta name=\"citation_publication_date\" content=\"2015\">"
+      ]
+    },
+    "sahoo": {
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/eb0b13cc515724ab8015bc978fdde0ad-Abstract-Conference.html",
+      "info": [
+        "<meta name=\"citation_title\" content=\"Simple and Effective Masked Diffusion Language Models\">",
+        "<meta name=\"citation_author\" content=\"Sahoo, Subham S.\">",
+        "<meta name=\"citation_author\" content=\"Arriola, Marianne\">",
+        "<meta name=\"citation_author\" content=\"Schiff, Yair\">",
+        "<meta name=\"citation_author\" content=\"Gokaslan, Aaron\">",
+        "<meta name=\"citation_author\" content=\"Marroquin, Edgar\">",
+        "<meta name=\"citation_author\" content=\"Chiu, Justin T.\">",
+        "<meta name=\"citation_author\" content=\"Rush, Alexander\">",
+        "<meta name=\"citation_author\" content=\"Kuleshov, Volodymyr\">",
+        "<meta name=\"citation_journal_title\" content=\"Advances in Neural Information Processing Systems\">",
+        "<meta name=\"citation_volume\" content=\"37\">",
+        "<meta name=\"citation_doi\" content=\"10.52202/079017-4135\">",
+        "<meta name=\"citation_firstpage\" content=\"130136\">",
+        "<meta name=\"citation_lastpage\" content=\"130184\">",
+        "<meta name=\"citation_pdf_url\" content=\"https://proceedings.neurips.cc/paper_files/paper/2024/file/eb0b13cc515724ab8015bc978fdde0ad-Paper-Conference.pdf\">",
+        "<meta name=\"citation_publication_date\" content=\"2024-12-16\">"
+      ]
+    },
+    "levy": {
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2014/hash/b78666971ceae55a8e87efb7cbfd9ad4-Abstract.html",
+      "info": [
+        "<meta name=\"citation_title\" content=\"Neural Word Embedding as Implicit Matrix Factorization\">",
+        "<meta name=\"citation_author\" content=\"Levy, Omer\">",
+        "<meta name=\"citation_author\" content=\"Goldberg, Yoav\">",
+        "<meta name=\"citation_journal_title\" content=\"Advances in Neural Information Processing Systems\">",
+        "<meta name=\"citation_volume\" content=\"27\">",
+        "<meta name=\"citation_pdf_url\" content=\"https://proceedings.neurips.cc/paper_files/paper/2014/file/b78666971ceae55a8e87efb7cbfd9ad4-Paper.pdf\">",
+        "<meta name=\"citation_publication_date\" content=\"2014\">"
+      ]
+    },
+    "merity": {
+      "url": "https://arxiv.org/abs/1609.07843",
+      "info": [
+        "<meta name=\"citation_title\" content=\"Pointer Sentinel Mixture Models\" />",
+        "<meta name=\"citation_author\" content=\"Merity, Stephen\" />",
+        "<meta name=\"citation_author\" content=\"Xiong, Caiming\" />",
+        "<meta name=\"citation_author\" content=\"Bradbury, James\" />",
+        "<meta name=\"citation_author\" content=\"Socher, Richard\" />",
+        "<meta name=\"citation_date\" content=\"2016/09/26\" />",
+        "<meta name=\"citation_online_date\" content=\"2016/09/26\" />",
+        "<meta name=\"citation_pdf_url\" content=\"https://arxiv.org/pdf/1609.07843\" />",
+        "<meta name=\"citation_arxiv_id\" content=\"1609.07843\" />",
+        "<meta name=\"citation_abstract\" content=\"Recent neural network sequence models with softmax classifiers have achieved their best language modeling performance only with very large hidden states and large vocabularies. Even then they struggle to predict rare or unseen words even if the context makes the prediction unambiguous. We introduce the pointer sentinel mixture architecture for neural sequence models which has the ability to either reproduce a word from the recent context or produce a word from a standard softmax classifier. Our pointer sentinel-LSTM model achieves state of the art language modeling performance on the Penn Treebank (70.9 perplexity) while using far fewer parameters than a standard softmax LSTM. In order to evaluate how well language models can exploit longer contexts and deal with more realistic vocabularies and larger corpora we also introduce the freely available WikiText corpus.\" />"
+      ]
+    },
+    "gries": {
+      "url": "https://api.crossref.org/works/10.1016/j.rmal.2021.100002",
+      "info": {
+        "title": [
+          "Toward more careful corpus statistics: uncertainty estimates for frequencies, dispersions, association measures, and more"
+        ],
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-6497-3958",
+            "authenticated-orcid": false,
+            "given": "Stefan Th.",
+            "family": "Gries",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "page": "100002",
+        "volume": "1",
+        "issue": "1",
+        "DOI": "10.1016/j.rmal.2021.100002"
+      }
+    },
+    "durbin": {
+      "url": "https://api.crossref.org/works/10.1093/biomet/46.3-4.477",
+      "info": {
+        "title": [
+          "A note on the application of Quenouille's method of bias reduction to the estimation of ratios"
+        ],
+        "author": [
+          {
+            "given": "J.",
+            "family": "DURBIN",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "page": "477-480",
+        "volume": "46",
+        "issue": "3-4",
+        "DOI": "10.1093/biomet/46.3-4.477"
+      }
+    }
+  },
+  "additional_sources": {
+    "radford2019language": "https://cdn.openai.com/better-language-models/language-models.pdf",
+    "dunning1993accurate": "https://aclanthology.org/J93-1003.pdf",
+    "jaeckel1972infinitesimal": "https://faculty.washington.edu/fscholz/Reports/InfinitesimalJackknife.pdf",
+    "merity2016pointer": "https://openreview.net/pdf?id=Byj72udxe",
+    "eldan2023tinystories": "https://arxiv.org/abs/2305.07759"
+  },
+  "current_bibliography": [
+    {
+      "key": "agresti2013categorical",
+      "entry": "A. Agresti.\n\\emph{Categorical Data Analysis}. Third edition. Wiley, 2013."
+    },
+    {
+      "key": "antoniak2018stability",
+      "entry": "M. Antoniak and D. Mimno.\nEvaluating the stability of embedding-based word similarities.\n\\emph{Transactions of the Association for Computational Linguistics},\n6:107--119, 2018.\n\\url{https://doi.org/10.1162/tacl_a_00008}."
+    },
+    {
+      "key": "austin2021structured",
+      "entry": "J. Austin, D. D. Johnson, J. Ho, D. Tarlow, and R. van den Berg.\nStructured denoising diffusion models in discrete state-spaces.\nIn \\emph{Advances in Neural Information Processing Systems}, volume 34, 2021.\n\\url{https://arxiv.org/abs/2107.03006}."
+    },
+    {
+      "key": "brunet2019origins",
+      "entry": "M.-E. Brunet, C. Alkalay-Houlihan, A. Anderson, and R. Zemel.\nUnderstanding the origins of bias in word embeddings.\nIn \\emph{Proceedings of ICML}, PMLR 97:803--811, 2019.\n\\url{https://proceedings.mlr.press/v97/brunet19a.html}."
+    },
+    {
+      "key": "chen1999smoothing",
+      "entry": "S. F. Chen and J. Goodman.\nAn empirical study of smoothing techniques for language modeling.\n\\emph{Computer Speech \\& Language}, 13(4):359--394, 1999.\n\\url{https://doi.org/10.1006/csla.1999.0128}."
+    },
+    {
+      "key": "church1990word",
+      "entry": "K. W. Church and P. Hanks.\nWord association norms, mutual information, and lexicography.\n\\emph{Computational Linguistics}, 16(1):22--29, 1990.\n\\url{https://aclanthology.org/J90-1003/}."
+    },
+    {
+      "key": "cochran1977sampling",
+      "entry": "W. G. Cochran.\n\\emph{Sampling Techniques}. Third edition. Wiley, 1977."
+    },
+    {
+      "key": "dunning1993accurate",
+      "entry": "T. Dunning.\nAccurate methods for the statistics of surprise and coincidence.\n\\emph{Computational Linguistics}, 19(1):61--74, 1993.\n\\url{https://aclanthology.org/J93-1003/}."
+    },
+    {
+      "key": "durbin1959ratios",
+      "entry": "J. Durbin.\nA note on the application of Quenouille's method of bias reduction to the estimation of ratios.\n\\emph{Biometrika}, 46(3--4):477--480, 1959.\n\\url{https://doi.org/10.1093/biomet/46.3-4.477}."
+    },
+    {
+      "key": "efron1979bootstrap",
+      "entry": "B. Efron.\nBootstrap methods: Another look at the jackknife.\n\\emph{The Annals of Statistics}, 7(1):1--26, 1979.\n\\url{https://doi.org/10.1214/aos/1176344552}."
+    },
+    {
+      "key": "efron1982jackknife",
+      "entry": "B. Efron.\n\\emph{The Jackknife, the Bootstrap and Other Resampling Plans}.\nCBMS-NSF Regional Conference Series in Applied Mathematics, volume 38.\nSIAM, 1982.\n\\url{https://doi.org/10.1137/1.9781611970319}."
+    },
+    {
+      "key": "eldan2023tinystories",
+      "entry": "R. Eldan and Y. Li.\nTinyStories: How small can language models be and still speak coherent English?\n\\emph{arXiv:2305.07759}, 2023.\n\\url{https://arxiv.org/abs/2305.07759}."
+    },
+    {
+      "key": "field2007clustered",
+      "entry": "C. A. Field and A. H. Welsh.\nBootstrapping clustered data.\n\\emph{Journal of the Royal Statistical Society: Series B (Statistical Methodology)},\n69(3):369--390, 2007.\n\\url{https://doi.org/10.1111/j.1467-9868.2007.00593.x}."
+    },
+    {
+      "key": "giordano2019swiss",
+      "entry": "R. Giordano, W. Stephenson, R. Liu, M. I. Jordan,\nand T. Broderick.\nA Swiss Army infinitesimal jackknife.\nIn \\emph{Proceedings of AISTATS}, PMLR 89:1139--1147, 2019.\n\\url{https://proceedings.mlr.press/v89/giordano19a.html}."
+    },
+    {
+      "key": "good1953population",
+      "entry": "I. J. Good.\nThe population frequencies of species and the estimation of population parameters.\n\\emph{Biometrika}, 40(3--4):237--264, 1953.\n\\url{https://doi.org/10.1093/biomet/40.3-4.237}."
+    },
+    {
+      "key": "gries2022uncertainty",
+      "entry": "S. Th. Gries.\nToward more careful corpus statistics: Uncertainty estimates for frequencies,\ndispersions, association measures, and more.\n\\emph{Research Methods in Applied Linguistics}, 1(1):100002, 2022.\n\\url{https://doi.org/10.1016/j.rmal.2021.100002}."
+    },
+    {
+      "key": "hampel1974influence",
+      "entry": "F. R. Hampel.\nThe influence curve and its role in robust estimation.\n\\emph{Journal of the American Statistical Association},\n69(346):383--393, 1974.\n\\url{https://doi.org/10.1080/01621459.1974.10482962}."
+    },
+    {
+      "key": "hermann2015teaching",
+      "entry": "K. M. Hermann, T. Ko\\v{c}isk\\'{y}, E. Grefenstette, L. Espeholt,\nW. Kay, M. Suleyman, and P. Blunsom.\nTeaching machines to read and comprehend.\nIn \\emph{Advances in Neural Information Processing Systems}, volume 28, 2015.\n\\url{https://proceedings.neurips.cc/paper/2015/hash/afdec7005cc9f14302cd0474fd0f3c96-Abstract.html}."
+    },
+    {
+      "key": "jaeckel1972infinitesimal",
+      "entry": "L. A. Jaeckel.\nThe infinitesimal jackknife.\nBell Laboratories Memorandum MM 72-1215-11, 1972.\n\\url{https://faculty.washington.edu/fscholz/Reports/InfinitesimalJackknife.pdf}."
+    },
+    {
+      "key": "levy2014implicit",
+      "entry": "O. Levy and Y. Goldberg.\nNeural word embedding as implicit matrix factorization.\nIn \\emph{Advances in Neural Information Processing Systems}, volume 27, pages 2177--2185, 2014.\n\\url{https://proceedings.neurips.cc/paper/2014/hash/b78666971ceae55a8e87efb7cbfd9ad4-Abstract.html}."
+    },
+    {
+      "key": "lou2024ratios",
+      "entry": "A. Lou, C. Meng, and S. Ermon.\nDiscrete diffusion modeling by estimating the ratios of the data distribution.\nIn \\emph{Proceedings of ICML}, PMLR 235:32819--32848, 2024.\n\\url{https://proceedings.mlr.press/v235/lou24a.html}."
+    },
+    {
+      "key": "merity2016pointer",
+      "entry": "S. Merity, C. Xiong, J. Bradbury, and R. Socher.\nPointer sentinel mixture models. In \\emph{Proceedings of ICLR}, 2017.\n\\url{https://openreview.net/forum?id=Byj72udxe}."
+    },
+    {
+      "key": "pananjady2024missing",
+      "entry": "A. Pananjady, V. Muthukumar, and A. Thangaraj.\nJust wing it: Near-optimal estimation of missing mass in a Markovian sequence.\n\\emph{Journal of Machine Learning Research}, 25(312):1--43, 2024.\n\\url{https://jmlr.org/papers/v25/24-0511.html}."
+    },
+    {
+      "key": "pennington2014glove",
+      "entry": "J. Pennington, R. Socher, and C. D. Manning.\nGloVe: Global vectors for word representation.\nIn \\emph{Proceedings of EMNLP}, pages 1532--1543, 2014.\n\\url{https://doi.org/10.3115/v1/D14-1162}."
+    },
+    {
+      "key": "quenouille1956bias",
+      "entry": "M. H. Quenouille.\nNotes on bias in estimation.\n\\emph{Biometrika}, 43(3--4):353--360, 1956.\n\\url{https://doi.org/10.1093/biomet/43.3-4.353}."
+    },
+    {
+      "key": "radford2019language",
+      "entry": "A. Radford, J. Wu, R. Child, D. Luan, D. Amodei, and I. Sutskever.\nLanguage models are unsupervised multitask learners. OpenAI technical report, 2019.\n\\url{https://cdn.openai.com/better-language-models/language-models.pdf}."
+    },
+    {
+      "key": "sahoo2024mdlm",
+      "entry": "S. S. Sahoo, M. Arriola, Y. Schiff, A. Gokaslan,\nE. Marroquin, J. T. Chiu, A. M. Rush, and V. Kuleshov.\nSimple and effective masked diffusion language models.\nIn \\emph{Advances in Neural Information Processing Systems}, volume 37, pages 130136--130184, 2024.\n\\href{https://proceedings.neurips.cc/paper_files/paper/2024/hash/eb0b13cc515724ab8015bc978fdde0ad-Abstract-Conference.html}{NeurIPS 2024 proceedings}."
+    },
+    {
+      "key": "see2017get",
+      "entry": "A. See, P. J. Liu, and C. D. Manning.\nGet to the point: Summarization with pointer-generator networks.\nIn \\emph{Proceedings of ACL}, pages 1073--1083, 2017.\n\\url{https://doi.org/10.18653/v1/P17-1099}."
+    },
+    {
+      "key": "vallebueno2024glovev",
+      "entry": "A. Vallebueno, C. Handan-Nader, C. D. Manning, and D. E. Ho.\nStatistical uncertainty in word embeddings: GloVe-V.\nIn \\emph{Proceedings of EMNLP}, pages 9032--9047, 2024.\n\\url{https://doi.org/10.18653/v1/2024.emnlp-main.510}."
+    },
+    {
+      "key": "vandervaart1998asymptotic",
+      "entry": "A. W. van der Vaart.\n\\emph{Asymptotic Statistics}. Cambridge University Press, 1998.\n\\url{https://doi.org/10.1017/CBO9780511802256}."
+    },
+    {
+      "key": "wang2026rmt",
+      "entry": "B. Wang, J. A. Zavatone-Veth, and C. Pehlevan.\nA random matrix theory perspective on the consistency of diffusion models.\nIn \\emph{Proceedings of ICML}, PMLR 306:132077--132128, 2026.\n\\url{https://proceedings.mlr.press/v306/wang26kf.html}."
+    }
+  ],
+  "manuscript_sha256": "a71d9e8fb71dd66096f11aef222fe76d6a2404886a110135c355cdf04c56976a"
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "corpus": "wikitext",
+    "n": 512,
+    "method": "analytic",
+    "median_seconds": 35.851083699963056,
+    "minimum_seconds": 35.6741680999985,
+    "maximum_seconds": 36.719250899972394,
+    "nonlinear_rebuilds": 0,
+    "repeats": 3
+  },
+  {
+    "corpus": "wikitext",
+    "n": 512,
+    "method": "bootstrap",
+    "median_seconds": 5.514025999931619,
+    "minimum_seconds": 5.272329100058414,
+    "maximum_seconds": 5.674170500016771,
+    "nonlinear_rebuilds": 48,
+    "repeats": 3
+  },
+  {
+    "corpus": "wikitext",
+    "n": 2048,
+    "method": "analytic",
+    "median_seconds": 37.252292299992405,
+    "minimum_seconds": 36.053847200004384,
+    "maximum_seconds": 37.287928899982944,
+    "nonlinear_rebuilds": 0,
+    "repeats": 3
+  },
+  {
+    "corpus": "wikitext",
+    "n": 2048,
+    "method": "bootstrap",
+    "median_seconds": 10.108350199996494,
+    "minimum_seconds": 10.014092999976128,
+    "maximum_seconds": 10.154358700034209,
+    "nonlinear_rebuilds": 48,
+    "repeats": 3
+  }
+]

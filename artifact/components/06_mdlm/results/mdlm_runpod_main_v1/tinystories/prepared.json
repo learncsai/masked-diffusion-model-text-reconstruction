@@ -1,0 +1,10 @@
+{
+  "completed_utc": "2026-09-30T19:29:55.426200+00:00",
+  "protocol_sha256": "6efba4a6503cf461d9256aa2f111a57573a3c0ce0fe055f6c6a34e3a1266ab05",
+  "sha256": {
+    "context.npz": "f539f14ce1d626fb666687950106f8b660e409724749ab89a26b7f3493873004",
+    "source_audit.json": "08eb5fb45ed1e584f227f62b5252b302210fc9b036944068b0cbc857281572a2",
+    "lag_forecasts.json": "e86bb4b2b8cd7486950d89350adeff71db49e2d92c13608bf552f3f3390e01f6",
+    "lag_pairs.json": "4b97bf1f4990109dc6b410a92292117284d4cdc26420a8ef3cdea097ae748dd9"
+  }
+}

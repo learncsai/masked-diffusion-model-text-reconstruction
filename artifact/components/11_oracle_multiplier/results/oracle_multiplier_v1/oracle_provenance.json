@@ -1,0 +1,11 @@
+{
+  "seconds": 57.64463829994202,
+  "config_sha256": "4ab2fa22df0ffe31d67ddb1de9069c279f2de3b3d69025fec337561070ed0a8a",
+  "source_sha256": {
+    "src/diffusion_lm_rmt/population_oracle.py": "514c370b826d02199a03a1ea776312367f0789e25b7da63948abfbb1f075e3ac",
+    "scripts/run_population_oracle.py": "a7cdf9d3fefec11cca59aefd9ebdf0854fb4e553ad439fd78a597ad628fa5c5b"
+  },
+  "exact_population_means": true,
+  "exact_covariance_contraction": true,
+  "no_reference_or_outcomes_in_oracle": true
+}

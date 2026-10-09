@@ -1,0 +1,52 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "corpus": "tinystories",
+      "check": "source-moment implementation agrees with historical source-loop results",
+      "max_absolute_difference": 1.1102230246251565e-16,
+      "legacy_sha256": "271f3d1599f04580e1ceebb78de75c44cf25e1cca3f96bf3e2ce24ad49c734ab",
+      "runtime_seconds": 3.269075700081885
+    },
+    {
+      "corpus": "tinystories",
+      "check": "all six reference banks and forty A/B arms are source/text/chunk disjoint",
+      "roles": 46,
+      "sources": 73927,
+      "chunks": 212992,
+      "source_text_chunk_overlap": 0
+    },
+    {
+      "corpus": "wikitext",
+      "check": "source-moment implementation agrees with historical source-loop results",
+      "max_absolute_difference": 1.0408340855860843e-16,
+      "legacy_sha256": "b6ec5a641bebdac8d86dc6e46f1aae0603445fe818a89ecba884c608f2aec5b9",
+      "runtime_seconds": 4.526561399921775
+    },
+    {
+      "corpus": "wikitext",
+      "check": "all six reference banks and forty A/B arms are source/text/chunk disjoint",
+      "roles": 46,
+      "sources": 94331,
+      "chunks": 212992,
+      "source_text_chunk_overlap": 0
+    },
+    {
+      "corpus": "cnn_dailymail",
+      "check": "source-moment implementation agrees with historical source-loop results",
+      "max_absolute_difference": 9.71445146547012e-17,
+      "legacy_sha256": "2d71e2a225ac51c597bd9c97b2ab1933f27189023f493190dc7a693668a2475c",
+      "runtime_seconds": 4.491389199858531
+    },
+    {
+      "corpus": "cnn_dailymail",
+      "check": "all six reference banks and forty A/B arms are source/text/chunk disjoint",
+      "roles": 46,
+      "sources": 106575,
+      "chunks": 212992,
+      "source_text_chunk_overlap": 0
+    }
+  ],
+  "no_new_ab_outcomes_read": true,
+  "validator_sha256": "0fbd6d6a667abbc0152e6441ab825f1e5d26eba528b37b440001486302a54e30"
+}

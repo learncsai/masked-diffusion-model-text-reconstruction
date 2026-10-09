@@ -1,0 +1,21 @@
+{
+  "seed": 20260930,
+  "base_runs": {
+    "grid": "configs/full_vocabulary_v1_analytic_grid.json",
+    "unequal_sizes": "configs/full_vocabulary_v1_analytic_unequal_sizes.json"
+  },
+  "raw_corpora": {
+    "tinystories": "data/diffusion_llm/tinystories_documents_matched.jsonl",
+    "wikitext": "data/diffusion_llm/wikitext_documents_stats.jsonl",
+    "cnn_dailymail": "data/diffusion_llm/cnn_dailymail_documents_stats.jsonl"
+  },
+  "tokenizer": "data/diffusion_llm/gpt2_tokenizer",
+  "fresh_banks": 2,
+  "fresh_chunks_per_bank": 2048,
+  "cases": [["grid", 512, 512, 0.5], ["grid", 2048, 2048, 0.5], ["unequal_sizes", 512, 2048, 0.5]],
+  "monte_carlo_banks": ["original", "pooled"],
+  "monte_carlo_batches": 8,
+  "draws_per_batch": 16,
+  "prepared": "data/diffusion_llm/calibration_diagnostics_v1",
+  "output": "results/full_vocabulary_v1/calibration_diagnostics_v1"
+}

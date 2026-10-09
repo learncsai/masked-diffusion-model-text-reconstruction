@@ -1,0 +1,42 @@
+[
+  {
+    "corpus": "cnn_dailymail",
+    "n": 512,
+    "method": "analytic",
+    "median_seconds": 32.94447520002723,
+    "minimum_seconds": 32.21377869998105,
+    "maximum_seconds": 33.683610799955204,
+    "nonlinear_rebuilds": 0,
+    "repeats": 3
+  },
+  {
+    "corpus": "cnn_dailymail",
+    "n": 512,
+    "method": "bootstrap",
+    "median_seconds": 4.993388600065373,
+    "minimum_seconds": 4.822181500028819,
+    "maximum_seconds": 5.10293890000321,
+    "nonlinear_rebuilds": 48,
+    "repeats": 3
+  },
+  {
+    "corpus": "cnn_dailymail",
+    "n": 2048,
+    "method": "analytic",
+    "median_seconds": 36.96426869998686,
+    "minimum_seconds": 35.04063460009638,
+    "maximum_seconds": 39.09882870002184,
+    "nonlinear_rebuilds": 0,
+    "repeats": 3
+  },
+  {
+    "corpus": "cnn_dailymail",
+    "n": 2048,
+    "method": "bootstrap",
+    "median_seconds": 13.259735999978147,
+    "minimum_seconds": 11.596870500012301,
+    "maximum_seconds": 15.719135500025004,
+    "nonlinear_rebuilds": 48,
+    "repeats": 3
+  }
+]

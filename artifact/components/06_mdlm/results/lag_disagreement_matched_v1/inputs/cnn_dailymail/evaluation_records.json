@@ -1,0 +1,770 @@
+[
+  {
+    "document_id": "cnn_dailymail:6454:814ede8d1aa5d7c7",
+    "chunk_index": 4,
+    "sha256": "83156869fa010d180823a76e538c14cc28a19d9d8f10f0b9569682d47ce63c8f",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:6454:814ede8d1aa5d7c7",
+    "chunk_index": 13,
+    "sha256": "c3b78cc4986584332528bc8ab8b8c33ae8bb188f96081aa1b7a7b943d2f6d8f4",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:5432:4b4e3200a7e87628",
+    "chunk_index": 3,
+    "sha256": "c4df767814d8ba76a45236f2904d440ddbbacd6a6ee37b6596c8c21ee96c2e05",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:5432:4b4e3200a7e87628",
+    "chunk_index": 9,
+    "sha256": "6ed4852c7d899e252a96a45ab3b71b8a41748f3495e05cff2f1efe982a9a3671",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:9023:aeb2ebfae6fc3047",
+    "chunk_index": 4,
+    "sha256": "7bd2ea3b7518ec8df8eee2694f870ba56828be38017f15577696faddf96267b1",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:9023:aeb2ebfae6fc3047",
+    "chunk_index": 12,
+    "sha256": "6c0cad9b942be548e84372c746bfb46211e1f7e18e9ff5438732ed864525df68",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:522:1c8df0581b6860a1",
+    "chunk_index": 3,
+    "sha256": "3ff5a2ccc1069d065aa5eb7e7c833048e09e632686d22c3684e717063a8aaf14",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:522:1c8df0581b6860a1",
+    "chunk_index": 10,
+    "sha256": "ade6cee7650f073fe2941130148d18d24461f14958c9725c763b0440dc30bdc0",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:3291:6132382c321499c8",
+    "chunk_index": 4,
+    "sha256": "9663f495e0f64d2d2ce780c0585a3fd5ada3016b4722caa76b4b88b746b4d7a3",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:3291:6132382c321499c8",
+    "chunk_index": 12,
+    "sha256": "8081a2ee6e56400e6d601ec48bff6be9754e8ddafd882012caaf3da51cd5b31e",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:552:dfeec6b371b086db",
+    "chunk_index": 2,
+    "sha256": "6136ae5153d2c0eecad14881c1e871bcbaa279c18ad470f8d1824055e4fb65de",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:552:dfeec6b371b086db",
+    "chunk_index": 6,
+    "sha256": "af258ee77b0d17b49c3822674e6b09e793630623009df7d34d1b18c9ef28d389",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:3277:0ec562fb6ceca0f7",
+    "chunk_index": 3,
+    "sha256": "54570450540be4c6b78490317a1969acef847a86b17058d974645521822b1acd",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:3277:0ec562fb6ceca0f7",
+    "chunk_index": 9,
+    "sha256": "a440a5bdb3d748b0d09000ace74be33490d6e47ba90c437cf3242bc29fc1531f",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:5097:1a39af4d9aacbdb4",
+    "chunk_index": 1,
+    "sha256": "459beb6dc64d5e133157a429dcd86cc6cffbba9d5d994f5ff78bea74cbd7ab80",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:5097:1a39af4d9aacbdb4",
+    "chunk_index": 3,
+    "sha256": "8dc17be5e410c154685247eae51d5ad0e7d888180cfd20cd2fbb770971e5d969",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:1911:ca0701ccaba63845",
+    "chunk_index": 4,
+    "sha256": "cebdde3559a820c95de1828ec3000986dbbf89af49c4f769cb44994e01e8e0ac",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:1911:ca0701ccaba63845",
+    "chunk_index": 12,
+    "sha256": "831d05c652c9918e95db6ca48968da6c3f9193e55581410071bc769e92c55968",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:2477:0ff0d50a2c9dcc12",
+    "chunk_index": 1,
+    "sha256": "a280329139dd69a5b7abf2e88be4e83b28d64827fd44b362d0271a0d15e24b44",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:2477:0ff0d50a2c9dcc12",
+    "chunk_index": 3,
+    "sha256": "ba32cf0e522954d88be431052d9e6036b8ee78d3b952f7f626039be3f194d798",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:2206:0c4f6a94debefba8",
+    "chunk_index": 1,
+    "sha256": "ae55cf12862bee0aca038ee6992e1d795543e7912874164beee64598b5eab139",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:2206:0c4f6a94debefba8",
+    "chunk_index": 3,
+    "sha256": "a7dace73b33f6ea8ab214a9788e3a2eadd13cacc1cff0e8be8b991ebd48bf57d",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:7886:e91cd8c65dfae41e",
+    "chunk_index": 1,
+    "sha256": "f639749483230b75ad99682b4bda95bd572bb06aac50be2b5fac5acc1bc190cf",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:7886:e91cd8c65dfae41e",
+    "chunk_index": 4,
+    "sha256": "cb5660a91a453ce5ab72834a836db0221289cbab03702606ba2347398fc00746",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:8203:6b52a256ada83674",
+    "chunk_index": 4,
+    "sha256": "6122f1700b3bf1b634e047b62877070f5cd8c740b8608e76323b57570ab88fda",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:8203:6b52a256ada83674",
+    "chunk_index": 12,
+    "sha256": "19bcbf1eee4e92c5024df4986e845c0b9799c00faacf00a1486edecb4479fc06",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:3596:67d6defe379500d3",
+    "chunk_index": 1,
+    "sha256": "62026faffa293d145e73c9c85082ed6e2a26e35640c6d57f20e449c7a444b8be",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:3596:67d6defe379500d3",
+    "chunk_index": 3,
+    "sha256": "7454d2124ad5fa2582e77339885885704a226abc18363bc83c748dd03e58d766",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:4192:e5dc3fae2beb8bbc",
+    "chunk_index": 4,
+    "sha256": "3630069362d4c81256a20bb7622358e48915132f9a4f2fe3c98336a4dac0dcc0",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:4192:e5dc3fae2beb8bbc",
+    "chunk_index": 12,
+    "sha256": "3aff4f1e1da7a0e33ff0ffd4dcacbe5e05499252704dafca3010fb19dd1ec29b",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:8937:3a93bc34de803ae6",
+    "chunk_index": 4,
+    "sha256": "58c18a350cf359c316c5129cf1f469c3bb6e7094766daf4932419d2670209216",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:8937:3a93bc34de803ae6",
+    "chunk_index": 14,
+    "sha256": "38987d6c137401883e8fb6b0708e1c0554002052c5abcdbcdadac7ae88839c31",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:7794:ed22946bb0f99de3",
+    "chunk_index": 1,
+    "sha256": "42e2b7e8f48c6a182ec3a42b9dda194d8ee6f1ed944f53804b9f95ca5c68d9db",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:7794:ed22946bb0f99de3",
+    "chunk_index": 4,
+    "sha256": "674d9af0249050dad9d79664e5783f396c6bc5c9eb3bdc034952c12ae2bbebe8",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:9573:9c9f457862672294",
+    "chunk_index": 2,
+    "sha256": "b613919eb317256071afa58f59d46419e8035e8340746c786bbcdda6fbd0de2f",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:9573:9c9f457862672294",
+    "chunk_index": 7,
+    "sha256": "07ea2ad793f93097c352e6fc10a27b6e847a4cd78b3e7f5262b574cb61f5ec4f",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:2228:f17f0b752a027849",
+    "chunk_index": 4,
+    "sha256": "a67e4735f82c032d396e51d14755e33b067a777145ef89dcda305dec69ac4071",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:2228:f17f0b752a027849",
+    "chunk_index": 13,
+    "sha256": "467eb379920757df0cc00e46324ec1c4629a59e4123869f0f5eee81db8d64c9b",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:6494:5cc9cce4794b4a75",
+    "chunk_index": 0,
+    "sha256": "ca2d94a1c857909651f51da497b8fc70b48d23901816bd4302eb1aafbd1d4a6b",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:6494:5cc9cce4794b4a75",
+    "chunk_index": 1,
+    "sha256": "68feb451c96e0df2bce260cf51ea87344531a5b718932e88a6f56cb42ec3b104",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:2088:86a29a8d10ac5bbc",
+    "chunk_index": 5,
+    "sha256": "22eb07583322fd86ef9c8e08c2a6da9ab07b93c8036d4bed50a2885dbb6cf0e0",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:2088:86a29a8d10ac5bbc",
+    "chunk_index": 15,
+    "sha256": "b02d16949d6fac7fe2d787967fd08258855691bcd74b9098774b22b28724e49e",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:7910:ec6f50a3e55d83be",
+    "chunk_index": 3,
+    "sha256": "3f94f67376e6c126df4d27343da375ec2f14264417fd540f8baf2fbcc13dd653",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:7910:ec6f50a3e55d83be",
+    "chunk_index": 11,
+    "sha256": "102e72f4a965cbe8a20ffebd4d27e33cfd19655cb102bf0c0be7cae7a633b496",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:457:e66d3a6b5a3868ab",
+    "chunk_index": 2,
+    "sha256": "7b9aaddd7b33c94866978c115fb220044a54bdd072bc9b2d2315779943334701",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:457:e66d3a6b5a3868ab",
+    "chunk_index": 6,
+    "sha256": "f1579e75e4707a94d15afd38cb4f478d1b162e2e7c226accdac450aac0a3292e",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:7006:e7f47718efcab5e4",
+    "chunk_index": 1,
+    "sha256": "a52d62d5913f49226d35dfb7c7e6fe7c906360fc4a11bab06fe9c5e50f4cc9ba",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:7006:e7f47718efcab5e4",
+    "chunk_index": 3,
+    "sha256": "98e82e43f9a39753e0f2197b9fb710566fb24f376e4ccf8aea691a82f1cfa062",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:6489:3d73808345ca0526",
+    "chunk_index": 3,
+    "sha256": "e0091f12376ea9ff715a049e620c9526b2a149d398b99a01c4d57933c4cb60d1",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:6489:3d73808345ca0526",
+    "chunk_index": 9,
+    "sha256": "f7d7e87d78552fde2ca734da7e5ffaf3d27b26d9f6b8352fa90bbc49421e2a2d",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:8511:7128e761a411de7b",
+    "chunk_index": 2,
+    "sha256": "e263c742341827b89b30b8e162649639e743267f901a0aba5e34499df684c54a",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:8511:7128e761a411de7b",
+    "chunk_index": 6,
+    "sha256": "b4ed9ba6f74893afd88178e93e8b425c047d81655f57aca55eb9fb637552c99c",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:3150:69fe126e92e43db7",
+    "chunk_index": 6,
+    "sha256": "8f26b0408f4cf2895950c362f6f167ac473950fb88ff1bc9759c1ed8fdf980c5",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:3150:69fe126e92e43db7",
+    "chunk_index": 18,
+    "sha256": "4e8b57bcd897d177b9752c6e650ab484c7afc81e35a56c29961807c71dab7470",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:1068:ed5a0168191c4819",
+    "chunk_index": 3,
+    "sha256": "d7906c5c2686a5c14dfb476bce1c86e291ed518cbe18fa30d32d988f66a5abae",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:1068:ed5a0168191c4819",
+    "chunk_index": 10,
+    "sha256": "6e44918981619f73b800ca5f503c8a0580397b9e34e8c6968e64df1d9b515a1a",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:5509:14c2805c06f6503e",
+    "chunk_index": 2,
+    "sha256": "75bbb9161d96b39ab7b7bb1a999806e5f9004bc19904cdc2668519253102c1d9",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:5509:14c2805c06f6503e",
+    "chunk_index": 8,
+    "sha256": "5f74cca3d574047dbf1347b52db2661a12e9cde7ac7b639923b13a16b3a0f0b4",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:3345:f40a53c40c922869",
+    "chunk_index": 1,
+    "sha256": "16c84cbb00065e37860b61304ebe0162902bff21b68a61b4012c7238f815b4b7",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:3345:f40a53c40c922869",
+    "chunk_index": 4,
+    "sha256": "7d8688950cf24936efffda529f0f520878882a8aefeb6e7484509747ae9eb47b",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:3660:c4f476a04b5b344b",
+    "chunk_index": 3,
+    "sha256": "123a1b331a480dc4aa71183feb0ebc03f89425545a1ac01015452871878f71b2",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:3660:c4f476a04b5b344b",
+    "chunk_index": 9,
+    "sha256": "8172084991dd1d467889f35bb9c1801635009715a92c34ca8f98156eef67706e",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:7835:bd97a4696a39717e",
+    "chunk_index": 2,
+    "sha256": "9b04a3f2cc333aae61391a4549a10e8befef6de58d9566539f9278fa1b5fe88f",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:7835:bd97a4696a39717e",
+    "chunk_index": 6,
+    "sha256": "093d9bd4c6c68b29006f023b1871a79cc706d4225aa61eee57b6c8e318f502ac",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:2361:aa8fc014c9d9b3b2",
+    "chunk_index": 3,
+    "sha256": "88c3ca247c70669a4f08056b79023827c846298773ec4f079a425087512eb4d3",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:2361:aa8fc014c9d9b3b2",
+    "chunk_index": 10,
+    "sha256": "0ffe19eb47d2826ea77d1df3272e24bca005747f243a1b9f4afb7a9f012f469e",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:4004:92882a6985180c21",
+    "chunk_index": 4,
+    "sha256": "a3e6f57d13d4eec3de05ed6a6d22bfca537c00e10c1251d33b8d9bfddfd05f54",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:4004:92882a6985180c21",
+    "chunk_index": 14,
+    "sha256": "93f43fbbc17ca7010679b4d92a55181df0cb9334f651f4363c271c01c61d92e7",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:5412:7faadde6da80aabe",
+    "chunk_index": 1,
+    "sha256": "0d97472b30c395bac5dc4d3fdccfc7e8bc90cea7417d319c908de3490ed14379",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:5412:7faadde6da80aabe",
+    "chunk_index": 5,
+    "sha256": "91743252e390f2bcc8493fec5cd1e3f05225406bc83eb65c79c78a66642e01e7",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:8884:400c77da6f3cc53a",
+    "chunk_index": 3,
+    "sha256": "d1915a02728ffc7a7c410f14d54598111832a22ee4c947f720272e0e1039fe92",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:8884:400c77da6f3cc53a",
+    "chunk_index": 9,
+    "sha256": "e7fd6438dd50568092e642a761fcc3bb50c240301238b150a8d793edf42936c3",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:6905:29a087ad3375cc4a",
+    "chunk_index": 1,
+    "sha256": "06338625e8b11ae7ea2fd4aa348e48632227ce3f71f36d2bb433e4ec88ecd569",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:6905:29a087ad3375cc4a",
+    "chunk_index": 3,
+    "sha256": "eadff10a808618e7c7d1ec1a80ca0d80b93af5293ae48a6d53b1bc69064c3d44",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:7678:3f69aebafc8130c3",
+    "chunk_index": 5,
+    "sha256": "50b8e645d80bfed925d8da3dfba11a0b85892bba907fc751b4871d61611722aa",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:7678:3f69aebafc8130c3",
+    "chunk_index": 15,
+    "sha256": "3ad52cce87cd5f5533ee73ef19d42a841128f1dd895182f1f803df711d8bf0e9",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:4542:9e450b2152dcc523",
+    "chunk_index": 2,
+    "sha256": "b1d727d659c99c4a2b7e89da60ef12cbbb2b854740df7840ca8f4311fd5221b8",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:4542:9e450b2152dcc523",
+    "chunk_index": 6,
+    "sha256": "65406f39b6ebfa255a60416e6df1420fc0c38a7db1d28411f2da72ed31eef122",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:6154:a84693dba1d5081a",
+    "chunk_index": 3,
+    "sha256": "de15897fff48ec805f9f62ea611b47b3eb2da539c17f0cd7a83aeb6a6746d3df",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:6154:a84693dba1d5081a",
+    "chunk_index": 9,
+    "sha256": "b6038f0c10c197e1fc415e1a13eaeb65885c157605f26b32b52fe9072bf80bd3",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:4224:355fee0f8eb9bed1",
+    "chunk_index": 2,
+    "sha256": "42273ecd46e6b23f434f1cdcdf2f78fa81f9f024b95c9af7b7f5dabdc31190df",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:4224:355fee0f8eb9bed1",
+    "chunk_index": 6,
+    "sha256": "9459560d786d0952d2d900f5668d90fe075c6f3638b997816e01ee90115e2ccd",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:8767:0381a96cbdb1898b",
+    "chunk_index": 6,
+    "sha256": "773ddcc7f10c20fbecbf56e54c502e26fad35650f4da200ed7a21767e3e6856b",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:8767:0381a96cbdb1898b",
+    "chunk_index": 18,
+    "sha256": "c85ff790e983291ea245b604c360aa2b666af4536a0bfb94ddf86d7f8db61236",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:3775:033d0e7926fbe8b7",
+    "chunk_index": 3,
+    "sha256": "3b63e6af86daf9ddb38d650ccad72cee345101f2d52e603d8442c3b165334a80",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:3775:033d0e7926fbe8b7",
+    "chunk_index": 9,
+    "sha256": "0528eda596767d826498db39586be9d78139088010ddb83bf8cb3e960a78dec8",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:3713:a9f60bb1752bf2e1",
+    "chunk_index": 4,
+    "sha256": "0fb73c740049d1db74b1d6de04e7a4d48c018f25e3d8bdf8b20c620780557aab",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:3713:a9f60bb1752bf2e1",
+    "chunk_index": 12,
+    "sha256": "1e589dc93ce93f066c222314397e4b201ddbc6a45bb4c8de1c1363b09d63edb4",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:4706:2ffd061452d65239",
+    "chunk_index": 1,
+    "sha256": "4aeeedf033d7dc7e0b050ea670b11028eac2a093247af2f3f96aa504f0a8cc4a",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:4706:2ffd061452d65239",
+    "chunk_index": 3,
+    "sha256": "95527abeaae73aaa4fc86122a5caf5240df88817059e7da89d337b6bcf39f634",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:5931:9a80d1cc83862098",
+    "chunk_index": 1,
+    "sha256": "ef525efe26d718660a3102968067e70a8754d46e38cad6cc3e20ff9452b1fc41",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:5931:9a80d1cc83862098",
+    "chunk_index": 5,
+    "sha256": "42249ba5b3b60f5da2dd5ad4dc5854a03e80d9c86ce9d091c1d34bd4d190a99d",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:5428:10075d93ff7bdf2f",
+    "chunk_index": 3,
+    "sha256": "6e44936bf55053bed10a2912cd35ec1169468af8e83bcd372fec4957503be5ea",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:5428:10075d93ff7bdf2f",
+    "chunk_index": 10,
+    "sha256": "89312c6432ae6af44faf67e331d391187a878d4cb72f6d45621794718dca974f",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:3831:38daf438400b54f3",
+    "chunk_index": 6,
+    "sha256": "42792f1c04d768e383200beac0dc50a1966f0224c7b44f68833ba435999754b6",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:3831:38daf438400b54f3",
+    "chunk_index": 18,
+    "sha256": "11a77d8f2d493d7e0db49dc16c3af9e37bcc0093fbd636fc3c84719df420cc2a",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:6776:b66b65517faabd64",
+    "chunk_index": 6,
+    "sha256": "e215ef6aac2acc9af8a56350169494654b1a0115b9353633cbce7715ee031ea6",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:6776:b66b65517faabd64",
+    "chunk_index": 18,
+    "sha256": "14fa6df4dfb6da5faf4813a4ed09542bd91be45eb96de5df1fa3012b46cccaaf",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:7200:b5b84b6153b384fa",
+    "chunk_index": 6,
+    "sha256": "eb5c5eded4d07566fcb5333a9186914912c318b02482af5032054b2ca2953931",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:7200:b5b84b6153b384fa",
+    "chunk_index": 18,
+    "sha256": "a0a5a3ab1c56f3a5263c63469479e6848e66d2e5151d1c4d1b2ba6f9566a92dc",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:5300:aab07f2684af0c75",
+    "chunk_index": 3,
+    "sha256": "2f086220f304b5fe3d6e65026278a1e5f555dc8582441a37aa33a6e4d7d09a2f",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:5300:aab07f2684af0c75",
+    "chunk_index": 9,
+    "sha256": "4d543cd1b5170d6eea036648234acec7e2b59e3ec3202720a749b6014f59b894",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:5910:d7d2891e9c964c43",
+    "chunk_index": 6,
+    "sha256": "3492db24a011fed7e1bba85cf838c0633415c57792ace453526df3891f7b11a4",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:5910:d7d2891e9c964c43",
+    "chunk_index": 19,
+    "sha256": "d869bb3371d1242a74a8319f4a24812dca6e0cadaff18e60e7c052d05f3f9932",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:3509:f4c69399ba63f1fd",
+    "chunk_index": 3,
+    "sha256": "b3b5a312502a36f59a2ef49c0572c6f631157447526580c97ef754118e2e7367",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:3509:f4c69399ba63f1fd",
+    "chunk_index": 9,
+    "sha256": "6df738ca68cb1d74c1f81ba893ab56c40461af2b02770105a7d37d5974bf8203",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:753:0c7f75e2c2546ff3",
+    "chunk_index": 3,
+    "sha256": "95ccc17568c0334a8a325b1149509decc9b1beec25d6455ebabee65f654e28b4",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:753:0c7f75e2c2546ff3",
+    "chunk_index": 9,
+    "sha256": "9cdda6f974d014f916f217ee048f986765154e16d8fa166147a155a670bb5077",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:1442:99bc01c5f83953f5",
+    "chunk_index": 4,
+    "sha256": "9f14774329a751e97c6df047f182a6294e9e4aee13e64e2a26e8c2b07e3c013d",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:1442:99bc01c5f83953f5",
+    "chunk_index": 14,
+    "sha256": "0e9fc71de077f53f3410123af7474818e0c9f30aa0f77163882c00bc657893ca",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:7695:f973200efd2b3cb9",
+    "chunk_index": 2,
+    "sha256": "b77ef59e5f068586c78514cd1a534ba6198368da782885b3e11171b92189988f",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:7695:f973200efd2b3cb9",
+    "chunk_index": 6,
+    "sha256": "84fa18c544a5dea95be45ea35a110c8982d85220137346221d7a36682ff54c59",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:8727:839b1e000d0b7ebe",
+    "chunk_index": 5,
+    "sha256": "8235f8b3c1df3582412cb4feec8adf1bc428ac98c7c3faa214743f78ad37e634",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:8727:839b1e000d0b7ebe",
+    "chunk_index": 15,
+    "sha256": "e44cb7a18b64eb210c89f25512144d218a2a5e05c06325f0677e99a3e69801b7",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:4673:9c27dbca2fac7a77",
+    "chunk_index": 3,
+    "sha256": "412d17c09d76ca4713805209e428fdcc1e836f96ddef907a1e613a76624aa486",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:4673:9c27dbca2fac7a77",
+    "chunk_index": 9,
+    "sha256": "b77df9cc90db69e3ef243dedbae3edc3a8b368641eaabc2c732032ebf14da160",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:5608:a659a579174b2301",
+    "chunk_index": 2,
+    "sha256": "98d96dfa2fcd7e257d8df46b148974b28a56e7be068ea333e78a3de5dcb37e7e",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:5608:a659a579174b2301",
+    "chunk_index": 6,
+    "sha256": "6a909f6d7547da069982fb9b0feb1e8c5212f91dddb6a1d6d05ae7c164840244",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:2982:e85b80fc381896f0",
+    "chunk_index": 4,
+    "sha256": "eb7acec7a62c6f0bb49b949fe35c116ec94246c3fdc6da00f9bdd6b2049ffc51",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:2982:e85b80fc381896f0",
+    "chunk_index": 12,
+    "sha256": "d76d857a1a23cbe919be019019e64e6172ebd1cbd567c9acc3a32b6dbdbc2c12",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:5634:17c1433f917a9972",
+    "chunk_index": 2,
+    "sha256": "1bf08f757b8d4eaddf16a5765260cee804b4aca46b58edf155e6973a577d71ac",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:5634:17c1433f917a9972",
+    "chunk_index": 6,
+    "sha256": "2c46a167103ade187ce0a2d03576971eb28bfaa38d59c891a6b44fee46e1c155",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:6019:e8f32cd61b563d4c",
+    "chunk_index": 2,
+    "sha256": "f4226733753a16cf196b6bb64d5c5e02cb0b4effbd2e620f416c5bb7261965cd",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:6019:e8f32cd61b563d4c",
+    "chunk_index": 6,
+    "sha256": "296b1d7c025f5866d2bede30f1443ba7684c0694eb78eb25f5b4967a5999ff48",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:9387:4b0de504f2c72357",
+    "chunk_index": 3,
+    "sha256": "b57904567765d2d94c8e2b1aacee4096c3558346c8e8b2cda43b9048a8a85233",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:9387:4b0de504f2c72357",
+    "chunk_index": 11,
+    "sha256": "3ebf720afddaac881433853e417efdab0dfc297523655c239aeff3ad7966e0c2",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:2576:e67abd753716f07b",
+    "chunk_index": 5,
+    "sha256": "b929e8da7f6dfedf74f76bd58f62dc59535f61d39e1dee1f2b5f164dac1ab02c",
+    "non_padding_tokens": 64
+  },
+  {
+    "document_id": "cnn_dailymail:2576:e67abd753716f07b",
+    "chunk_index": 15,
+    "sha256": "4d1821cd500dd7a50f47b24c747823f7875489ed099f17c2fff97d38240b295c",
+    "non_padding_tokens": 64
+  }
+]

@@ -1,0 +1,40 @@
+CORRECTION FOLLOW-UP
+
+The six-bank, twenty-pair outcomes are already known. All added baseline,
+gating, inflation and threshold-sensitivity comparisons on them are exploratory.
+The old primary analysis and its saved records are preserved.
+
+For each old reference, reuse the original whole-source random partition.
+Evaluate nonlinear source bootstrap with 48 replicates in three independent
+batches of 16. Each replicate samples complete retained source groups with
+replacement until n chunks are obtained, truncating only the final source.
+Within each batch, twice the unbiased sample variance of reconstructed output
+estimates disagreement. Average the three estimates. Repeat separately for
+both source halves at the same n and use the identical source-count jackknife.
+Retain batch estimates to quantify Monte Carlo variation. Apply no outcome-
+based tuning or selective reruns. Report nonpositive corrected scalar values.
+
+For the direct measurement baseline, reconstruct using each reference half
+without resampling. If their chunk counts are m1 and m2, define the harmonic
+effective half-size h=2/(1/m1+1/m2). The inverse-size extrapolation is Dsplit*h/n.
+Also report the constant Dsplit forecast so that a failure of the 1/n assumption
+is distinguishable from failure of direct measurement itself.
+
+Report the original m<n primary cells and the whole 3-by-4 reference/target
+grid with equal cell and corpus weights. Compare both uncorrected laws,
+both corrected laws, both bootstrap versions, and both direct baselines.
+Evaluate the retrospective rule: correct only if m<=n. Evaluate uncorrected
+laws multiplied by the fixed factor 1.25, chosen as a simple inflation control,
+not optimized on this study. For size selection, retain the original target
+and add absolute targets .020, .025 and .030 for every corpus. Report abstention,
+success, failure and excess size relative to the smallest observed acceptable
+grid size. All these decision comparisons use shared outcomes and are descriptive.
+
+A separate prospective confirmation uses the allocations and primary criterion
+in configs/correction_followup_v1.json. Save this protocol and code hashes before
+allocating new sources. Save all analytic forecasts across the three corpora
+before scoring any new A/B pair. Corrected multinomial is the primary method,
+compared with plain multinomial. Report the result regardless of direction.
+Other analytic methods and cells are secondary. Source bootstrap is compared
+on the larger original grid, not designated a confirmatory primary competitor.
+The timestamped local records are an execution audit, not external preregistration.

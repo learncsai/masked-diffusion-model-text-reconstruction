@@ -1,0 +1,80 @@
+SOURCE BOOTSTRAP ON THE SEPARATE CONFIRMATION PAIRS
+
+Where to start
+--------------
+Component 12_bootstrap_confirmation supports the added m>n column in Table 6
+(tab:confirmation), Appendix B.3 and the main-text recommendation. The table's
+original primary and full-grid analytic/multiplier results are unchanged.
+Run python reproduce.py from the archive root to rebuild the complete table.
+
+New computation
+---------------
+The added forecasts use m=2048 reference chunks and n=1024 target chunks in
+each of three corpora. All three existing confirmation banks and all six
+confirmation A/B pairs per corpus are used. Auxiliary quantities and the
+128 evaluation chunks are unchanged. No neural model is trained.
+
+Whole reference sources are sampled with replacement until n chunks have been
+collected, truncating only the final source. All lag tables are rebuilt jointly.
+The estimate is twice the unbiased output sample variance. Three independent
+batches of 16 draws are run for the full bank and for each source-disjoint half.
+The correction is 2*full - w1*half1 - w2*half2, where w1 and w2 are proportions
+of sources, not proportions of chunks. Source partitions match the existing
+confirmation analytic corrections. There are no clipped corrected forecasts.
+
+The pooled absolute log errors at this condition are:
+  corrected bootstrap:                 0.0197865754
+  corrected multinomial:               0.0493342801
+  multinomial, original-grid factor:    0.0388409299
+  uncorrected bootstrap:               0.1062047309
+The calibrated factor is closer than corrected bootstrap on TinyStories.
+
+Intervals independently resample whole banks and whole A/B pairs within each
+corpus. Methods remain paired, and multiplier calibration uses original-study
+records only, reselecting factors within each resample. The 5000-draw intervals
+condition on the saved Monte Carlo draws and fixed auxiliary/evaluation data.
+Per-bank Monte Carlo standard errors are reported separately.
+
+Files in the restored component
+-------------------------------
+configs/bootstrap_confirmation_v1.json: all settings and reporting scope.
+docs/bootstrap_confirmation_protocol.txt: sampling and interpretation.
+results/bootstrap_confirmation_v1/method_saved.json: pre-computation settings,
+  implementation and input hashes. Local timing is not external registration.
+  Original hashes of omitted token arrays are retained. These are not hashes
+  of the sanitized numerical replacements in other historical components.
+results/bootstrap_confirmation_v1/<corpus>/bank<index>.npz: numerical batch
+  estimates, source/half sizes and weights, corrections, and timing/hash links.
+results/bootstrap_confirmation_v1/summary.json: every method, paired difference,
+  corpus-specific ratio/error, Monte Carlo diagnostic and original-grid policy.
+results/bootstrap_confirmation_v1/bank_records.csv: all 81 bank/method records.
+results/bootstrap_confirmation_v1/monte_carlo.csv: all 18 batch-SE records.
+scripts/summarize_bootstrap_confirmation.py: executable inference and table rows.
+scripts/run_bootstrap_confirmation.py: original bootstrap runner.
+data/diffusion_llm/correction_followup_v1/<corpus>/*.json: reference source
+  rosters, source-role audit and input hashes. No token arrays are included here.
+
+Scope of reproduction
+---------------------
+The default CPU replay recomputes batch corrections, uncertainty intervals,
+all table rows and the retrospective policy score from the saved numerical
+records. The boundary-routing check preserves bank identity and handles m=n.
+Recomputing nonlinear forecasts from text requires the separately acquired
+token inputs matching method_saved.json. NEWS_DATA_ACCESS.md explains upstream
+news acquisition and preprocessing. The supplied reference rosters contain
+identifiers and hashes, not passages or reversible token sequences. Reusing
+the exact auxiliary and evaluation inputs is also necessary. Raw-text replay
+is not claimed by the default numerical reconstruction.
+
+History and interpretation
+--------------------------
+These A/B outcomes were already known when the added bootstrap comparison was
+proposed. Settings were saved before the new bootstrap forecasts. The result
+checks transfer to a separate pair/reference allocation, not prospective
+prediction on new outcomes.
+
+The original-grid switch chooses corrected multinomial for m<=n and corrected
+bootstrap for m>n. Its error is 0.0432242512 [0.0400018855, 0.0469821382], compared
+with 0.0609778378 and 0.0598280015 for each method throughout. The rule was chosen
+after seeing the original grid, and the boundary is not claimed to be optimal.
+The added confirmation computation checks only its larger-reference branch.

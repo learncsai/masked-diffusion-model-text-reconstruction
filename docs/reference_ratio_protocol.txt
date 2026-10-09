@@ -1,0 +1,121 @@
+Reference size and calibration follow-up
+========================================
+
+This follow-up was proposed after inspection of the earlier calibration
+results. It tests a new hypothesis. Earlier prospective outcomes are discovery
+data for this hypothesis. The protocol and numerical expectations are saved
+before any new forecast cells or new A/B outcomes in this experiment.
+
+Fixed setting
+-------------
+All three corpora use the existing 50,257-token vocabulary, 64-token chunks,
+radius 2, smoothing 5, auxiliary weights, 128 evaluation chunks, and saved
+mask at q=0.5. Sources are stories, WikiText paragraphs, or news articles.
+News retains at most two spaced chunks per article. Source IDs, full-text
+hashes, and exact chunk hashes remain separate across roles. We retain the
+existing sampling and final-source truncation conventions.
+
+Primary metric
+--------------
+Calibration is mean forecast divided by arithmetic mean observed squared
+disagreement. Each evaluation chunk has equal weight after averaging its
+hidden positions. A/B pairs have equal weight. Target calibration is one.
+No multiplicative calibration is learned. Full source, source with same-lag
+terms only, and the original smoothed multinomial approximation are reported.
+The latter estimates its conditional collision at the reference size.
+
+Numerical predictions, fixed before new cells
+-------------------------------------------
+For the full source method, the observed discovery ranges suggest:
+  m/n = 1: calibration in [0.82, 0.88]
+  m/n = 2: calibration in [0.93, 0.96]
+  m/n = 3: calibration in [0.97, 1.03]
+The ratio-three interval is an explicitly chosen tolerance around the three
+discovery values at n=2048. These are descriptive prediction ranges, not
+confidence intervals or guaranteed bounds. We report exact misses, including
+small misses at interval boundaries. We also report absolute distance from
+one and absolute log error without converting these into significance tests.
+
+For m/n=4 at n=1024 and 2048, the secondary prediction is that calibration
+will be within [0.95, 1.10]. Larger ratios 8 and 16 are stress checks with no
+numerical success range. No range is adjusted after seeing new results.
+
+Stage 1: additional forecasts, known A/B outcomes
+------------------------------------------------
+Use the fixed three matched pairs and existing nested reference bank.
+New (n,m) cells per corpus are:
+  (512,512), (512,1024), (1024,1024),
+  (512,4096), (1024,4096), (2048,4096),
+  (512,8192), (1024,8192), (2048,8192).
+We also compute (2048,6144), providing ratio three at the same target size
+under the matched protocol. Previously computed cells are reused only after
+hash and numerical reconciliation. All planned cells will be reported.
+These are new computations on known outcomes, not independent prospective
+replications. Banks are nested and sizes within pairs are nested.
+
+Stage 2: fresh A/B outcomes
+-------------------------
+The cached 64,000-source pools have 25,635 unused TinyStories sources, 21,663
+unused WikiText sources, and 19,284 unused news sources after historical
+exclusions. Allocate three new mutually source-disjoint A/B pairs per corpus,
+4,096 chunks per side. Their 2,048-chunk prefixes give a paired size test.
+
+Extend the existing 8,192-chunk reference by 4,096 unused chunks to 12,288.
+Allocate a separate fresh 4,096-chunk reference, disjoint from that bank and
+all A/B, auxiliary, and evaluation sources. All reference allocations and
+forecasts are frozen before scoring any fresh A/B reconstructor. Allocation
+uses a fixed seed, without inspecting the resulting disagreement.
+
+Primary nested-reference cells are (2048,2048), (2048,4096), (2048,6144),
+(2048,8192), (4096,4096), (4096,8192), (4096,12288).
+The separate reference tests (2048,4096) and (4096,4096). It supplies a limited
+check of reference composition at one size. Two banks do not support a
+population-level confidence interval for reference uncertainty.
+
+Use seed 20261017 plus corpus index for source allocation. Reserve all
+historical roles, including unused historical pair sides and reference banks.
+Allocate the reference extension, the separate reference, then fresh pairs
+from one shuffled eligible source list, excluding each completed role.
+If the source pool cannot supply the planned chunks, report the shortage
+before scoring. Any revised allocation requires a dated protocol addendum.
+
+All absolute forecasts and their file hashes must be saved before any fresh
+A/B outcomes are calculated. Timestamped local manifests document sequence.
+This is a prospective follow-up to an exploratory hypothesis, not external
+preregistration. We report every planned cell and both reference banks.
+
+Uncertainty
+-----------
+Keep pair identity through aggregation. Conditional intervals for the ratio
+use a t interval for the arithmetic mean observed disagreement, inverted
+against the fixed positive forecast. Bounds are F/U and F/L when L>0.
+Three-pair intervals are imprecise. They condition on the reference,
+auxiliary data, and evaluation inputs. Chunks, nested sizes, reference
+prefixes, and repeated forecasts are not independent replications.
+The older seven-pair results are recomputed using the same ratio definition.
+
+Mechanism check
+---------------
+Partition masked positions by the smallest raw reference row count among
+their visible offsets: 0, 1-4, 5-19, 20-99, and at least 100. A separate
+category covers positions without visible offsets. Count each position once.
+Retain all lag cross terms within its forecast. Give each position weight
+1/(128 times the number of hidden positions in its evaluation chunk).
+Stratum sums must reconstruct total predicted and observed disagreement.
+Report energy shares and signed contributions, including empty/zero strata.
+This checks association with coverage. It does not identify a unique causal
+mechanism. Changes of strata with reference size will be stated explicitly.
+
+The existing known-population control remains a separate regime (K=512,
+L=8). Compare total calibration with total calibration. Its reference-error
+component alone is not comparable to the real-text total ratio. Its opposite
+reference and propagation errors prohibit a universal m/n interpretation.
+
+Reporting
+---------
+Present all previous and new conditions in a common table and figure inputs.
+Distinguish discovery, new forecasts on known outcomes, and fresh outcomes.
+Do not promote a universal reference-size rule or rewrite the abstract around
+the pattern unless the new evidence supports it. Keep the image/text
+correspondence table in the main text. Restore prospective calibration to the
+main figure and show the complete reference-size comparison.

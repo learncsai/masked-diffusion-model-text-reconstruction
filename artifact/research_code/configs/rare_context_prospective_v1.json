@@ -1,0 +1,31 @@
+{
+  "seed": 20261003,
+  "output": "results/rare_context_prospective_v1",
+  "inputs": "data/diffusion_llm/rare_context_prospective_v1",
+  "corpora": ["tinystories", "wikitext", "cnn_dailymail"],
+  "fresh_source_pool": 128000,
+  "pairs": 20,
+  "reference_banks": 6,
+  "reference_sizes": [1024, 2048, 4096],
+  "larger_reference_size": 8192,
+  "sizes": [512, 1024, 2048, 4096],
+  "evaluation_chunks": 128,
+  "mask_rate": 0.5,
+  "radius": 2,
+  "smoothing": 5.0,
+  "ridge": 0.01,
+  "methods": ["source_full", "source_jackknife", "multinomial"],
+  "primary_cells": [[1024, 2048], [1024, 4096], [2048, 4096]],
+  "primary_metric": "Mean bank absolute log error against the arithmetic mean of 20 A/B outcomes, averaged equally over corpora and primary m<n cells",
+  "uncertainty": "5000 crossed bootstrap draws, resampling reference banks and A/B pairs independently while retaining method pairing and nested sizes",
+  "decision": {
+    "target_fraction": 0.8,
+    "baseline_size": 512,
+    "target_rule": "Common target equals 0.8 times the median 8192-chunk-reference full-source forecast at n=512, saved before A/B scoring",
+    "selection": "For each reference bank and method, select the smallest grid n whose forecast is at or below the common target. Abstain if no size qualifies.",
+    "verification": "Compare selected n with mean observed disagreement and a 95% interval across 20 source-separated pairs. Report all selections, target failures and abstentions."
+  },
+  "development_gate_required": true,
+  "external_preregistration": false,
+  "no_neural_training": true
+}

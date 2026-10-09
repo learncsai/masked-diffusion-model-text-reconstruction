@@ -1,0 +1,210 @@
+{
+  "status": "passed",
+  "pair_controls_checked": 27,
+  "checkpoint_spot_inference": [
+    {
+      "corpus": "tinystories",
+      "chunks": 4,
+      "n": 2048,
+      "pair": 1,
+      "updates": 12000,
+      "maximum_errors": {
+        "loss_a": 2.6245271005920223e-06,
+        "loss_b": 4.010815774169174e-06,
+        "disagreement": 2.205865765811388e-06,
+        "baseline": 0.0
+      }
+    },
+    {
+      "corpus": "wikitext",
+      "chunks": 4,
+      "n": 2048,
+      "pair": 1,
+      "updates": 12000,
+      "maximum_errors": {
+        "loss_a": 3.1369073051346064e-06,
+        "loss_b": 2.110705656255263e-06,
+        "disagreement": 2.12090256224845e-06,
+        "baseline": 0.0
+      }
+    },
+    {
+      "corpus": "cnn_dailymail",
+      "chunks": 4,
+      "n": 2048,
+      "pair": 1,
+      "updates": 12000,
+      "maximum_errors": {
+        "loss_a": 1.5616416930708255e-06,
+        "loss_b": 1.146396001239225e-06,
+        "disagreement": 1.0801692648457206e-06,
+        "baseline": 0.0
+      }
+    }
+  ],
+  "limitation": "Confirms manifest/parent/seed/data identity for all pairs and CPU inference for six saved checkpoints. Does not revalidate historical optimizer/RNG states, which were not retained, or rerun training.",
+  "pairs": [
+    {
+      "corpus": "tinystories",
+      "n": 512,
+      "pair": 1,
+      "parent_and_seed_and_data_verified": true
+    },
+    {
+      "corpus": "tinystories",
+      "n": 512,
+      "pair": 2,
+      "parent_and_seed_and_data_verified": true
+    },
+    {
+      "corpus": "tinystories",
+      "n": 512,
+      "pair": 3,
+      "parent_and_seed_and_data_verified": true
+    },
+    {
+      "corpus": "tinystories",
+      "n": 1024,
+      "pair": 1,
+      "parent_and_seed_and_data_verified": true
+    },
+    {
+      "corpus": "tinystories",
+      "n": 1024,
+      "pair": 2,
+      "parent_and_seed_and_data_verified": true
+    },
+    {
+      "corpus": "tinystories",
+      "n": 1024,
+      "pair": 3,
+      "parent_and_seed_and_data_verified": true
+    },
+    {
+      "corpus": "tinystories",
+      "n": 2048,
+      "pair": 1,
+      "parent_and_seed_and_data_verified": true
+    },
+    {
+      "corpus": "tinystories",
+      "n": 2048,
+      "pair": 2,
+      "parent_and_seed_and_data_verified": true
+    },
+    {
+      "corpus": "tinystories",
+      "n": 2048,
+      "pair": 3,
+      "parent_and_seed_and_data_verified": true
+    },
+    {
+      "corpus": "wikitext",
+      "n": 512,
+      "pair": 1,
+      "parent_and_seed_and_data_verified": true
+    },
+    {
+      "corpus": "wikitext",
+      "n": 512,
+      "pair": 2,
+      "parent_and_seed_and_data_verified": true
+    },
+    {
+      "corpus": "wikitext",
+      "n": 512,
+      "pair": 3,
+      "parent_and_seed_and_data_verified": true
+    },
+    {
+      "corpus": "wikitext",
+      "n": 1024,
+      "pair": 1,
+      "parent_and_seed_and_data_verified": true
+    },
+    {
+      "corpus": "wikitext",
+      "n": 1024,
+      "pair": 2,
+      "parent_and_seed_and_data_verified": true
+    },
+    {
+      "corpus": "wikitext",
+      "n": 1024,
+      "pair": 3,
+      "parent_and_seed_and_data_verified": true
+    },
+    {
+      "corpus": "wikitext",
+      "n": 2048,
+      "pair": 1,
+      "parent_and_seed_and_data_verified": true
+    },
+    {
+      "corpus": "wikitext",
+      "n": 2048,
+      "pair": 2,
+      "parent_and_seed_and_data_verified": true
+    },
+    {
+      "corpus": "wikitext",
+      "n": 2048,
+      "pair": 3,
+      "parent_and_seed_and_data_verified": true
+    },
+    {
+      "corpus": "cnn_dailymail",
+      "n": 512,
+      "pair": 1,
+      "parent_and_seed_and_data_verified": true
+    },
+    {
+      "corpus": "cnn_dailymail",
+      "n": 512,
+      "pair": 2,
+      "parent_and_seed_and_data_verified": true
+    },
+    {
+      "corpus": "cnn_dailymail",
+      "n": 512,
+      "pair": 3,
+      "parent_and_seed_and_data_verified": true
+    },
+    {
+      "corpus": "cnn_dailymail",
+      "n": 1024,
+      "pair": 1,
+      "parent_and_seed_and_data_verified": true
+    },
+    {
+      "corpus": "cnn_dailymail",
+      "n": 1024,
+      "pair": 2,
+      "parent_and_seed_and_data_verified": true
+    },
+    {
+      "corpus": "cnn_dailymail",
+      "n": 1024,
+      "pair": 3,
+      "parent_and_seed_and_data_verified": true
+    },
+    {
+      "corpus": "cnn_dailymail",
+      "n": 2048,
+      "pair": 1,
+      "parent_and_seed_and_data_verified": true
+    },
+    {
+      "corpus": "cnn_dailymail",
+      "n": 2048,
+      "pair": 2,
+      "parent_and_seed_and_data_verified": true
+    },
+    {
+      "corpus": "cnn_dailymail",
+      "n": 2048,
+      "pair": 3,
+      "parent_and_seed_and_data_verified": true
+    }
+  ]
+}

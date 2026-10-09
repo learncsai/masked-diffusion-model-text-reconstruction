@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "masked-diffusion-model-text-reconstruction"
+version = "0.1.0"
+description = "Experiments for Predicting Corpus-to-Corpus Variation in Text Reconstruction"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["numpy>=2.0", "scipy>=1.16", "matplotlib>=3.10"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", ".", "scripts"]
+addopts = "-ra"
